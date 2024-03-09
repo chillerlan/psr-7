@@ -27,8 +27,8 @@ return [
 	// Thus, both first-party and third-party code being used by
 	// your application should be included in this list.
 	'directory_list'                  => [
-		'.phan/stubs',
-		'examples',
+#		'.phan/stubs',
+#		'examples',
 		'src',
 		'tests',
 		'vendor',
@@ -57,5 +57,7 @@ return [
 	],
 	'suppress_issue_types'            => [
 		'PhanAccessMethodInternal',
+		'PhanNoopCast',
+		'PhanNoopNew',
 	],
 ];

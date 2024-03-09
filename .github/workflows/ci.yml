@@ -21,7 +21,7 @@ on:
 name: "Continuous Integration"
 
 env:
-  PHP_EXTENSIONS: "" # caution: setting 'none' resets/disables shared extensions
+  PHP_EXTENSIONS: fileinfo, intl, json, mbstring, simplexml, sodium, zlib
   PHP_INI_VALUES: memory_limit=-1, error_reporting=-1, display_errors=On
 
 jobs:
@@ -136,29 +136,4 @@ jobs:
         with:
           branch: gh-pages
           folder: .build/phpdocs
-          clean: true
-
-
-  build-manual:
-    name: "Build and publish user manual"
-    if: github.ref_name == 'main'
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: "Checkout sources"
-        uses: actions/checkout@v4
-
-      - name: "Install Sphinx"
-        run: pip install sphinx myst-parser sphinx-rtd-theme
-
-      - name: "Build manual"
-        run: |
-          cd docs
-          make html
-
-      - name: "Publish user manual to branch readthedocs"
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: readthedocs
-          folder: .build/sphinx/html
           clean: true
