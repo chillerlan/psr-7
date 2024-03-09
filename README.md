@@ -14,7 +14,7 @@ A [PSR-7](https://www.php-fig.org/psr/psr-7/)/[PSR-17](https://www.php-fig.org/p
 [php]: https://www.php.net/supported-versions.php
 [packagist-badge]: https://img.shields.io/packagist/v/chillerlan/psr-7.svg?logo=packagist&logoColor=fff
 [packagist]: https://packagist.org/packages/chillerlan/psr-7
-[license-badge]: https://img.shields.io/github/license/chillerlan/psr-7.svg
+[license-badge]: https://img.shields.io/github/license/chillerlan/psr-7
 [license]: https://github.com/chillerlan/psr-7/blob/main/LICENSE
 [gh-action-badge]: https://img.shields.io/github/actions/workflow/status/chillerlan/psr-7/ci.yml?branch=main&logo=github&logoColor=fff
 [gh-action]: https://github.com/chillerlan/psr-7/actions/workflows/ci.yml?query=branch%3Amain
