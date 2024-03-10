@@ -47,6 +47,7 @@
 	},
 	"suggest": {
 		"chillerlan/php-httpinterface": "A PSR-18 HTTP client implementation",
+		"chillerlan/php-http-message-utils": "Utilities for use with PSR-7 message objects.",
 		"chillerlan/php-oauth": "A PSR-7 OAuth client/handler that also acts as PSR-18 HTTP client"
 	},
 	"autoload": {

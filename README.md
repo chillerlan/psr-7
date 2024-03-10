@@ -20,7 +20,7 @@ A [PSR-7](https://www.php-fig.org/psr/psr-7/)/[PSR-17](https://www.php-fig.org/p
 [gh-action]: https://github.com/chillerlan/psr-7/actions/workflows/ci.yml?query=branch%3Amain
 [coverage-badge]: https://img.shields.io/codecov/c/github/chillerlan/psr-7.svg?logo=codecov&logoColor=fff
 [coverage]: https://codecov.io/github/chillerlan/psr-7
-[codacy-badge]: https://img.shields.io/codacy/grade/de971588f9a44f1a99e7bbd2a0737951?logo=codacy&logoColor=fff
+[codacy-badge]: https://img.shields.io/codacy/grade/3578bf36b50d49b0a1660d14ce06b54e?logo=codacy&logoColor=fff
 [codacy]: https://app.codacy.com/gh/chillerlan/psr-7/dashboard
 [downloads-badge]: https://img.shields.io/packagist/dt/chillerlan/psr-7.svg?logo=packagist&logoColor=fff
 [downloads]: https://packagist.org/packages/chillerlan/psr-7/stats
