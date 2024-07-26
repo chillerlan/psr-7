@@ -15,6 +15,7 @@ declare(strict_types=1);
 namespace chillerlan\HTTPTest\Psr7;
 
 use chillerlan\HTTP\Psr7\Stream;
+use chillerlan\PHPUnitHttp\HttpFactoryTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\StreamInterface;
 use Exception, InvalidArgumentException, RuntimeException;
@@ -24,7 +25,7 @@ use function filesize, fopen, fwrite;
  *
  */
 class StreamTest extends TestCase{
-	use FactoryTrait;
+	use HttpFactoryTrait;
 
 	protected function setUp():void{
 		$this->initFactories();

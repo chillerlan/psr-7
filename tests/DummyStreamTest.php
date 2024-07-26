@@ -15,13 +15,14 @@ declare(strict_types=1);
 namespace chillerlan\HTTPTest\Psr7;
 
 use chillerlan\HTTP\Psr7\DummyStream;
+use chillerlan\PHPUnitHttp\HttpFactoryTrait;
 use PHPUnit\Framework\TestCase;
 
 /**
  *
  */
 class DummyStreamTest extends TestCase{
-	use FactoryTrait;
+	use HttpFactoryTrait;
 
 	protected function setUp():void{
 		$this->initFactories();

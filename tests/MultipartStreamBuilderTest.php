@@ -13,6 +13,7 @@ declare(strict_types=1);
 namespace chillerlan\HTTPTest\Psr7;
 
 use chillerlan\HTTP\Psr7\MultipartStreamBuilder;
+use chillerlan\PHPUnitHttp\HttpFactoryTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\MessageInterface;
 use InvalidArgumentException;
@@ -21,7 +22,7 @@ use InvalidArgumentException;
  *
  */
 class MultipartStreamBuilderTest extends TestCase{
-	use FactoryTrait;
+	use HttpFactoryTrait;
 
 	protected MultipartStreamBuilder $multipartStreamBuilder;
 

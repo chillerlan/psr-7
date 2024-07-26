@@ -15,6 +15,8 @@ declare(strict_types=1);
 namespace chillerlan\HTTPTest\Psr7;
 
 use chillerlan\HTTP\Psr7\UploadedFile;
+use chillerlan\HTTP\Utils\ServerUtil;
+use chillerlan\PHPUnitHttp\HttpFactoryTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use InvalidArgumentException, RuntimeException;
@@ -26,13 +28,20 @@ use const PHP_OS_FAMILY, UPLOAD_ERR_CANT_WRITE, UPLOAD_ERR_EXTENSION, UPLOAD_ERR
  *
  */
 class UploadedFileTest extends TestCase{
-	use FactoryTrait;
+	use HttpFactoryTrait;
 
 	protected array $cleanup;
 
 	// called from FactoryTrait
 	protected function setUp():void{
 		$this->initFactories();
+
+		$this->server = new ServerUtil(
+			$this->serverRequestFactory,
+			$this->uriFactory,
+			$this->uploadedFileFactory,
+			$this->streamFactory,
+		);
 
 		$this->cleanup = [];
 	}
