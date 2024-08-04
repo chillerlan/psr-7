@@ -48,10 +48,6 @@ The pseudo-immutability gets in the way more often (always) than it is useful (n
 If you want your objects to be immutable for whatever reason, just fucking clone them and don't force countless libraries
 to do that for you instead. If you don't like it, just use Guzzle instead (spoiler: you won't notice the difference).**
 
-Further, this library still only implements [`psr/http-message`](https://packagist.org/packages/psr/http-message) v1.1,
-as the v2.0 release (06/2023) has return types added [that conflict](https://github.com/php-fig/http-message/pull/107)
-with the [`static` return type](https://wiki.php.net/rfc/static_return_type) that was introduced in PHP 8 (11/2020).
-
 
 ### Auto generated API documentation
 
