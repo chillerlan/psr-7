@@ -17,6 +17,12 @@
 			"homepage":"https://github.com/chillerlan/psr-7/graphs/contributors"
 		}
 	],
+	"funding": [
+		{
+			"type": "Ko-Fi",
+			"url": "https://ko-fi.com/codemasher"
+		}
+	],
 	"homepage": "https://github.com/chillerlan/psr-7",
 	"support": {
 		"docs": "https://chillerlan.github.io/psr-7/",
@@ -54,12 +60,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"chillerlan\\HTTP\\Psr7\\": "src/"
+			"chillerlan\\HTTP\\Psr7\\": "src"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"chillerlan\\HTTPTest\\Psr7\\": "tests/"
+			"chillerlan\\HTTPTest\\Psr7\\": "tests"
 		}
 	},
 	"scripts": {

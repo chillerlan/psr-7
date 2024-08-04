@@ -67,3 +67,10 @@ Locally created docs will appear in `.build/phpdocs/`. If you'd like to create l
 ## Disclaimer
 
 Use at your own risk!
+
+
+## License information
+
+This library contains portions of code (tests) from the following libraries:
+- [Guzzle PSR-7](https://github.com/guzzle/psr7) (MIT)
+- [Slim](https://github.com/slimphp/Slim) (MIT)

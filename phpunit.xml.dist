@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
          bootstrap="vendor/autoload.php"
          cacheDirectory=".build/phpunit-cache"
          colors="true"
 >
 	<testsuites>
 		<testsuite name="chillerlan/psr-7 test suite">
-			<directory>./tests/</directory>
+			<directory>tests</directory>
 		</testsuite>
 		<testsuite name="http-interop integration tests">
-			<directory>./vendor/http-interop/http-factory-tests/test</directory>
+			<directory>vendor/http-interop/http-factory-tests/test</directory>
 		</testsuite>
 	</testsuites>
 	<source>
