@@ -9,7 +9,6 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTPTest\Psr7;
@@ -20,9 +19,6 @@ use PHPUnit\Framework\TestCase;
 use InvalidArgumentException;
 use const UPLOAD_ERR_OK;
 
-/**
- *
- */
 class ServerRequestTest extends TestCase{
 
 	public function testServerParams():void{

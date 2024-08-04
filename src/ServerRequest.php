@@ -7,7 +7,6 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTP\Psr7;
@@ -21,15 +20,22 @@ use function array_key_exists, is_array, is_object;
  */
 class ServerRequest extends Request implements ServerRequestInterface{
 
+	/** @var array<string, string> */
 	protected array             $serverParams;
+	/** @var array<string, string> */
 	protected array             $cookieParams  = [];
+	/** @var array<string, string> */
 	protected array             $queryParams   = [];
+	/** @var array<string, mixed> */
 	protected array             $attributes    = [];
+	/** @var array{tmp_name: string[], size: int[], error: int[], name: string[], type: string[]} */
 	protected array             $uploadedFiles = [];
 	protected array|object|null $parsedBody    = null;
 
 	/**
 	 * ServerRequest constructor.
+	 *
+	 * @param array<string, string>|nul $serverParams
 	 */
 	public function __construct(string $method, UriInterface|string $uri, array|null $serverParams = null){
 		parent::__construct($method, $uri);
@@ -37,71 +43,48 @@ class ServerRequest extends Request implements ServerRequestInterface{
 		$this->serverParams = ($serverParams ?? []);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getServerParams():array{
 		return $this->serverParams;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getCookieParams():array{
 		return $this->cookieParams;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
+	/** @param array<string, string> $cookies */
 	public function withCookieParams(array $cookies):static{
 		$this->cookieParams = $cookies;
 
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getQueryParams():array{
 		return $this->queryParams;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
+	/** @param array<string, string> $query */
 	public function withQueryParams(array $query):static{
 		$this->queryParams = $query;
 
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
+	/** @return array{tmp_name: string[], size: int[], error: int[], name: string[], type: string[]} */
 	public function getUploadedFiles():array{
 		return $this->uploadedFiles;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
+	/** @param array{tmp_name: string[], size: int[], error: int[], name: string[], type: string[]} $uploadedFiles */
 	public function withUploadedFiles(array $uploadedFiles):static{
 		$this->uploadedFiles = $uploadedFiles;
 
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getParsedBody():array|object|null{
 		return $this->parsedBody;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withParsedBody(mixed $data):static{
 
 		if($data !== null && !is_object($data) && !is_array($data)){
@@ -113,16 +96,10 @@ class ServerRequest extends Request implements ServerRequestInterface{
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getAttributes():array{
 		return $this->attributes;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getAttribute(string $name, mixed $default = null):mixed{
 
 		if(!array_key_exists($name, $this->attributes)){
@@ -132,18 +109,12 @@ class ServerRequest extends Request implements ServerRequestInterface{
 		return $this->attributes[$name];
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withAttribute(string $name, mixed $value):static{
 		$this->attributes[$name] = $value;
 
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withoutAttribute(string $name):static{
 
 		if(array_key_exists($name, $this->attributes)){

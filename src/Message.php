@@ -7,7 +7,6 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTP\Psr7;
@@ -27,6 +26,7 @@ use function array_column, array_combine, array_merge, implode, is_array, strtol
 class Message implements MessageInterface{
 
 	protected StreamInterface $body;
+	/** @var array<string, string|string[]>  */
 	protected array           $headers = [];
 	protected string          $version = '1.1';
 
@@ -37,39 +37,24 @@ class Message implements MessageInterface{
 		$this->body = HTTPFactory::createStreamFromSource($body);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getProtocolVersion():string{
 		return $this->version;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withProtocolVersion(string $version):static{
 		$this->version = $version;
 
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getHeaders():array{
 		return array_combine(array_column($this->headers, 'name'), array_column($this->headers, 'value'));
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function hasHeader(string $name):bool{
 		return isset($this->headers[strtolower($this->checkName($name))]);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getHeader(string $name):array{
 		$name = $this->checkName($name);
 
@@ -80,16 +65,10 @@ class Message implements MessageInterface{
 		return $this->headers[strtolower($name)]['value'];
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getHeaderLine(string $name):string{
 		return implode(', ', $this->getHeader($name));
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withHeader(string $name, mixed $value):static{
 		$name = $this->checkName($name);
 
@@ -98,9 +77,6 @@ class Message implements MessageInterface{
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withAddedHeader(string $name, mixed $value):static{
 		$name   = $this->checkName($name);
 		$lcName = strtolower($name);
@@ -114,9 +90,6 @@ class Message implements MessageInterface{
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withoutHeader(string $name):static{
 		$name   = $this->checkName($name);
 		$lcName = strtolower($name);
@@ -130,16 +103,10 @@ class Message implements MessageInterface{
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getBody():StreamInterface{
 		return $this->body;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withBody(StreamInterface $body):static{
 		$this->body = $body;
 
@@ -166,10 +133,6 @@ class Message implements MessageInterface{
 			$value = [$value];
 		}
 
-		/**
-		 * @noinspection PhpIncompatibleReturnTypeInspection
-		 * @phan-suppress-next-next-line PhanTypeMismatchReturn
-		 */
 		return HeaderUtil::trimValues($value);
 	}
 

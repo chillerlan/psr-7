@@ -7,7 +7,6 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTP\Psr7;
@@ -43,9 +42,6 @@ class Request extends Message implements RequestInterface, RequestMethodInterfac
 		$this->updateHostFromUri();
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getRequestTarget():string{
 
 		if($this->requestTarget !== null){
@@ -66,9 +62,6 @@ class Request extends Message implements RequestInterface, RequestMethodInterfac
 		return $target;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withRequestTarget(string $requestTarget):static{
 
 		if(preg_match('#\s#', $requestTarget)){
@@ -80,16 +73,10 @@ class Request extends Message implements RequestInterface, RequestMethodInterfac
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getMethod():string{
 		return $this->method;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withMethod(string $method):static{
 		$method = strtoupper(trim($method));
 
@@ -102,16 +89,10 @@ class Request extends Message implements RequestInterface, RequestMethodInterfac
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getUri():UriInterface{
 		return $this->uri;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withUri(UriInterface $uri, bool $preserveHost = false):static{
 
 		if($uri !== $this->uri){
@@ -125,9 +106,6 @@ class Request extends Message implements RequestInterface, RequestMethodInterfac
 		return $this;
 	}
 
-	/**
-	 *
-	 */
 	protected function updateHostFromUri():void{
 		$host = $this->uri->getHost();
 

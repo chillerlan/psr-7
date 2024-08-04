@@ -9,7 +9,6 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTPTest\Psr7;
@@ -24,12 +23,10 @@ use function basename, file_exists, fopen, is_scalar, sys_get_temp_dir, tempnam,
 use const PHP_OS_FAMILY, UPLOAD_ERR_CANT_WRITE, UPLOAD_ERR_EXTENSION, UPLOAD_ERR_FORM_SIZE,
 	UPLOAD_ERR_INI_SIZE, UPLOAD_ERR_NO_FILE, UPLOAD_ERR_NO_TMP_DIR, UPLOAD_ERR_OK, UPLOAD_ERR_PARTIAL;
 
-/**
- *
- */
 class UploadedFileTest extends TestCase{
 	use HttpFactoryTrait;
 
+	/** @var string[] */
 	protected array $cleanup;
 
 	// called from FactoryTrait

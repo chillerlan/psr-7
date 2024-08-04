@@ -7,7 +7,6 @@
  * @copyright    2023 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTPTest\Psr7;
@@ -18,9 +17,6 @@ use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\MessageInterface;
 use InvalidArgumentException;
 
-/**
- *
- */
 class MultipartStreamBuilderTest extends TestCase{
 	use HttpFactoryTrait;
 
@@ -72,7 +68,7 @@ class MultipartStreamBuilderTest extends TestCase{
 			"\r\n".
 			"content a\r\n".
 			"--boundary--\r\n",
-			(string)$this->multipartStreamBuilder
+			(string)$this->multipartStreamBuilder,
 		);
 
 		$this->multipartStreamBuilder->reset();
@@ -109,7 +105,7 @@ class MultipartStreamBuilderTest extends TestCase{
 			"\r\n".
 			"content b\r\n".
 			"--boundary--\r\n",
-			(string)$this->multipartStreamBuilder
+			(string)$this->multipartStreamBuilder,
 		);
 	}
 
@@ -135,7 +131,7 @@ class MultipartStreamBuilderTest extends TestCase{
 			"\r\n".
 			"filestream b\r\n".
 			"--boundary--\r\n",
-			(string)$this->multipartStreamBuilder
+			(string)$this->multipartStreamBuilder,
 		);
 	}
 
@@ -161,7 +157,7 @@ class MultipartStreamBuilderTest extends TestCase{
 			"\r\n".
 			"bbb\r\n".
 			"--boundary--\r\n",
-			(string)$this->multipartStreamBuilder
+			(string)$this->multipartStreamBuilder,
 		);
 	}
 
@@ -191,7 +187,7 @@ class MultipartStreamBuilderTest extends TestCase{
 			"\r\n".
 			"filestream a\r\n".
 			"--boundary--\r\n",
-			(string)$this->multipartStreamBuilder
+			(string)$this->multipartStreamBuilder,
 		);
 	}
 
@@ -203,7 +199,6 @@ class MultipartStreamBuilderTest extends TestCase{
 				'x-foo'               => 'bar',
 				'content-disposition' => 'custom',
 			])
-			// phpcs:ignore
 			->addStream($this->streamFactory->createStream('filestream b'), 'b', '/dir/b.jpg', [
 				'cOntenT-Type' => 'custom',
 			])
@@ -224,7 +219,7 @@ class MultipartStreamBuilderTest extends TestCase{
 			"\r\n".
 			"filestream b\r\n".
 			"--boundary--\r\n",
-			(string)$this->multipartStreamBuilder
+			(string)$this->multipartStreamBuilder,
 		);
 	}
 
@@ -241,7 +236,7 @@ class MultipartStreamBuilderTest extends TestCase{
 			"Content-Length: 9\r\n\r\nc".
 			"ontent a\r\n".
 			"--boundary--\r\n",
-			(string)$this->multipartStreamBuilder
+			(string)$this->multipartStreamBuilder,
 		);
 
 	}
@@ -267,7 +262,7 @@ class MultipartStreamBuilderTest extends TestCase{
 			"\r\n".
 			"content a\r\n".
 			"--boundary--\r\n",
-			(string)$this->multipartStreamBuilder
+			(string)$this->multipartStreamBuilder,
 		);
 
 	}
@@ -311,7 +306,8 @@ class MultipartStreamBuilderTest extends TestCase{
 			"\r\n".
 			"content a2\r\n".
 			"--boundary-a--\r\n".
-			"\r\n". // does this extra newline bother anyone or can we just ignore it??
+			// does this extra newline bother anyone or can we just ignore it??
+			"\r\n".
 			"--boundary-b\r\n".
 			"Content-Disposition: form-data; name=\"b2\"; filename=\"b2.jpg\"\r\n".
 			"Content-Length: 10\r\n".
@@ -319,7 +315,7 @@ class MultipartStreamBuilderTest extends TestCase{
 			"\r\n".
 			"content b2\r\n".
 			"--boundary-b--\r\n",
-			(string)$mp2
+			(string)$mp2,
 		);
 
 	}
@@ -344,7 +340,7 @@ class MultipartStreamBuilderTest extends TestCase{
 			"\r\n".
 			"filestream a\r\n".
 			"--boundary--\r\n",
-			(string)$request->getBody()
+			(string)$request->getBody(),
 		);
 
 	}

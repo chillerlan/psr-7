@@ -7,7 +7,6 @@
  * @copyright    2023 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTP\Psr7;
@@ -25,16 +24,17 @@ use function basename, count, implode, ksort, preg_match, random_bytes, sha1, sp
 class MultipartStreamBuilder{
 
 	/** @var \Psr\Http\Message\MessageInterface[] */
-	protected array           $messages;
-	protected string          $boundary;
-	protected StreamInterface $multipartStream;
+	protected array                  $messages;
+	protected string                 $boundary;
+	protected StreamInterface        $multipartStream;
+	protected StreamFactoryInterface $streamFactory;
 
 	/**
 	 * MultipartStreamBuilder constructor
 	 */
-	public function __construct(
-		protected StreamFactoryInterface $streamFactory,
-	){
+	public function __construct(StreamFactoryInterface $streamFactory){
+		$this->streamFactory = $streamFactory;
+
 		$this->reset();
 	}
 
@@ -191,6 +191,8 @@ class MultipartStreamBuilder{
 
 	/**
 	 * Parses and writes the headers from the given message to the multipart stream
+	 *
+	 * @param array<string, string|string[]> $headers
 	 */
 	protected function writeHeaders(iterable $headers):void{
 		$headers = HeaderUtil::normalize($headers);

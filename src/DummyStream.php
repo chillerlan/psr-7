@@ -7,7 +7,6 @@
  * @copyright    2023 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTP\Psr7;
@@ -40,8 +39,9 @@ class DummyStream implements StreamInterface{
 		'getMetadata',
 	];
 
-	protected StreamInterface $stream;
+	/** @var array<string, \Closure> */
 	protected array           $override = [];
+	protected StreamInterface $stream;
 
 	/**
 	 * DummyStream constructor
@@ -66,7 +66,7 @@ class DummyStream implements StreamInterface{
 	/**
 	 * Sets the override methods
 	 *
-	 * @param \Closure[] $methods
+	 * @param array<string, \Closure> $methods
 	 */
 	public function dummyOverrideAll(array $methods):static{
 
@@ -86,7 +86,7 @@ class DummyStream implements StreamInterface{
 	 */
 	public function dummyOverrideMethod(string $name, Closure $fn):static{
 
-		if(in_array($name, $this::STREAMINTERFACE_METHODS)){
+		if(in_array($name, $this::STREAMINTERFACE_METHODS, true)){
 			$this->override[$name] = $fn;
 		}
 
@@ -97,77 +97,62 @@ class DummyStream implements StreamInterface{
 		$this->override['close']();
 	}
 
-	/** @inheritDoc */
 	public function __toString():string{
 		return $this->override['__toString']();
 	}
 
-	/** @inheritDoc */
 	public function close():void{
 		$this->override['close']();
 	}
 
-	/** @inheritDoc */
 	public function detach(){
 		return $this->override['detach']();
 	}
 
-	/** @inheritDoc */
 	public function getSize():int|null{
 		return $this->override['getSize']();
 	}
 
-	/** @inheritDoc */
 	public function tell():int{
 		return $this->override['tell']();
 	}
 
-	/** @inheritDoc */
 	public function eof():bool{
 		return $this->override['eof']();
 	}
 
-	/** @inheritDoc */
 	public function isSeekable():bool{
 		return $this->override['isSeekable']();
 	}
 
-	/** @inheritDoc */
 	public function seek(int $offset, int $whence = SEEK_SET):void{
 		$this->override['seek']($offset, $whence);
 	}
 
-	/** @inheritDoc */
 	public function rewind():void{
 		$this->override['rewind']();
 	}
 
-	/** @inheritDoc */
 	public function isWritable():bool{
 		return $this->override['isWritable']();
 	}
 
-	/** @inheritDoc */
 	public function write(string $string):int{
 		return $this->override['write']($string);
 	}
 
-	/** @inheritDoc */
 	public function isReadable():bool{
 		return $this->override['isReadable']();
 	}
 
-	/** @inheritDoc */
 	public function read(int $length):string{
 		return $this->override['read']($length);
 	}
 
-	/** @inheritDoc */
 	public function getContents():string{
 		return $this->override['getContents']();
 	}
 
-	/** @inheritDoc */
 	public function getMetadata(string|null $key = null):mixed{
 		return $this->override['getMetadata']($key);
 	}

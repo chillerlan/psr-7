@@ -7,7 +7,6 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTP\Psr7;
@@ -25,7 +24,7 @@ class Response extends Message implements ResponseInterface, StatusCodeInterface
 	/**
 	 * Status codes and reason phrases
 	 *
-	 * @var array
+	 * @var array<int, string>
 	 */
 	public const REASON_PHRASES = [
 		//Informational 1xx
@@ -115,16 +114,10 @@ class Response extends Message implements ResponseInterface, StatusCodeInterface
 		$this->reasonPhrase = ($reason ?? $this->getReasonPhraseFromStatusCode($this->statusCode));
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getStatusCode():int{
 		return $this->statusCode;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withStatus(int $code, string $reasonPhrase = ''):static{
 		$this->reasonPhrase = trim($reasonPhrase);
 		$this->statusCode   = $code;
@@ -136,9 +129,6 @@ class Response extends Message implements ResponseInterface, StatusCodeInterface
 		return $this;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getReasonPhrase():string{
 		return $this->reasonPhrase;
 	}

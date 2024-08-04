@@ -7,15 +7,14 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTP\Psr7;
 
 use Psr\Http\Message\{StreamFactoryInterface, StreamInterface, UploadedFileInterface};
 use InvalidArgumentException, RuntimeException;
-use function in_array, is_file, is_string, is_writable, move_uploaded_file, php_sapi_name, rename;
-use const UPLOAD_ERR_CANT_WRITE, UPLOAD_ERR_EXTENSION, UPLOAD_ERR_FORM_SIZE, UPLOAD_ERR_INI_SIZE,
+use function in_array, is_file, is_string, is_writable, move_uploaded_file, rename;
+use const PHP_SAPI, UPLOAD_ERR_CANT_WRITE, UPLOAD_ERR_EXTENSION, UPLOAD_ERR_FORM_SIZE, UPLOAD_ERR_INI_SIZE,
 	UPLOAD_ERR_NO_FILE, UPLOAD_ERR_NO_TMP_DIR, UPLOAD_ERR_OK, UPLOAD_ERR_PARTIAL;
 
 /**
@@ -35,23 +34,33 @@ class UploadedFile implements UploadedFileInterface{
 		UPLOAD_ERR_EXTENSION,
 	];
 
-	protected string|null          $file  = null;
-	protected StreamInterface|null $stream;
-	protected bool                 $moved = false;
+	protected StreamFactoryInterface $streamFactory;
+	protected StreamInterface|null   $stream;
+	protected int                    $size;
+	protected int                    $error;
+	protected string|null            $filename = null;
+	protected string|null            $mediaType = null;
+	protected string|null            $file  = null;
+	protected bool                   $moved = false;
 
 	/**
 	 * @throws \InvalidArgumentException
 	 */
 	public function __construct(
-		mixed                            $file,
-		protected int                    $size,
-		protected int                    $error = UPLOAD_ERR_OK,
-		protected string|null            $filename = null,
-		protected string|null            $mediaType = null,
-		protected StreamFactoryInterface $streamFactory = new HTTPFactory,
+		mixed                  $file,
+		int                    $size,
+		int                    $error = UPLOAD_ERR_OK,
+		string|null            $filename = null,
+		string|null            $mediaType = null,
+		StreamFactoryInterface $streamFactory = new HTTPFactory,
 	){
+		$this->size          = $size;
+		$this->error         = $error;
+		$this->filename      = $filename;
+		$this->mediaType     = $mediaType;
+		$this->streamFactory = $streamFactory;
 
-		if(!in_array($error, $this::UPLOAD_ERRORS, true)){
+		if(!in_array($this->error, $this::UPLOAD_ERRORS, true)){
 			throw new InvalidArgumentException('Invalid error status for UploadedFile');
 		}
 
@@ -68,11 +77,7 @@ class UploadedFile implements UploadedFileInterface{
 
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getStream():StreamInterface{
-
 		$this->validateActive();
 
 		if($this->stream instanceof StreamInterface){
@@ -86,11 +91,7 @@ class UploadedFile implements UploadedFileInterface{
 		return $this->streamFactory->createStream($this->file);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function moveTo(string $targetPath):void{
-
 		$this->validateActive();
 
 		if(empty($targetPath)){
@@ -102,7 +103,7 @@ class UploadedFile implements UploadedFileInterface{
 		}
 
 		if($this->file !== null){
-			$this->moved = php_sapi_name() === 'cli'
+			$this->moved = (PHP_SAPI === 'cli')
 				? rename($this->file, $targetPath)
 				: move_uploaded_file($this->file, $targetPath);
 		}
@@ -117,30 +118,18 @@ class UploadedFile implements UploadedFileInterface{
 
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getSize():int|null{
 		return $this->size;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getError():int{
 		return $this->error;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getClientFilename():string|null{
 		return $this->filename;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getClientMediaType():string|null{
 		return $this->mediaType;
 	}

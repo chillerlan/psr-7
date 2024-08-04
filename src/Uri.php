@@ -9,7 +9,6 @@
  *
  * @noinspection RegExpUnnecessaryNonCapturingGroup, RegExpRedundantEscape
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTP\Psr7;
@@ -90,7 +89,6 @@ class Uri implements UriInterface{
 	}
 
 	/**
-	 * @inheritDoc
 	 * @throws \InvalidArgumentException
 	 */
 	public function __toString():string{
@@ -138,16 +136,10 @@ class Uri implements UriInterface{
 	 * Getters
 	 */
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getScheme():string{
 		return $this->scheme;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getUserInfo():string{
 		$userinfo = $this->user;
 
@@ -158,23 +150,14 @@ class Uri implements UriInterface{
 		return $userinfo;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getHost():string{
 		return $this->host;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getPort():int|null{
 		return $this->port;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getAuthority():string{
 		$authority = $this->host;
 		$userInfo  = $this->getUserInfo();
@@ -194,23 +177,14 @@ class Uri implements UriInterface{
 		return $authority;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getPath():string{
 		return $this->path;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getQuery():string{
 		return $this->query;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getFragment():string{
 		return $this->fragment;
 	}
@@ -219,51 +193,30 @@ class Uri implements UriInterface{
 	 * Setters
 	 */
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withScheme(string $scheme):static{
 		return $this->parseUriParts(['scheme' => $scheme]);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withUserInfo(string $user, string|null $password = null):static{
 		return $this->parseUriParts(['user' => $user, 'pass' => ($password ?? '')]);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withHost(string $host):static{
 		return $this->parseUriParts(['host' => $host]);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withPort(int|null $port):static{
 		return $this->parseUriParts(['port' => $port]);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withPath(string $path):static{
 		return $this->parseUriParts(['path' => $path]);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withQuery(string $query):static{
 		return $this->parseUriParts(['query' => $query]);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function withFragment(string $fragment):static{
 		return $this->parseUriParts(['fragment' => $fragment]);
 	}
@@ -285,9 +238,6 @@ class Uri implements UriInterface{
 		return $scheme;
 	}
 
-	/**
-	 *
-	 */
 	protected function filterUserInfo(string $userOrPass):string{
 		return $this->replaceChars(
 			$userOrPass,
@@ -295,9 +245,6 @@ class Uri implements UriInterface{
 		);
 	}
 
-	/**
-	 *
-	 */
 	protected function filterHost(string $host):string{
 		$filteredIPv6 = filter_var(trim($host, '[]'), FILTER_VALIDATE_IP, FILTER_FLAG_IPV6);
 
@@ -324,9 +271,6 @@ class Uri implements UriInterface{
 		throw new InvalidArgumentException('invalid port: '.$port);
 	}
 
-	/**
-	 *
-	 */
 	protected function filterPath(string $path):string{
 		return $this->replaceChars(
 			$path,
@@ -334,9 +278,6 @@ class Uri implements UriInterface{
 		);
 	}
 
-	/**
-	 *
-	 */
 	protected function filterQueryOrFragment(string $queryOrFragment):string{
 		return $this->replaceChars(
 			$queryOrFragment,
@@ -344,15 +285,12 @@ class Uri implements UriInterface{
 		);
 	}
 
-	/**
-	 *
-	 */
 	protected function replaceChars(string $str, string $regex):string{
 		return preg_replace_callback($regex, fn(array $match):string => rawurlencode($match[0]), $str);
 	}
 
 	/**
-	 *
+	 * @param array{scheme?: string, host?: int|string, port?: string, user?: string, pass?: string, path?: string, query?: string, fragment?: string} $parts
 	 */
 	protected function parseUriParts(array $parts):static{
 

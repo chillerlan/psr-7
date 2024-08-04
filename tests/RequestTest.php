@@ -9,7 +9,6 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTPTest\Psr7;
@@ -19,9 +18,6 @@ use Fig\Http\Message\RequestMethodInterface;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
-/**
- *
- */
 class RequestTest extends TestCase{
 
 	public function testRequestUriMayBeString():void{

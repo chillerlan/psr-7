@@ -9,7 +9,6 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTPTest\Psr7;
@@ -19,9 +18,6 @@ use chillerlan\HTTP\Psr7\Response;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\StreamInterface;
 
-/**
- *
- */
 class ResponseTest extends TestCase{
 
 	public function testDefaultConstructor():void{
@@ -74,7 +70,7 @@ class ResponseTest extends TestCase{
 	public function testWithBody():void{
 		$response = (new Response)->withBody(HTTPFactory::createStreamFromString('0'));
 		$this::assertInstanceOf(StreamInterface::class, $response->getBody());
-		$this::assertSame('0', (string) $response->getBody());
+		$this::assertSame('0', (string)$response->getBody());
 	}
 
 }

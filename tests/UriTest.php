@@ -7,7 +7,6 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTPTest\Psr7;
@@ -17,6 +16,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\UriInterface;
 use InvalidArgumentException;
+use function sprintf;
 
 /**
  * @see https://github.com/guzzle/psr7/blob/45b30f99ac27b5ca93cb4831afe16285f57b8221/tests/UriTest.php
@@ -365,11 +365,11 @@ class UriTest extends TestCase{
 				'/pa/th//two?q=va/lue#frag/ment',
 			],
 			'Don\'t encode unreserved chars or sub-delimiters' => [
-				"/$unreserved?$unreserved#$unreserved",
-				"/$unreserved",
+				sprintf('/%1$s?%1$s#%1$s', $unreserved),
+				sprintf('/%s', $unreserved),
 				$unreserved,
 				$unreserved,
-				"/$unreserved?$unreserved#$unreserved",
+				sprintf('/%1$s?%1$s#%1$s', $unreserved),
 			],
 			'Encoded unreserved chars are not decoded'         => [
 				'/p%61th?q=v%61lue#fr%61gment',
@@ -387,7 +387,7 @@ class UriTest extends TestCase{
 		string $path,
 		string $query,
 		string $fragment,
-		string $output
+		string $output,
 	):void{
 		$uri = new Uri($input);
 
@@ -537,7 +537,14 @@ class UriTest extends TestCase{
 	 * If the port component is not set or is the standard port for the current scheme, it SHOULD NOT be included.
 	 */
 	#[DataProvider('authorityProvider')]
-	public function testGetAuthority(string $scheme, string $user, string $pass, string $host, ?int $port, string $authority):void{
+	public function testGetAuthority(
+		string   $scheme,
+		string   $user,
+		string   $pass,
+		string   $host,
+		int|null $port,
+		string   $authority,
+	):void{
 
 		$uri = (new Uri)
 			->withHost($host)

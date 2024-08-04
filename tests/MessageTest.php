@@ -7,7 +7,6 @@
  * @copyright    2023 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTPTest\Psr7;
@@ -16,9 +15,6 @@ use chillerlan\HTTP\Psr7\Message;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\StreamInterface;
 
-/**
- *
- */
 class MessageTest extends TestCase{
 
 	public function testNullBody():void{

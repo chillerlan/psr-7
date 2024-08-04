@@ -7,7 +7,6 @@
  * @copyright    2019 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTPTest\Psr7;
@@ -19,9 +18,6 @@ use Psr\Http\Message\StreamInterface;
 use InvalidArgumentException, stdClass;
 use function fopen, fseek, fwrite, simplexml_load_string;
 
-/**
- *
- */
 class FactoryUtilsTest extends TestCase{
 
 	public function testCreateStream():void{

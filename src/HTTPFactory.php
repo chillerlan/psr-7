@@ -7,6 +7,7 @@
  * @copyright    2024 smiley
  * @license      MIT
  */
+declare(strict_types=1);
 
 namespace chillerlan\HTTP\Psr7;
 
@@ -34,30 +35,18 @@ class HTTPFactory implements
 	UploadedFileFactoryInterface,
 	UriFactoryInterface {
 
-	/**
-	 * @inheritDoc
-	 */
-	public function createRequest(string $method, $uri):RequestInterface{
+	public function createRequest(string $method, $uri):RequestInterface{ // phpcs:ignore
 		return new Request($method, $uri);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function createResponse(int $code = 200, string $reasonPhrase = ''):ResponseInterface{
 		return new Response($code, $reasonPhrase);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function createStream(string $content = ''):StreamInterface{
 		return static::createStreamFromString(content: $content, rewind: false);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function createStreamFromFile(string $filename, string $mode = 'r'):StreamInterface{
 
 		if(empty($filename) || !is_file($filename) || !is_readable($filename)){
@@ -67,30 +56,18 @@ class HTTPFactory implements
 		return new Stream(StreamUtil::tryFopen($filename, $mode));
 	}
 
-	/**
-	 * @inheritDoc
-	 */
-	public function createStreamFromResource($resource):StreamInterface{
+	public function createStreamFromResource($resource):StreamInterface{ // phpcs:ignore
 		return new Stream($resource);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function createUri(string $uri = ''):UriInterface{
 		return new Uri($uri);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
-	public function createServerRequest(string $method, $uri, array $serverParams = []):ServerRequestInterface{
+	public function createServerRequest(string $method, $uri, array $serverParams = []):ServerRequestInterface{ // phpcs:ignore
 		return new ServerRequest($method, $uri, $serverParams);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function createUploadedFile(
 		StreamInterface $stream,
 		int|null        $size = null,
@@ -159,6 +136,5 @@ class HTTPFactory implements
 
 		throw new InvalidArgumentException('Invalid resource type: '.$type);
 	}
-
 
 }

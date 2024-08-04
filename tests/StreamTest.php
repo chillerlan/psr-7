@@ -9,7 +9,6 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTPTest\Psr7;
@@ -18,12 +17,9 @@ use chillerlan\HTTP\Psr7\Stream;
 use chillerlan\PHPUnitHttp\HttpFactoryTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\StreamInterface;
-use Exception, InvalidArgumentException, RuntimeException;
+use Closure, Exception, InvalidArgumentException, RuntimeException;
 use function filesize, fopen, fwrite;
 
-/**
- *
- */
 class StreamTest extends TestCase{
 	use HttpFactoryTrait;
 
@@ -131,21 +127,23 @@ class StreamTest extends TestCase{
 		$this::assertFalse($stream->isWritable());
 		$this::assertFalse($stream->isSeekable());
 
-		$throws = function(callable $fn) use ($stream){
+		$throws = function(Closure $fn) use ($stream):void{
 			try{
 				$fn($stream);
 				$this::fail();
 			}
-			catch(Exception){}
+			catch(Exception){
+				// noop
+			}
 		};
 
-		$throws(function(StreamInterface $stream){$stream->read(10);});
-		$throws(function(StreamInterface $stream){$stream->write('bar');});
-		$throws(function(StreamInterface $stream){$stream->seek(10);});
-		$throws(function(StreamInterface $stream){$stream->tell();});
-		$throws(function(StreamInterface $stream){$stream->eof();});
-		$throws(function(StreamInterface $stream){$stream->getSize();});
-		$throws(function(StreamInterface $stream){$stream->getContents();});
+		$throws(fn(StreamInterface $stream) => $stream->read(10));
+		$throws(fn(StreamInterface $stream) => $stream->write('bar'));
+		$throws(fn(StreamInterface $stream) => $stream->seek(10));
+		$throws(fn(StreamInterface $stream) => $stream->tell());
+		$throws(fn(StreamInterface $stream) => $stream->eof());
+		$throws(fn(StreamInterface $stream) => $stream->getSize());
+		$throws(fn(StreamInterface $stream) => $stream->getContents());
 
 		$this::assertSame('', (string)$stream);
 		$stream->close();

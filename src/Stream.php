@@ -7,7 +7,6 @@
  * @copyright    2018 smiley
  * @license      MIT
  */
-
 declare(strict_types=1);
 
 namespace chillerlan\HTTP\Psr7;
@@ -60,9 +59,6 @@ class Stream implements StreamInterface{
 		$this->close();
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function __toString():string{
 
 		if(!is_resource($this->stream)){
@@ -76,9 +72,6 @@ class Stream implements StreamInterface{
 		return $this->getContents();
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function close():void{
 
 		if(is_resource($this->stream)){
@@ -88,9 +81,6 @@ class Stream implements StreamInterface{
 		$this->detach();
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function detach(){
 		$oldResource = $this->stream;
 
@@ -104,9 +94,6 @@ class Stream implements StreamInterface{
 		return $oldResource;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getSize():int|null{
 
 		if(!is_resource($this->stream)){
@@ -133,9 +120,6 @@ class Stream implements StreamInterface{
 		return null; // @codeCoverageIgnore
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function tell():int{
 
 		if(!is_resource($this->stream)){
@@ -151,23 +135,14 @@ class Stream implements StreamInterface{
 		return $result;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function eof():bool{
 		return !$this->stream || feof($this->stream);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function isSeekable():bool{
 		return $this->seekable;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function seek(int $offset, int $whence = SEEK_SET):void{
 
 		if(!is_resource($this->stream)){
@@ -184,23 +159,14 @@ class Stream implements StreamInterface{
 
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function rewind():void{
 		$this->seek(0);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function isWritable():bool{
 		return $this->writable;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function write(string $string):int{
 
 		if(!is_resource($this->stream)){
@@ -222,16 +188,10 @@ class Stream implements StreamInterface{
 		return $result;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function isReadable():bool{
 		return $this->readable;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function read(int $length):string{
 
 		if(!is_resource($this->stream)){
@@ -259,9 +219,6 @@ class Stream implements StreamInterface{
 		return $string;
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getContents():string{
 
 		if(!is_resource($this->stream)){
@@ -275,9 +232,6 @@ class Stream implements StreamInterface{
 		return StreamUtil::tryGetContents($this->stream);
 	}
 
-	/**
-	 * @inheritDoc
-	 */
 	public function getMetadata(string|null $key = null):mixed{
 
 		if(!is_resource($this->stream)){
