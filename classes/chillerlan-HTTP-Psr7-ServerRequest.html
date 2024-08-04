@@ -62,7 +62,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/chillerlan.html" class="">chillerlan</a>
@@ -79,7 +79,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -87,14 +87,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -137,11 +137,14 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Implements a server-side incoming HTTP request</p>
+
+
+
 
 
 
@@ -176,73 +179,73 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_attributes">$attributes</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_attributes">$attributes</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string, mixed&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#property_body">$body</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#property_body">$body</a>
     <span>
                         &nbsp;: <abbr title="\Psr\Http\Message\StreamInterface">StreamInterface</abbr>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_cookieParams">$cookieParams</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_cookieParams">$cookieParams</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string, string&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#property_headers">$headers</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#property_headers">$headers</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string, array{name: string, value: string[]}&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-Request.html#property_method">$method</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Request.html#property_method">$method</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_parsedBody">$parsedBody</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_parsedBody">$parsedBody</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;|object|null            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_queryParams">$queryParams</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_queryParams">$queryParams</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string, string&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-Request.html#property_requestTarget">$requestTarget</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Request.html#property_requestTarget">$requestTarget</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_serverParams">$serverParams</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_serverParams">$serverParams</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string, string&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_uploadedFiles">$uploadedFiles</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_uploadedFiles">$uploadedFiles</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array{tmp_name: string[], size: int[], error: int[], name: string[], type: string[]}            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-Request.html#property_uri">$uri</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Request.html#property_uri">$uri</a>
     <span>
                         &nbsp;: <abbr title="\Psr\Http\Message\UriInterface">UriInterface</abbr>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#property_version">$version</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#property_version">$version</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
@@ -256,213 +259,212 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method___construct">__construct()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>ServerRequest constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getAttribute">getAttribute()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getAttribute">getAttribute()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getAttributes">getAttributes()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getAttributes">getAttributes()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getBody">getBody()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_getBody">getBody()</a>
     <span>
                                 &nbsp;: <abbr title="\Psr\Http\Message\StreamInterface">StreamInterface</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getCookieParams">getCookieParams()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getCookieParams">getCookieParams()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeader">getHeader()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeader">getHeader()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeaderLine">getHeaderLine()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeaderLine">getHeaderLine()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeaders">getHeaders()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeaders">getHeaders()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getMethod">getMethod()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Request.html#method_getMethod">getMethod()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getParsedBody">getParsedBody()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getParsedBody">getParsedBody()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;|object|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getProtocolVersion">getProtocolVersion()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_getProtocolVersion">getProtocolVersion()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getQueryParams">getQueryParams()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getQueryParams">getQueryParams()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getRequestTarget">getRequestTarget()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Request.html#method_getRequestTarget">getRequestTarget()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getServerParams">getServerParams()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getServerParams">getServerParams()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getUploadedFiles">getUploadedFiles()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getUploadedFiles">getUploadedFiles()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array{tmp_name: string[], size: int[], error: int[], name: string[], type: string[]}    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getUri">getUri()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Request.html#method_getUri">getUri()</a>
     <span>
                                 &nbsp;: <abbr title="\Psr\Http\Message\UriInterface">UriInterface</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_hasHeader">hasHeader()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_hasHeader">hasHeader()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withAddedHeader">withAddedHeader()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_withAddedHeader">withAddedHeader()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withAttribute">withAttribute()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withAttribute">withAttribute()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withBody">withBody()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_withBody">withBody()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withCookieParams">withCookieParams()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withCookieParams">withCookieParams()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withHeader">withHeader()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_withHeader">withHeader()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withMethod">withMethod()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Request.html#method_withMethod">withMethod()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withoutAttribute">withoutAttribute()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withoutAttribute">withoutAttribute()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withoutHeader">withoutHeader()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_withoutHeader">withoutHeader()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withParsedBody">withParsedBody()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withParsedBody">withParsedBody()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withProtocolVersion">withProtocolVersion()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_withProtocolVersion">withProtocolVersion()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withQueryParams">withQueryParams()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withQueryParams">withQueryParams()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withRequestTarget">withRequestTarget()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Request.html#method_withRequestTarget">withRequestTarget()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withUploadedFiles">withUploadedFiles()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withUploadedFiles">withUploadedFiles()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withUri">withUri()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Request.html#method_withUri">withUri()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_checkName">checkName()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_checkName">checkName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>checks/cleans a header name</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_checkValue">checkValue()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Message.html#method_checkValue">checkValue()</a>
     <span>
                                 &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_updateHostFromUri">updateHostFromUri()</a>
+    <a class="" href="classes/chillerlan-HTTP-Psr7-Request.html#method_updateHostFromUri">updateHostFromUri()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -492,19 +494,22 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$attributes</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
+    
+
     
 
 </article>
@@ -525,10 +530,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
+    
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -538,6 +544,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -558,19 +566,22 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
     <span class="phpdocumentor-signature__name">$cookieParams</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
+    
+
     
 
 </article>
@@ -596,14 +607,17 @@
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, array{name: string, value: string[]}&gt;</span>
     <span class="phpdocumentor-signature__name">$headers</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
+    
+
     
 
 </article>
@@ -624,10 +638,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Request.php"><a href="files/src-request.html"><abbr title="src/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
+    
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -637,6 +652,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -657,10 +674,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
+    
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -670,6 +688,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -690,19 +710,22 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
     <span class="phpdocumentor-signature__name">$queryParams</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
+    
+
     
 
 </article>
@@ -723,10 +746,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Request.php"><a href="files/src-request.html"><abbr title="src/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
+    
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -736,6 +760,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -761,14 +787,17 @@
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
     <span class="phpdocumentor-signature__name">$serverParams</span>
     </code>
 
     
     
+    
+
     
 
 </article>
@@ -789,19 +818,22 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array{tmp_name: string[], size: int[], error: int[], name: string[], type: string[]}</span>
     <span class="phpdocumentor-signature__name">$uploadedFiles</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
+    
+
     
 
 </article>
@@ -822,10 +854,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Request.php"><a href="files/src-request.html"><abbr title="src/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
+    
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
@@ -835,6 +868,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -860,6 +895,7 @@
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
@@ -868,6 +904,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -893,7 +931,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -901,10 +939,11 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\UriInterface">UriInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$serverParams</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\UriInterface">UriInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string, string&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$serverParams</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -924,12 +963,14 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$serverParams</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|null</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, string&gt;|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -949,7 +990,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -960,6 +1001,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -980,20 +1022,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getAttribute#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
     
 </article>
@@ -1011,7 +1041,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -1025,20 +1055,9 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getAttributes#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1060,7 +1079,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -1074,20 +1093,9 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getBody#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1123,20 +1131,9 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getCookieParams#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1158,7 +1155,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -1169,6 +1166,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1182,20 +1180,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeader#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1217,7 +1203,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -1228,6 +1214,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1241,20 +1228,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeaderLine#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1276,7 +1251,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -1290,20 +1265,9 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeaders#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1325,7 +1289,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Request.php"><a href="files/src-request.html"><abbr title="src/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -1339,20 +1303,9 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getMethod#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1374,7 +1327,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -1388,20 +1341,9 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getParsedBody#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1423,7 +1365,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -1437,20 +1379,9 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getProtocolVersion#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1472,7 +1403,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -1486,20 +1417,9 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getQueryParams#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1521,7 +1441,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Request.php"><a href="files/src-request.html"><abbr title="src/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -1535,20 +1455,9 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getRequestTarget#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1570,7 +1479,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -1584,20 +1493,9 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getServerParams#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1619,38 +1517,27 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getUploadedFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getUploadedFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{tmp_name: string[], size: int[], error: int[], name: string[], type: string[]}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getUploadedFiles#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array{tmp_name: string[], size: int[], error: int[], name: string[], type: string[]}</span>
             </section>
 
 </article>
@@ -1668,7 +1555,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Request.php"><a href="files/src-request.html"><abbr title="src/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -1682,20 +1569,9 @@
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getUri#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1717,7 +1593,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -1728,6 +1604,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1741,20 +1618,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_hasHeader#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1776,7 +1641,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -1787,6 +1652,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1807,20 +1673,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withAddedHeader#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1842,7 +1696,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -1853,6 +1707,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1873,20 +1728,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withAttribute#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1908,7 +1751,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -1919,6 +1762,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1932,20 +1776,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withBody#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1967,23 +1799,24 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withCookieParams</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cookies</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+                    <span class="phpdocumentor-signature__name">withCookieParams</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cookies</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$cookies</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, string&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1991,20 +1824,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withCookieParams#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2026,7 +1847,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -2037,6 +1858,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2057,20 +1879,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withHeader#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2092,7 +1902,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Request.php"><a href="files/src-request.html"><abbr title="src/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -2103,6 +1913,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2116,20 +1927,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withMethod#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2151,7 +1950,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -2162,6 +1961,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2175,20 +1975,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withoutAttribute#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2210,7 +1998,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -2221,6 +2009,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2234,20 +2023,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withoutHeader#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2269,7 +2046,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -2280,6 +2057,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2293,20 +2071,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withParsedBody#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2328,7 +2094,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -2339,6 +2105,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2352,20 +2119,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withProtocolVersion#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2387,23 +2142,24 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withQueryParams</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+                    <span class="phpdocumentor-signature__name">withQueryParams</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$query</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, string&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2411,20 +2167,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withQueryParams#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2446,7 +2190,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Request.php"><a href="files/src-request.html"><abbr title="src/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -2457,6 +2201,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2470,20 +2215,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withRequestTarget#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2505,23 +2238,24 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServerRequest.php"><a href="files/src-serverrequest.html"><abbr title="src/ServerRequest.php">ServerRequest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withUploadedFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uploadedFiles</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+                    <span class="phpdocumentor-signature__name">withUploadedFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{tmp_name: string[], size: int[], error: int[], name: string[], type: string[]}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uploadedFiles</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$uploadedFiles</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array{tmp_name: string[], size: int[], error: int[], name: string[], type: string[]}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2529,20 +2263,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withUploadedFiles#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2564,7 +2286,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Request.php"><a href="files/src-request.html"><abbr title="src/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -2575,6 +2297,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2595,20 +2318,8 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withUri#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2630,7 +2341,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -2642,6 +2353,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2671,6 +2383,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -2691,7 +2405,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Message.php"><a href="files/src-message.html"><abbr title="src/Message.php">Message.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -2702,6 +2416,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2731,6 +2446,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
@@ -2751,7 +2468,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Request.php"><a href="files/src-request.html"><abbr title="src/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -2764,6 +2481,9 @@
         </div>
     
     
+    
+    
+
     
 
     
@@ -2881,58 +2601,58 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_attributes">$attributes<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#property_body">$body<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_cookieParams">$cookieParams<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#property_headers">$headers<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-Request.html#property_method">$method<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_parsedBody">$parsedBody<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_queryParams">$queryParams<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-Request.html#property_requestTarget">$requestTarget<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_serverParams">$serverParams<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_uploadedFiles">$uploadedFiles<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-Request.html#property_uri">$uri<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#property_version">$version<a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html"></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_attributes">$attributes</a></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#property_body">$body</a></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_cookieParams">$cookieParams</a></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#property_headers">$headers</a></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-Request.html#property_method">$method</a></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_parsedBody">$parsedBody</a></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_queryParams">$queryParams</a></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-Request.html#property_requestTarget">$requestTarget</a></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_serverParams">$serverParams</a></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#property_uploadedFiles">$uploadedFiles</a></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-Request.html#property_uri">$uri</a></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#property_version">$version</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getAttribute">getAttribute()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getAttributes">getAttributes()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getBody">getBody()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getCookieParams">getCookieParams()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeader">getHeader()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeaderLine">getHeaderLine()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeaders">getHeaders()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getMethod">getMethod()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getParsedBody">getParsedBody()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getProtocolVersion">getProtocolVersion()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getQueryParams">getQueryParams()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getRequestTarget">getRequestTarget()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getServerParams">getServerParams()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getUploadedFiles">getUploadedFiles()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getUri">getUri()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_hasHeader">hasHeader()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withAddedHeader">withAddedHeader()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withAttribute">withAttribute()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withBody">withBody()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withCookieParams">withCookieParams()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withHeader">withHeader()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withMethod">withMethod()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withoutAttribute">withoutAttribute()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withoutHeader">withoutHeader()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withParsedBody">withParsedBody()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withProtocolVersion">withProtocolVersion()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withQueryParams">withQueryParams()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withRequestTarget">withRequestTarget()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withUploadedFiles">withUploadedFiles()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withUri">withUri()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_checkName">checkName()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_checkValue">checkValue()</a></li>
-                                            <li><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_updateHostFromUri">updateHostFromUri()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getAttribute">getAttribute()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getAttributes">getAttributes()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getBody">getBody()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getCookieParams">getCookieParams()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeader">getHeader()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeaderLine">getHeaderLine()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getHeaders">getHeaders()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getMethod">getMethod()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getParsedBody">getParsedBody()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_getProtocolVersion">getProtocolVersion()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getQueryParams">getQueryParams()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getRequestTarget">getRequestTarget()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getServerParams">getServerParams()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_getUploadedFiles">getUploadedFiles()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_getUri">getUri()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_hasHeader">hasHeader()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withAddedHeader">withAddedHeader()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withAttribute">withAttribute()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withBody">withBody()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withCookieParams">withCookieParams()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withHeader">withHeader()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withMethod">withMethod()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withoutAttribute">withoutAttribute()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withoutHeader">withoutHeader()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withParsedBody">withParsedBody()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_withProtocolVersion">withProtocolVersion()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withQueryParams">withQueryParams()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withRequestTarget">withRequestTarget()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-ServerRequest.html#method_withUploadedFiles">withUploadedFiles()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_withUri">withUri()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_checkName">checkName()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Message.html#method_checkValue">checkValue()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-Request.html#method_updateHostFromUri">updateHostFromUri()</a></li>
                                     </ul>
             </li>
                     </ul>

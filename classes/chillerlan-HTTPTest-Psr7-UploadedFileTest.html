@@ -62,7 +62,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/chillerlan.html" class="">chillerlan</a>
@@ -79,7 +79,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -87,14 +87,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -125,8 +125,8 @@
     
     
             <span class="phpdocumentor-element__extends">
-            Uses
-                            <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html"><abbr title="\chillerlan\HTTPTest\Psr7\FactoryTrait">FactoryTrait</abbr></a>                    </span>
+            uses
+                            <abbr title="\chillerlan\PHPUnitHttp\HttpFactoryTrait">HttpFactoryTrait</abbr>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -137,11 +137,14 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
         
+
+
+
 
 
 
@@ -168,57 +171,9 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#property_cleanup">$cleanup</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#property_cleanup">$cleanup</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_requestFactory">$requestFactory</a>
-    <span>
-                        &nbsp;: <abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_responseFactory">$responseFactory</a>
-    <span>
-                        &nbsp;: <abbr title="\Psr\Http\Message\ResponseFactoryInterface">ResponseFactoryInterface</abbr>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_server">$server</a>
-    <span>
-                        &nbsp;: <abbr title="\chillerlan\HTTP\Utils\ServerUtil">ServerUtil</abbr>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_serverRequestFactory">$serverRequestFactory</a>
-    <span>
-                        &nbsp;: <abbr title="\Psr\Http\Message\ServerRequestFactoryInterface">ServerRequestFactoryInterface</abbr>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_streamFactory">$streamFactory</a>
-    <span>
-                        &nbsp;: <abbr title="\Psr\Http\Message\StreamFactoryInterface">StreamFactoryInterface</abbr>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_uploadedFileFactory">$uploadedFileFactory</a>
-    <span>
-                        &nbsp;: <abbr title="\Psr\Http\Message\UploadedFileFactoryInterface">UploadedFileFactoryInterface</abbr>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_uriFactory">$uriFactory</a>
-    <span>
-                        &nbsp;: <abbr title="\Psr\Http\Message\UriFactoryInterface">UriFactoryInterface</abbr>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_FACTORIES">$FACTORIES</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, string&gt;            </span>
 </dt>
 
     </dl>
@@ -230,127 +185,120 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_invalidErrorStatuses">invalidErrorStatuses()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_invalidErrorStatuses">invalidErrorStatuses()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_invalidStreams">invalidStreams()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_invalidStreams">invalidStreams()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_nonOkErrorStatus">nonOkErrorStatus()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_nonOkErrorStatus">nonOkErrorStatus()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotMoveToEmptyTarget">testCannotMoveToEmptyTarget()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotMoveToEmptyTarget">testCannotMoveToEmptyTarget()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotMoveToUnwritableDirectory">testCannotMoveToUnwritableDirectory()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotMoveToUnwritableDirectory">testCannotMoveToUnwritableDirectory()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotRetrieveStreamAfterMove">testCannotRetrieveStreamAfterMove()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotRetrieveStreamAfterMove">testCannotRetrieveStreamAfterMove()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent">testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent">testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamRaisesExceptionWhenErrorStatusPresent">testGetStreamRaisesExceptionWhenErrorStatusPresent()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamRaisesExceptionWhenErrorStatusPresent">testGetStreamRaisesExceptionWhenErrorStatusPresent()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamReturnsOriginalStreamObject">testGetStreamReturnsOriginalStreamObject()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamReturnsOriginalStreamObject">testGetStreamReturnsOriginalStreamObject()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamReturnsWrappedPhpStream">testGetStreamReturnsWrappedPhpStream()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamReturnsWrappedPhpStream">testGetStreamReturnsWrappedPhpStream()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveCannotBeCalledMoreThanOnce">testMoveCannotBeCalledMoreThanOnce()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveCannotBeCalledMoreThanOnce">testMoveCannotBeCalledMoreThanOnce()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveToCreatesStreamIfOnlyAFilenameWasProvided">testMoveToCreatesStreamIfOnlyAFilenameWasProvided()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveToCreatesStreamIfOnlyAFilenameWasProvided">testMoveToCreatesStreamIfOnlyAFilenameWasProvided()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveToRaisesExceptionWhenErrorStatusPresent">testMoveToRaisesExceptionWhenErrorStatusPresent()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveToRaisesExceptionWhenErrorStatusPresent">testMoveToRaisesExceptionWhenErrorStatusPresent()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testNormalizeFilesRaisesException">testNormalizeFilesRaisesException()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testNormalizeFilesRaisesException">testNormalizeFilesRaisesException()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidErrorStatus">testRaisesExceptionOnInvalidErrorStatus()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidErrorStatus">testRaisesExceptionOnInvalidErrorStatus()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidStreamOrFile">testRaisesExceptionOnInvalidStreamOrFile()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidStreamOrFile">testRaisesExceptionOnInvalidStreamOrFile()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testSuccessful">testSuccessful()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testSuccessful">testSuccessful()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#method_initFactories">initFactories()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_setUp">setUp()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_setUp">setUp()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_tearDown">tearDown()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_tearDown">tearDown()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -380,14 +328,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$cleanup</span>
     </code>
 
@@ -395,268 +344,6 @@
     
     
 
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_requestFactory">
-        $requestFactory
-        <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_requestFactory" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/FactoryTrait.php"><a href="files/tests-factorytrait.html"><abbr title="tests/FactoryTrait.php">FactoryTrait.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">37</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr></span>
-    <span class="phpdocumentor-signature__name">$requestFactory</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_responseFactory">
-        $responseFactory
-        <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_responseFactory" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/FactoryTrait.php"><a href="files/tests-factorytrait.html"><abbr title="tests/FactoryTrait.php">FactoryTrait.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">38</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\ResponseFactoryInterface">ResponseFactoryInterface</abbr></span>
-    <span class="phpdocumentor-signature__name">$responseFactory</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_server">
-        $server
-        <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_server" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/FactoryTrait.php"><a href="files/tests-factorytrait.html"><abbr title="tests/FactoryTrait.php">FactoryTrait.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">43</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\chillerlan\HTTP\Utils\ServerUtil">ServerUtil</abbr></span>
-    <span class="phpdocumentor-signature__name">$server</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_serverRequestFactory">
-        $serverRequestFactory
-        <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_serverRequestFactory" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/FactoryTrait.php"><a href="files/tests-factorytrait.html"><abbr title="tests/FactoryTrait.php">FactoryTrait.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">39</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\ServerRequestFactoryInterface">ServerRequestFactoryInterface</abbr></span>
-    <span class="phpdocumentor-signature__name">$serverRequestFactory</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_streamFactory">
-        $streamFactory
-        <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_streamFactory" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/FactoryTrait.php"><a href="files/tests-factorytrait.html"><abbr title="tests/FactoryTrait.php">FactoryTrait.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\StreamFactoryInterface">StreamFactoryInterface</abbr></span>
-    <span class="phpdocumentor-signature__name">$streamFactory</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_uploadedFileFactory">
-        $uploadedFileFactory
-        <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_uploadedFileFactory" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/FactoryTrait.php"><a href="files/tests-factorytrait.html"><abbr title="tests/FactoryTrait.php">FactoryTrait.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">41</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\UploadedFileFactoryInterface">UploadedFileFactoryInterface</abbr></span>
-    <span class="phpdocumentor-signature__name">$uploadedFileFactory</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_uriFactory">
-        $uriFactory
-        <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_uriFactory" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/FactoryTrait.php"><a href="files/tests-factorytrait.html"><abbr title="tests/FactoryTrait.php">FactoryTrait.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">42</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\UriFactoryInterface">UriFactoryInterface</abbr></span>
-    <span class="phpdocumentor-signature__name">$uriFactory</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_FACTORIES">
-        $FACTORIES
-        <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_FACTORIES" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/FactoryTrait.php"><a href="files/tests-factorytrait.html"><abbr title="tests/FactoryTrait.php">FactoryTrait.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">28</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$FACTORIES</span>
-     = <span class="phpdocumentor-signature__default-value">[&#039;requestFactory&#039; =&gt; &#039;REQUEST_FACTORY&#039;, &#039;responseFactory&#039; =&gt; &#039;RESPONSE_FACTORY&#039;, &#039;serverRequestFactory&#039; =&gt; &#039;SERVER_REQUEST_FACTORY&#039;, &#039;streamFactory&#039; =&gt; &#039;STREAM_FACTORY&#039;, &#039;uploadedFileFactory&#039; =&gt; &#039;UPLOADED_FILE_FACTORY&#039;, &#039;uriFactory&#039; =&gt; &#039;URI_FACTORY&#039;]</span></code>
-
-    
-    
     
 
 </article>
@@ -682,7 +369,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -695,6 +382,9 @@
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -717,7 +407,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -730,6 +420,9 @@
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -752,7 +445,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">168</span>
 
     </aside>
 
@@ -765,6 +458,9 @@
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -787,7 +483,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -800,6 +496,9 @@
         </div>
     
     
+    
+    
+
     
 
     
@@ -818,7 +517,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -831,6 +530,9 @@
         </div>
     
     
+    
+    
+
     
 
     
@@ -849,7 +551,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -862,6 +564,9 @@
         </div>
     
     
+    
+    
+
     
 
     
@@ -880,7 +585,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">180</span>
 
     </aside>
 
@@ -891,6 +596,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -904,6 +610,22 @@
             </dl>
 
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;nonOkErrorStatus&#039;
+    </dd>
+    </dl>
+            </section>
 
     
 </article>
@@ -921,7 +643,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">194</span>
 
     </aside>
 
@@ -932,6 +654,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -945,6 +668,22 @@
             </dl>
 
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamRaisesExceptionWhenErrorStatusPresent#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;nonOkErrorStatus&#039;
+    </dd>
+    </dl>
+            </section>
 
     
 </article>
@@ -962,7 +701,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -975,6 +714,9 @@
         </div>
     
     
+    
+    
+
     
 
     
@@ -993,7 +735,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -1006,6 +748,9 @@
         </div>
     
     
+    
+    
+
     
 
     
@@ -1024,7 +769,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -1037,6 +782,9 @@
         </div>
     
     
+    
+    
+
     
 
     
@@ -1055,7 +803,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">196</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
@@ -1068,6 +816,9 @@
         </div>
     
     
+    
+    
+
     
 
     
@@ -1086,7 +837,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -1097,6 +848,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1110,6 +862,22 @@
             </dl>
 
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveToRaisesExceptionWhenErrorStatusPresent#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;nonOkErrorStatus&#039;
+    </dd>
+    </dl>
+            </section>
 
     
 </article>
@@ -1127,7 +895,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -1140,6 +908,9 @@
         </div>
     
     
+    
+    
+
     
 
     
@@ -1158,7 +929,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -1169,6 +940,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1182,6 +954,22 @@
             </dl>
 
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidErrorStatus#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;invalidErrorStatuses&#039;
+    </dd>
+    </dl>
+            </section>
 
     
 </article>
@@ -1199,7 +987,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -1210,6 +998,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1223,6 +1012,22 @@
             </dl>
 
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidStreamOrFile#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;invalidStreams&#039;
+    </dd>
+    </dl>
+            </section>
 
     
 </article>
@@ -1240,7 +1045,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -1254,52 +1059,9 @@
     
     
     
+    
 
     
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_initFactories">
-        initFactories()
-        <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#method_initFactories" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/FactoryTrait.php"><a href="files/tests-factorytrait.html"><abbr title="tests/FactoryTrait.php">FactoryTrait.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">48</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">initFactories</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#method_initFactories#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
 
     
 </article>
@@ -1317,7 +1079,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -1330,6 +1092,9 @@
         </div>
     
     
+    
+    
+
     
 
     
@@ -1348,7 +1113,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UploadedFileTest.php"><a href="files/tests-uploadedfiletest.html"><abbr title="tests/UploadedFileTest.php">UploadedFileTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -1361,6 +1126,9 @@
         </div>
     
     
+    
+    
+
     
 
     
@@ -1478,41 +1246,32 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#property_cleanup">$cleanup<a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_requestFactory">$requestFactory<a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_responseFactory">$responseFactory<a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_server">$server<a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_serverRequestFactory">$serverRequestFactory<a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_streamFactory">$streamFactory<a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_uploadedFileFactory">$uploadedFileFactory<a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_uriFactory">$uriFactory<a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html"></li>
-                                                    <li><a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#property_FACTORIES">$FACTORIES<a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html"></li>
+                                                    <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#property_cleanup">$cleanup</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_invalidErrorStatuses">invalidErrorStatuses()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_invalidStreams">invalidStreams()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_nonOkErrorStatus">nonOkErrorStatus()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotMoveToEmptyTarget">testCannotMoveToEmptyTarget()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotMoveToUnwritableDirectory">testCannotMoveToUnwritableDirectory()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotRetrieveStreamAfterMove">testCannotRetrieveStreamAfterMove()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent">testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamRaisesExceptionWhenErrorStatusPresent">testGetStreamRaisesExceptionWhenErrorStatusPresent()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamReturnsOriginalStreamObject">testGetStreamReturnsOriginalStreamObject()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamReturnsWrappedPhpStream">testGetStreamReturnsWrappedPhpStream()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveCannotBeCalledMoreThanOnce">testMoveCannotBeCalledMoreThanOnce()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveToCreatesStreamIfOnlyAFilenameWasProvided">testMoveToCreatesStreamIfOnlyAFilenameWasProvided()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveToRaisesExceptionWhenErrorStatusPresent">testMoveToRaisesExceptionWhenErrorStatusPresent()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testNormalizeFilesRaisesException">testNormalizeFilesRaisesException()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidErrorStatus">testRaisesExceptionOnInvalidErrorStatus()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidStreamOrFile">testRaisesExceptionOnInvalidStreamOrFile()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testSuccessful">testSuccessful()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-FactoryTrait.html#method_initFactories">initFactories()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_setUp">setUp()</a></li>
-                                            <li><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_tearDown">tearDown()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_invalidErrorStatuses">invalidErrorStatuses()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_invalidStreams">invalidStreams()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_nonOkErrorStatus">nonOkErrorStatus()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotMoveToEmptyTarget">testCannotMoveToEmptyTarget()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotMoveToUnwritableDirectory">testCannotMoveToUnwritableDirectory()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotRetrieveStreamAfterMove">testCannotRetrieveStreamAfterMove()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent">testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamRaisesExceptionWhenErrorStatusPresent">testGetStreamRaisesExceptionWhenErrorStatusPresent()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamReturnsOriginalStreamObject">testGetStreamReturnsOriginalStreamObject()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamReturnsWrappedPhpStream">testGetStreamReturnsWrappedPhpStream()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveCannotBeCalledMoreThanOnce">testMoveCannotBeCalledMoreThanOnce()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveToCreatesStreamIfOnlyAFilenameWasProvided">testMoveToCreatesStreamIfOnlyAFilenameWasProvided()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveToRaisesExceptionWhenErrorStatusPresent">testMoveToRaisesExceptionWhenErrorStatusPresent()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testNormalizeFilesRaisesException">testNormalizeFilesRaisesException()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidErrorStatus">testRaisesExceptionOnInvalidErrorStatus()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidStreamOrFile">testRaisesExceptionOnInvalidStreamOrFile()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testSuccessful">testSuccessful()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_setUp">setUp()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_tearDown">tearDown()</a></li>
                                     </ul>
             </li>
                     </ul>
