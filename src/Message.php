@@ -26,7 +26,7 @@ use function array_column, array_combine, array_merge, implode, is_array, strtol
 class Message implements MessageInterface{
 
 	protected StreamInterface $body;
-	/** @var array<string, string|string[]>  */
+	/** @var array<string, array{name: string, value: string[]}>  */
 	protected array           $headers = [];
 	protected string          $version = '1.1';
 
