@@ -121,7 +121,8 @@ class HTTPFactory implements
 
 		if($type === 'resource'){
 			// avoid using php://input and copy over the contents to a new stream
-			if(stream_get_meta_data($source)['uri'] === 'php://input'){
+			/** @phpstan-ignore-next-line */
+			if((stream_get_meta_data($source)['uri'] ?? '') === 'php://input'){
 				$stream = StreamUtil::tryFopen('php://temp', 'r+');
 
 				stream_copy_to_stream($source, $stream);
