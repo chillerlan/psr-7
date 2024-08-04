@@ -6,6 +6,11 @@ parameters:
 			path: src/DummyStream.php
 
 		-
+			message: "#^Offset 'uri' on array\\{timed_out\\: bool, blocked\\: bool, eof\\: bool, unread_bytes\\: int, stream_type\\: string, wrapper_type\\: string, wrapper_data\\: mixed, mode\\: string, \\.\\.\\.\\} on left side of \\?\\? always exists and is not nullable\\.$#"
+			count: 1
+			path: src/HTTPFactory.php
+
+		-
 			message: "#^Property chillerlan\\\\HTTP\\\\Psr7\\\\ServerRequest\\:\\:\\$uploadedFiles \\(array\\{tmp_name\\: array\\<string\\>, size\\: array\\<int\\>, error\\: array\\<int\\>, name\\: array\\<string\\>, type\\: array\\<string\\>\\}\\) does not accept default value of type array\\{\\}\\.$#"
 			count: 1
 			path: src/ServerRequest.php
