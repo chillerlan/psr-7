@@ -64,6 +64,9 @@ class HTTPFactory implements
 		return new Uri($uri);
 	}
 
+	/**
+	 * @param array<int|string, mixed> $serverParams
+	 */
 	public function createServerRequest(string $method, $uri, array $serverParams = []):ServerRequestInterface{ // phpcs:ignore
 		return new ServerRequest($method, $uri, $serverParams);
 	}
@@ -118,7 +121,7 @@ class HTTPFactory implements
 
 		if($type === 'resource'){
 			// avoid using php://input and copy over the contents to a new stream
-			if((stream_get_meta_data($source)['uri'] ?? '') === 'php://input'){
+			if(stream_get_meta_data($source)['uri'] === 'php://input'){
 				$stream = StreamUtil::tryFopen('php://temp', 'r+');
 
 				stream_copy_to_stream($source, $stream);

@@ -47,7 +47,8 @@
 		"ext-simplexml": "*",
 		"chillerlan/phpunit-http": "^1.0",
 		"http-interop/http-factory-tests": "^2.1",
-		"phan/phan": "^5.4",
+		"phpstan/phpstan": "^1.11",
+		"phpstan/phpstan-deprecation-rules": "^1.2",
 		"phpunit/phpunit": "^10.5",
 		"phpmd/phpmd": "^2.15",
 		"slevomat/coding-standard": "^8.15",
@@ -70,8 +71,9 @@
 	},
 	"scripts": {
 		"phpcs": "@php vendor/bin/phpcs",
-		"phpunit": "@php vendor/bin/phpunit",
-		"phan": "@php vendor/bin/phan"
+		"phpstan": "@php vendor/bin/phpstan",
+		"phpstan-baseline": "@php vendor/bin/phpstan --generate-baseline",
+		"phpunit": "@php vendor/bin/phpunit"
 	},
 	"config": {
 		"lock": false,

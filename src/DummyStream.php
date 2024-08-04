@@ -45,6 +45,8 @@ class DummyStream implements StreamInterface{
 
 	/**
 	 * DummyStream constructor
+	 *
+	 * @param array<string, \Closure>|null $methods
 	 */
 	public function __construct(StreamInterface|null $stream = null, array|null $methods = null){
 

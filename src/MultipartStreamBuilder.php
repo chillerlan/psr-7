@@ -42,6 +42,7 @@ class MultipartStreamBuilder{
 	 * Returns the stream content (make sure to save the boundary before!)
 	 */
 	public function __toString():string{
+		/** @phpstan-ignore-next-line build() always returns a StreamInterface here */
 		return $this->build()->getContents();
 	}
 
@@ -94,6 +95,8 @@ class MultipartStreamBuilder{
 
 	/**
 	 * Adds a message with the given content
+	 *
+	 * @phpstan-param array<string, string>|null $headers
 	 */
 	public function addString(
 		string        $content,
@@ -107,6 +110,8 @@ class MultipartStreamBuilder{
 
 	/**
 	 * Adds a StreamInterface
+	 *
+	 * @phpstan-param array<string, string>|null $headers
 	 */
 	public function addStream(
 		StreamInterface $stream,

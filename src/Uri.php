@@ -15,7 +15,7 @@ namespace chillerlan\HTTP\Psr7;
 
 use chillerlan\HTTP\Utils\UriUtil;
 use Psr\Http\Message\UriInterface;
-use InvalidArgumentException;
+use InvalidArgumentException, RuntimeException;
 use function explode, filter_var, is_array, is_string, ltrim, mb_strtolower, preg_match,
 	preg_replace_callback, property_exists, rawurlencode, str_contains, str_starts_with, trim;
 use const FILTER_FLAG_IPV6, FILTER_VALIDATE_IP;
@@ -26,6 +26,8 @@ use const FILTER_FLAG_IPV6, FILTER_VALIDATE_IP;
  * @see https://datatracker.ietf.org/doc/html/rfc3986
  * @see https://datatracker.ietf.org/doc/html/rfc7320
  * @see https://datatracker.ietf.org/doc/html/rfc8820
+ *
+ * @phpstan-type ParsedUrl array{scheme?: string, host?: string, port?: int|string, user?: string, pass?: string, path?: string, query?: string, fragment?: string}
  */
 class Uri implements UriInterface{
 
@@ -70,8 +72,10 @@ class Uri implements UriInterface{
 	 * Uri constructor.
 	 *
 	 * @throws \InvalidArgumentException
+	 *
+	 * @phpstan-param ParsedUrl|string|null $uri
 	 */
-	public function __construct(string|array|null $uri = null){
+	public function __construct(array|string|null $uri = null){
 
 		if($uri !== null){
 
@@ -286,14 +290,20 @@ class Uri implements UriInterface{
 	}
 
 	protected function replaceChars(string $str, string $regex):string{
-		return preg_replace_callback($regex, fn(array $match):string => rawurlencode($match[0]), $str);
+		$str = preg_replace_callback($regex, fn(array $match):string => rawurlencode($match[0]), $str);
+
+		if(!is_string($str)){
+			throw new RuntimeException('preg_replace_callback() did not reurn a string');
+		}
+
+		return $str;
 	}
 
 	/**
-	 * @param array{scheme?: string, host?: int|string, port?: string, user?: string, pass?: string, path?: string, query?: string, fragment?: string} $parts
+	 * @phpstan-param ParsedUrl $parts
 	 */
 	protected function parseUriParts(array $parts):static{
-
+		/** @var string $part */
 		foreach($parts as $part => $value){
 
 			if(!property_exists($this, $part)){
