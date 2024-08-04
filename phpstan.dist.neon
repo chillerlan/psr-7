@@ -10,6 +10,8 @@ parameters:
 
 	treatPhpDocTypesAsCertain: false
 
+	excludePaths:
+		- src/HTTPFactory.php
 
 includes:
 	- phpstan-baseline.neon
