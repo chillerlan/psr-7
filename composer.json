@@ -47,6 +47,7 @@
 		"ext-simplexml": "*",
 		"chillerlan/phpunit-http": "^1.0",
 		"http-interop/http-factory-tests": "^2.1",
+		"phan/phan": "^5.5.0",
 		"phpstan/phpstan": "^2.1.19",
 		"phpstan/phpstan-deprecation-rules": "^2.0.3",
 		"phpunit/phpunit": "^10.5",
@@ -70,6 +71,7 @@
 		}
 	},
 	"scripts": {
+		"phan": "@php vendor/bin/phan",
 		"phpcs": "@php vendor/bin/phpcs",
 		"phpstan": "@php vendor/bin/phpstan",
 		"phpstan-baseline": "@php vendor/bin/phpstan --generate-baseline",

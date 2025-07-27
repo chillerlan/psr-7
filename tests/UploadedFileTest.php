@@ -27,7 +27,8 @@ class UploadedFileTest extends TestCase{
 	use HttpFactoryTrait;
 
 	/** @var string[] */
-	protected array $cleanup;
+	protected array      $cleanup;
+	protected ServerUtil $server;
 
 	// called from FactoryTrait
 	protected function setUp():void{
@@ -101,6 +102,7 @@ class UploadedFileTest extends TestCase{
 
 	public function testSuccessful():void{
 		$stream = $this->streamFactory->createStream('Foo bar!');
+		/** @phan-suppress-next-line PhanTypeMismatchArgumentNullable */
 		$upload = new UploadedFile($stream, $stream->getSize(), UPLOAD_ERR_OK, 'filename.txt', 'text/plain');
 
 		$this::assertSame($stream->getSize(), $upload->getSize());

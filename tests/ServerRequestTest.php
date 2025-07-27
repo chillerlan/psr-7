@@ -110,7 +110,7 @@ class ServerRequestTest extends TestCase{
 		$this::assertSame([], $request->getUploadedFiles());
 
 		$files = ['file' => new UploadedFile('test', 123, UPLOAD_ERR_OK)];
-
+		/** @phan-suppress-next-line PhanTypeMismatchArgument */
 		$request->withUploadedFiles($files);
 
 		$this::assertSame($files, $request->getUploadedFiles());
