@@ -1566,6 +1566,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#property_cleanup"
         },                {
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003A\u0024server",
+            "name": "server",
+            "summary": "",
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#property_server"
+        },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest",
             "name": "UriTest",
             "summary": "",
