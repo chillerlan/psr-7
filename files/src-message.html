@@ -110,9 +110,9 @@
 
             <p class="phpdocumentor-summary">Class Message</p>
 
-
-
-
+        
+        
+        
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="files/src-message.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -158,9 +158,7 @@
                         </dl>
 
 
-
-
-
+        
 <h3 id="toc">
     Table of Contents
     <a href="files/src-message.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -177,7 +175,6 @@
     </h4>
     <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/chillerlan-HTTP-Psr7-Message.html"><abbr title="\chillerlan\HTTP\Psr7\Message">Message</abbr></a></dt><dd>Implements a HTTP message</dd>    </dl>
-
 
 
 
@@ -226,6 +223,8 @@
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 

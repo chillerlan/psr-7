@@ -247,9 +247,23 @@
 <dd>Adds a message with the given content</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_build">build()</a>
+    <a class="-deprecated" href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_build">build()</a>
     <span>
                                 &nbsp;: <abbr title="\Psr\Http\Message\StreamInterface">StreamInterface</abbr>|<abbr title="\Psr\Http\Message\MessageInterface">MessageInterface</abbr>    </span>
+</dt>
+<dd>Builds the multipart content from the given messages.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_buildMessage">buildMessage()</a>
+    <span>
+                                &nbsp;: <abbr title="\Psr\Http\Message\MessageInterface">MessageInterface</abbr>    </span>
+</dt>
+<dd>Builds the multipart content from the given messages and sets body and content type headerin the given MessageInterface.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="-deprecated" href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_buildStream">buildStream()</a>
+    <span>
+                                &nbsp;: <abbr title="\Psr\Http\Message\StreamInterface">StreamInterface</abbr>    </span>
 </dt>
 <dd>Builds the multipart content from the given messages.</dd>
 
@@ -320,14 +334,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_boundary">
         $boundary
         <a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#property_boundary" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MultipartStreamBuilder.php"><a href="files/src-multipartstreambuilder.html"><abbr title="src/MultipartStreamBuilder.php">MultipartStreamBuilder.php</abbr></a></abbr>
@@ -339,13 +353,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$boundary</span>
     </code>
 
     
     
+    
+
     
 
     
@@ -356,14 +372,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_messages">
         $messages
         <a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#property_messages" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MultipartStreamBuilder.php"><a href="files/src-multipartstreambuilder.html"><abbr title="src/MultipartStreamBuilder.php">MultipartStreamBuilder.php</abbr></a></abbr>
@@ -375,13 +391,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, <abbr title="\Psr\Http\Message\MessageInterface">MessageInterface</abbr>&gt;</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">array&lt;string|int, <abbr title="\Psr\Http\Message\MessageInterface">MessageInterface</abbr>&gt;</span>
     <span class="phpdocumentor-signature__name">$messages</span>
     </code>
 
     
     
+    
+
     
 
     
@@ -392,14 +410,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_multipartStream">
         $multipartStream
         <a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#property_multipartStream" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MultipartStreamBuilder.php"><a href="files/src-multipartstreambuilder.html"><abbr title="src/MultipartStreamBuilder.php">MultipartStreamBuilder.php</abbr></a></abbr>
@@ -411,13 +429,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\StreamInterface">StreamInterface</abbr></span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\StreamInterface">StreamInterface</abbr></span>
     <span class="phpdocumentor-signature__name">$multipartStream</span>
     </code>
 
     
     
+    
+
     
 
     
@@ -428,14 +448,14 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_streamFactory">
         $streamFactory
         <a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#property_streamFactory" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MultipartStreamBuilder.php"><a href="files/src-multipartstreambuilder.html"><abbr title="src/MultipartStreamBuilder.php">MultipartStreamBuilder.php</abbr></a></abbr>
@@ -447,13 +467,15 @@
     
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\StreamFactoryInterface">StreamFactoryInterface</abbr></span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\StreamFactoryInterface">StreamFactoryInterface</abbr></span>
     <span class="phpdocumentor-signature__name">$streamFactory</span>
     </code>
 
     
     
+    
+
     
 
     
@@ -811,7 +833,7 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+            -deprecated                                            "
 >
     <h4 class="phpdocumentor-element__name" id="method_build">
         build()
@@ -821,17 +843,25 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MultipartStreamBuilder.php"><a href="files/src-multipartstreambuilder.html"><abbr title="src/MultipartStreamBuilder.php">MultipartStreamBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Builds the multipart content from the given messages.</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">build</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\MessageInterface">MessageInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\StreamInterface">StreamInterface</abbr>|<abbr title="\Psr\Http\Message\MessageInterface">MessageInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                <p>The parameter $message and the MessageInterface return type will be removed in the next major version,
+use the method buildMessage() instead.</p>
+
+            </article>
         </div>
     
         <section class="phpdocumentor-description"><p>If a MessageInterface is given, the body and content type header with the boundary will be set
@@ -856,6 +886,103 @@ and the MessageInterface is returned; returns the StreamInterface with the conte
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\StreamInterface">StreamInterface</abbr>|<abbr title="\Psr\Http\Message\MessageInterface">MessageInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_buildMessage">
+        buildMessage()
+        <a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_buildMessage" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/MultipartStreamBuilder.php"><a href="files/src-multipartstreambuilder.html"><abbr title="src/MultipartStreamBuilder.php">MultipartStreamBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">210</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Builds the multipart content from the given messages and sets body and content type headerin the given MessageInterface.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">buildMessage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\MessageInterface">MessageInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\MessageInterface">MessageInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\MessageInterface">MessageInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\MessageInterface">MessageInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+            -deprecated                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="method_buildStream">
+        buildStream()
+        <a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_buildStream" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/MultipartStreamBuilder.php"><a href="files/src-multipartstreambuilder.html"><abbr title="src/MultipartStreamBuilder.php">MultipartStreamBuilder.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">188</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Builds the multipart content from the given messages.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">buildStream</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\StreamInterface">StreamInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                <p>intermediate helper function, will be renamed/moved to build() in the next major version</p>
+
+            </article>
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Returns the StreamInterface with the multipart message content.</p>
+</section>
+
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\StreamInterface">StreamInterface</abbr></span>
             </section>
 
 </article>
@@ -1056,7 +1183,7 @@ and the MessageInterface is returned; returns the StreamInterface with the conte
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MultipartStreamBuilder.php"><a href="files/src-multipartstreambuilder.html"><abbr title="src/MultipartStreamBuilder.php">MultipartStreamBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">267</span>
 
     </aside>
 
@@ -1121,7 +1248,7 @@ and the MessageInterface is returned; returns the StreamInterface with the conte
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MultipartStreamBuilder.php"><a href="files/src-multipartstreambuilder.html"><abbr title="src/MultipartStreamBuilder.php">MultipartStreamBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">249</span>
 
     </aside>
 
@@ -1166,7 +1293,7 @@ and the MessageInterface is returned; returns the StreamInterface with the conte
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/MultipartStreamBuilder.php"><a href="files/src-multipartstreambuilder.html"><abbr title="src/MultipartStreamBuilder.php">MultipartStreamBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -1235,6 +1362,8 @@ and the MessageInterface is returned; returns the StreamInterface with the conte
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 
@@ -1325,7 +1454,9 @@ and the MessageInterface is returned; returns the StreamInterface with the conte
                                             <li class=""><a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_addMessage">addMessage()</a></li>
                                             <li class=""><a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_addStream">addStream()</a></li>
                                             <li class=""><a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_addString">addString()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_build">build()</a></li>
+                                            <li class="-deprecated"><a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_build">build()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_buildMessage">buildMessage()</a></li>
+                                            <li class="-deprecated"><a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_buildStream">buildStream()</a></li>
                                             <li class=""><a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_getBoundary">getBoundary()</a></li>
                                             <li class=""><a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_reset">reset()</a></li>
                                             <li class=""><a href="classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_setBoundary">setBoundary()</a></li>

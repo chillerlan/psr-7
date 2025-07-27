@@ -321,6 +321,16 @@ Search.appendIndex(
             "summary": "Builds\u0020the\u0020multipart\u0020content\u0020from\u0020the\u0020given\u0020messages.",
             "url": "classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_build"
         },                {
+            "fqsen": "\\chillerlan\\HTTP\\Psr7\\MultipartStreamBuilder\u003A\u003AbuildStream\u0028\u0029",
+            "name": "buildStream",
+            "summary": "Builds\u0020the\u0020multipart\u0020content\u0020from\u0020the\u0020given\u0020messages.",
+            "url": "classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_buildStream"
+        },                {
+            "fqsen": "\\chillerlan\\HTTP\\Psr7\\MultipartStreamBuilder\u003A\u003AbuildMessage\u0028\u0029",
+            "name": "buildMessage",
+            "summary": "Builds\u0020the\u0020multipart\u0020content\u0020from\u0020the\u0020given\u0020messages\u0020and\u0020sets\u0020body\u0020and\u0020content\u0020type\u0020headerin\u0020the\u0020given\u0020MessageInterface.",
+            "url": "classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_buildMessage"
+        },                {
             "fqsen": "\\chillerlan\\HTTP\\Psr7\\MultipartStreamBuilder\u003A\u003AwriteHeaders\u0028\u0029",
             "name": "writeHeaders",
             "summary": "Parses\u0020and\u0020writes\u0020the\u0020headers\u0020from\u0020the\u0020given\u0020message\u0020to\u0020the\u0020multipart\u0020stream",

@@ -110,11 +110,11 @@
 
             <p class="phpdocumentor-summary">Class DummyStreamTest</p>
 
-
-    <section class="phpdocumentor-description"><p>see https://github.com/guzzle/psr7/blob/815698d9f11c908bc59471d11f642264b533346a/tests/FnStreamTest.php</p>
+        
+            <section class="phpdocumentor-description"><p>see https://github.com/guzzle/psr7/blob/815698d9f11c908bc59471d11f642264b533346a/tests/FnStreamTest.php</p>
 </section>
 
-
+        
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="files/tests-dummystreamtest.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -160,9 +160,7 @@
                         </dl>
 
 
-
-
-
+        
 <h3 id="toc">
     Table of Contents
     <a href="files/tests-dummystreamtest.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -179,7 +177,6 @@
     </h4>
     <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/chillerlan-HTTPTest-Psr7-DummyStreamTest.html"><abbr title="\chillerlan\HTTPTest\Psr7\DummyStreamTest">DummyStreamTest</abbr></a></dt>    </dl>
-
 
 
 
@@ -228,6 +225,8 @@
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
                             Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
                             return;
                         }
 
