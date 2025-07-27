@@ -1,71 +1,88 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Property chillerlan\\\\HTTP\\\\Psr7\\\\DummyStream\\:\\:\\$override \\(array\\<string, Closure\\>\\) does not accept non\\-empty\\-array\\<int\\|string, Closure\\>\\.$#"
+			message: '''
+				#^Call to deprecated method buildStream\(\) of class chillerlan\\HTTP\\Psr7\\MultipartStreamBuilder\:
+				1\.2\.0 intermediate helper function, will be renamed/moved to build\(\) in the next major version$#
+			'''
+			identifier: method.deprecated
 			count: 1
-			path: src/DummyStream.php
+			path: src/MultipartStreamBuilder.php
 
 		-
-			message: "#^Property chillerlan\\\\HTTP\\\\Psr7\\\\ServerRequest\\:\\:\\$uploadedFiles \\(array\\{tmp_name\\: array\\<string\\>, size\\: array\\<int\\>, error\\: array\\<int\\>, name\\: array\\<string\\>, type\\: array\\<string\\>\\}\\) does not accept default value of type array\\{\\}\\.$#"
+			message: '#^Property chillerlan\\HTTP\\Psr7\\ServerRequest\:\:\$uploadedFiles \(array\{tmp_name\: array\<string\>, size\: array\<int\>, error\: array\<int\>, name\: array\<string\>, type\: array\<string\>\}\) does not accept default value of type array\{\}\.$#'
+			identifier: property.defaultValue
 			count: 1
 			path: src/ServerRequest.php
 
 		-
-			message: "#^Parameter \\#1 \\$content of method Psr\\\\Http\\\\Message\\\\StreamFactoryInterface\\:\\:createStream\\(\\) expects string, string\\|null given\\.$#"
+			message: '#^Parameter \#1 \$content of method Psr\\Http\\Message\\StreamFactoryInterface\:\:createStream\(\) expects string, string\|null given\.$#'
+			identifier: argument.type
 			count: 1
 			path: src/UploadedFile.php
 
 		-
-			message: "#^Parameter \\#1 \\$filename of function is_file expects string, string\\|null given\\.$#"
+			message: '#^Parameter \#1 \$filename of function is_file expects string, string\|null given\.$#'
+			identifier: argument.type
 			count: 1
 			path: src/UploadedFile.php
 
 		-
-			message: "#^Parameter \\#1 \\$filename of method Psr\\\\Http\\\\Message\\\\StreamFactoryInterface\\:\\:createStreamFromFile\\(\\) expects string, string\\|null given\\.$#"
+			message: '#^Parameter \#1 \$filename of method Psr\\Http\\Message\\StreamFactoryInterface\:\:createStreamFromFile\(\) expects string, string\|null given\.$#'
+			identifier: argument.type
 			count: 1
 			path: src/UploadedFile.php
 
 		-
-			message: "#^Match expression does not handle remaining value\\: string$#"
+			message: '#^Match expression does not handle remaining value\: string$#'
+			identifier: match.unhandled
 			count: 1
 			path: src/Uri.php
 
 		-
-			message: "#^Parameter \\#1 \\$host of method chillerlan\\\\HTTP\\\\Psr7\\\\Uri\\:\\:filterHost\\(\\) expects string, int\\|string given\\.$#"
+			message: '#^Parameter \#1 \$host of method chillerlan\\HTTP\\Psr7\\Uri\:\:filterHost\(\) expects string, int\|string given\.$#'
+			identifier: argument.type
 			count: 1
 			path: src/Uri.php
 
 		-
-			message: "#^Parameter \\#1 \\$parts of method chillerlan\\\\HTTP\\\\Psr7\\\\Uri\\:\\:parseUriParts\\(\\) expects array\\{scheme\\?\\: string, host\\?\\: string, port\\?\\: int\\|string, user\\?\\: string, pass\\?\\: string, path\\?\\: string, query\\?\\: string, fragment\\?\\: string\\}, array\\{port\\: int\\|null\\} given\\.$#"
+			message: '#^Parameter \#1 \$parts of method chillerlan\\HTTP\\Psr7\\Uri\:\:parseUriParts\(\) expects array\{scheme\?\: string, host\?\: string, port\?\: int\|string, user\?\: string, pass\?\: string, path\?\: string, query\?\: string, fragment\?\: string\}, array\{port\: int\|null\} given\.$#'
+			identifier: argument.type
 			count: 1
 			path: src/Uri.php
 
 		-
-			message: "#^Parameter \\#1 \\$parts of method chillerlan\\\\HTTP\\\\Psr7\\\\Uri\\:\\:parseUriParts\\(\\) expects array\\{scheme\\?\\: string, host\\?\\: string, port\\?\\: int\\|string, user\\?\\: string, pass\\?\\: string, path\\?\\: string, query\\?\\: string, fragment\\?\\: string\\}, array\\{scheme\\?\\: string, host\\?\\: int\\|string, port\\?\\: int\\|string, user\\?\\: string, pass\\?\\: string, path\\?\\: string, query\\?\\: string, fragment\\?\\: string\\} given\\.$#"
+			message: '#^Parameter \#1 \$parts of method chillerlan\\HTTP\\Psr7\\Uri\:\:parseUriParts\(\) expects array\{scheme\?\: string, host\?\: string, port\?\: int\|string, user\?\: string, pass\?\: string, path\?\: string, query\?\: string, fragment\?\: string\}, array\{scheme\?\: string, host\?\: int\|string, port\?\: int\|string, user\?\: string, pass\?\: string, path\?\: string, query\?\: string, fragment\?\: string\} given\.$#'
+			identifier: argument.type
 			count: 1
 			path: src/Uri.php
 
 		-
-			message: "#^Parameter \\#1 \\$path of method chillerlan\\\\HTTP\\\\Psr7\\\\Uri\\:\\:filterPath\\(\\) expects string, int\\|string given\\.$#"
+			message: '#^Parameter \#1 \$path of method chillerlan\\HTTP\\Psr7\\Uri\:\:filterPath\(\) expects string, int\|string given\.$#'
+			identifier: argument.type
 			count: 1
 			path: src/Uri.php
 
 		-
-			message: "#^Parameter \\#1 \\$port of method chillerlan\\\\HTTP\\\\Psr7\\\\Uri\\:\\:filterPort\\(\\) expects int\\|null, int\\|string given\\.$#"
+			message: '#^Parameter \#1 \$port of method chillerlan\\HTTP\\Psr7\\Uri\:\:filterPort\(\) expects int\|null, int\|string given\.$#'
+			identifier: argument.type
 			count: 1
 			path: src/Uri.php
 
 		-
-			message: "#^Parameter \\#1 \\$queryOrFragment of method chillerlan\\\\HTTP\\\\Psr7\\\\Uri\\:\\:filterQueryOrFragment\\(\\) expects string, int\\|string given\\.$#"
+			message: '#^Parameter \#1 \$queryOrFragment of method chillerlan\\HTTP\\Psr7\\Uri\:\:filterQueryOrFragment\(\) expects string, int\|string given\.$#'
+			identifier: argument.type
 			count: 1
 			path: src/Uri.php
 
 		-
-			message: "#^Parameter \\#1 \\$scheme of method chillerlan\\\\HTTP\\\\Psr7\\\\Uri\\:\\:filterScheme\\(\\) expects string, int\\|string given\\.$#"
+			message: '#^Parameter \#1 \$scheme of method chillerlan\\HTTP\\Psr7\\Uri\:\:filterScheme\(\) expects string, int\|string given\.$#'
+			identifier: argument.type
 			count: 1
 			path: src/Uri.php
 
 		-
-			message: "#^Parameter \\#1 \\$userOrPass of method chillerlan\\\\HTTP\\\\Psr7\\\\Uri\\:\\:filterUserInfo\\(\\) expects string, int\\|string given\\.$#"
+			message: '#^Parameter \#1 \$userOrPass of method chillerlan\\HTTP\\Psr7\\Uri\:\:filterUserInfo\(\) expects string, int\|string given\.$#'
+			identifier: argument.type
 			count: 1
 			path: src/Uri.php
