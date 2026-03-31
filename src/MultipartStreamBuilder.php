@@ -42,7 +42,6 @@ class MultipartStreamBuilder{
 	 * Returns the stream content (make sure to save the boundary before!)
 	 */
 	public function __toString():string{
-		/** @phpstan-ignore-next-line build() always returns a StreamInterface here */
 		return $this->build()->getContents();
 	}
 
@@ -88,6 +87,8 @@ class MultipartStreamBuilder{
 
 	/**
 	 * Generates a random boundary string
+	 *
+	 * @throws \Random\RandomException
 	 */
 	protected function getRandomBoundary():string{
 		return sha1(random_bytes(8192));
@@ -161,31 +162,9 @@ class MultipartStreamBuilder{
 	}
 
 	/**
-	 * Builds the multipart content from the given messages.
-	 *
-	 * If a MessageInterface is given, the body and content type header with the boundary will be set
-	 * and the MessageInterface is returned; returns the StreamInterface with the content otherwise.
-	 *
-	 * @deprecated 1.2.0 The parameter $message and the MessageInterface return type will be removed in the next major version,
-	 *             use the method buildMessage() instead.
+	 * Builds the multipart content from the given messages, returns a StreamInterface with the content.
 	 */
-	public function build(MessageInterface|null $message = null):StreamInterface|MessageInterface{
-
-		if($message === null){
-			return $this->buildStream();
-		}
-
-		return $this->buildMessage($message);
-	}
-
-	/**
-	 * Builds the multipart content from the given messages.
-	 *
-	 * Returns the StreamInterface with the multipart message content.
-	 *
-	 * @deprecated 1.2.0 intermediate helper function, will be renamed/moved to build() in the next major version
-	 */
-	public function buildStream():StreamInterface{
+	public function build():StreamInterface{
 		$this->multipartStream = $this->streamFactory->createStream();
 
 		foreach($this->messages as $part){
@@ -205,13 +184,13 @@ class MultipartStreamBuilder{
 	}
 
 	/**
-	 * Builds the multipart content from the given messages and sets body and content type headerin the given MessageInterface.
+	 * Builds the multipart content from the given messages and sets body and content type header in the given MessageInterface.
 	 */
 	public function buildMessage(MessageInterface $message):MessageInterface{
 		// write a proper multipart header to the given message and add the body
 		return $message
 			->withHeader('Content-Type', sprintf('multipart/form-data; boundary="%s"', $this->boundary))
-			->withBody($this->buildStream())
+			->withBody($this->build())
 		;
 	}
 

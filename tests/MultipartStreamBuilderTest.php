@@ -325,7 +325,7 @@ class MultipartStreamBuilderTest extends TestCase{
 		$request = $this->multipartStreamBuilder
 			->setBoundary('boundary')
 			->addStream($this->streamFactory->createStream('filestream a'), 'a', '/foo/a.jpg')
-			->build($this->requestFactory->createRequest('POST', 'http://example.com/api/media'))
+			->buildMessage($this->requestFactory->createRequest('POST', 'http://example.com/api/media'))
 		;
 
 		$this::assertInstanceOf(MessageInterface::class, $request);
@@ -359,7 +359,7 @@ class MultipartStreamBuilderTest extends TestCase{
 		$modifiedRequest = $this->multipartStreamBuilder
 			->setBoundary('boundary')
 			->addStream($this->streamFactory->createStream('filestream a'), 'a', '/foo/a.jpg')
-			->build($originalRequest)
+			->buildMessage($originalRequest)
 		;
 
 		$this::assertTrue($modifiedRequest->hasHeader('content-type'));

@@ -23,7 +23,7 @@ use const PHP_SAPI, UPLOAD_ERR_CANT_WRITE, UPLOAD_ERR_EXTENSION, UPLOAD_ERR_FORM
 class UploadedFile implements UploadedFileInterface{
 
 	/** @var int[] */
-	public const UPLOAD_ERRORS = [
+	public const array UPLOAD_ERRORS = [
 		UPLOAD_ERR_OK,
 		UPLOAD_ERR_INI_SIZE,
 		UPLOAD_ERR_FORM_SIZE,

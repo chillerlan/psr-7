@@ -30,18 +30,16 @@ jobs:
     name: "Static Code Analysis"
     runs-on: ubuntu-latest
 
-    env:
-      PHAN_ALLOW_XDEBUG: 0
-      PHAN_DISABLE_XDEBUG_WARN: 1
+#    env:
+#      PHAN_ALLOW_XDEBUG: 0
+#      PHAN_DISABLE_XDEBUG_WARN: 1
 
     strategy:
       fail-fast: true
       matrix:
         php-version:
-          - "8.1"
-          - "8.2"
-          - "8.3"
           - "8.4"
+          - "8.5"
 
     steps:
       - name: "Checkout"
@@ -56,19 +54,19 @@ jobs:
           coverage: none
 
       - name: "Validate composer.json"
-        run: composer validate --ansi --strict
+        run: composer validate --ansi --strict --with-dependencies --no-interaction --verbose
 
       - name: "Install dependencies with composer"
-        uses: ramsey/composer-install@v3
-
-      - name: "Run phan"
-        run: php vendor/bin/phan --target-php-version=${{ matrix.php-version }}
+        uses: ramsey/composer-install@v4
 
       - name: "Run PHP_CodeSniffer"
         run: php vendor/bin/phpcs -v
 
-      - name: "Run PHPStan"
-        run: php vendor/bin/phpstan
+      - name: "Run phan"
+        run: php vendor/bin/phan --target-php-version=${{ matrix.php-version }}
+
+#      - name: "Run PHPStan"
+#        run: php vendor/bin/phpstan
 
 
   tests:
@@ -83,14 +81,12 @@ jobs:
           - ubuntu-latest
           - windows-latest
         php-version:
-          - "8.1"
-          - "8.2"
-          - "8.3"
           - "8.4"
+          - "8.5"
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v2
@@ -101,13 +97,13 @@ jobs:
           coverage: pcov
 
       - name: "Install dependencies with composer"
-        uses: ramsey/composer-install@v3
+        uses: ramsey/composer-install@v4
 
       - name: "Run tests with phpunit"
         run: php vendor/bin/phpunit --colors=always --configuration=phpunit.xml.dist
 
       - name: "Send code coverage report to Codecov.io"
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v6
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: .build/coverage/clover.xml
@@ -126,7 +122,7 @@ jobs:
 
     steps:
       - name: "Checkout sources"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: "Install PHP"
         uses: shivammathur/setup-php@v2

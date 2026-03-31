@@ -36,28 +36,28 @@ class Uri implements UriInterface{
 	 *
 	 * @see https://datatracker.ietf.org/doc/html/rfc3986#section-2.1
 	 */
-	protected const CHAR_PERCENT_HEX = '%(?![a-fA-F0-9]{2})';
+	protected const string CHAR_PERCENT_HEX = '%(?![a-fA-F0-9]{2})';
 
 	/**
 	 * Generic delimiters for use in a regex.
 	 *
 	 * @see https://datatracker.ietf.org/doc/html/rfc3986#section-2.2
 	 */
-	protected const CHAR_GEN_DELIMS = ':\/\?#\[\]@';
+	protected const string CHAR_GEN_DELIMS = ':\/\?#\[\]@';
 
 	/**
 	 * Sub delimiters for use in a regex.
 	 *
 	 * @see https://datatracker.ietf.org/doc/html/rfc3986#section-2.2
 	 */
-	protected const CHAR_SUB_DELIMS = '!\$&\'\(\)\*\+,;=';
+	protected const string CHAR_SUB_DELIMS = '!\$&\'\(\)\*\+,;=';
 
 	/**
 	 * Unreserved characters for use in a regex.
 	 *
 	 * @see https://datatracker.ietf.org/doc/html/rfc3986#section-2.3
 	 */
-	protected const CHAR_UNRESERVED = 'a-zA-Z0-9_\-\.~';
+	protected const string CHAR_UNRESERVED = 'a-zA-Z0-9_\-\.~';
 
 	protected string   $scheme   = '';
 	protected string   $user     = '';

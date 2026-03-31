@@ -5,6 +5,7 @@
 	<description>chillerlan rules for phpcs</description>
 
 	<!--<file>examples</file>-->
+	<file>http-interop</file>
 	<file>src</file>
 	<file>tests</file>
 
@@ -216,7 +217,7 @@
 
 
 	<!--
-		Configurable built-in https://github.com/squizlabs/PHP_CodeSniffer/wiki/Customisable-Sniff-Properties
+		Configurable built-in https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki/Customisable-Sniff-Properties
 	-->
 
 	<rule ref="Generic.ControlStructures.InlineControlStructure">

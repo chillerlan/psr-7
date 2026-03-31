@@ -10,7 +10,7 @@
 			<directory>tests</directory>
 		</testsuite>
 		<testsuite name="http-interop integration tests">
-			<directory>vendor/http-interop/http-factory-tests/test</directory>
+			<directory>http-interop</directory>
 		</testsuite>
 	</testsuites>
 	<source>

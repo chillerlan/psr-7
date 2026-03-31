@@ -21,7 +21,8 @@ use const SEEK_SET;
  */
 class DummyStream implements StreamInterface{
 
-	protected const STREAMINTERFACE_METHODS = [
+	/** @var string[] */
+	protected const array STREAMINTERFACE_METHODS = [
 		'__toString',
 		'close',
 		'detach',
