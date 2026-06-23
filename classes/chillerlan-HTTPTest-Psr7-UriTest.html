@@ -6,7 +6,10 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
     <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -148,28 +151,21 @@
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">see</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><a href="https://github.com/guzzle/psr7/blob/45b30f99ac27b5ca93cb4831afe16285f57b8221/tests/UriTest.php">https://github.com/guzzle/psr7/blob/45b30f99ac27b5ca93cb4831afe16285f57b8221/tests/UriTest.php</a></span>
-                                        
-                                             
+                                                                
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
+                            <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><a href="https://github.com/Nyholm/psr7/blob/fd12ffc87a1e4014b2a7485b88add81c96d105e8/tests/UriTest.php">https://github.com/Nyholm/psr7/blob/fd12ffc87a1e4014b2a7485b88add81c96d105e8/tests/UriTest.php</a></span>
-                                        
-                                             
+                                                                
                                     </dd>
-                                            </dl>
+                        </dl>
 
-
-
-
-
+    
+    
 <h3 id="toc">
     Table of Contents
     <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -192,10 +188,86 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_addsSlashForRelativeUriStringWithHost">addsSlashForRelativeUriStringWithHost()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_allowsForRelativeUri">allowsForRelativeUri()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_authorityProvider">authorityProvider()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_authorityWithUserInfoOrPortButWithoutHost">authorityWithUserInfoOrPortButWithoutHost()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>In RFC 8986 the host is optional and the authority can only
+consist of the user info and port.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canConstructFalseyUriParts">canConstructFalseyUriParts()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canParseFalseyUriParts">canParseFalseyUriParts()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canTransformAndRetrievePartsIndividually">canTransformAndRetrievePartsIndividually()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_defaultReturnValuesOfGetters">defaultReturnValuesOfGetters()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_fileSchemeWithEmptyHostReconstruction">fileSchemeWithEmptyHostReconstruction()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_filterHostIPv6">filterHostIPv6()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_fromParts">fromParts()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getAuthority">getAuthority()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>If the port component is not set or is the standard port for the current scheme, it SHOULD NOT be included.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getHost">getHost()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>The value returned MUST be normalized to lowercase, per RFC 3986 Section 3.2.2.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getInvalidUris">getInvalidUris()</a>
@@ -210,233 +282,115 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostInUriDefaultsToLocalhost">hostInUriDefaultsToLocalhost()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostIsNormalizedToLowercase">hostIsNormalizedToLowercase()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostProvider">hostProvider()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAddsSlashForRelativeUriStringWithHost">testAddsSlashForRelativeUriStringWithHost()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_internationalizedDomainName">internationalizedDomainName()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAllowsForRelativeUri">testAllowsForRelativeUri()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_invalidUrisThrowException">invalidUrisThrowException()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAuthorityWithUserInfoOrPortButWithoutHost">testAuthorityWithUserInfoOrPortButWithoutHost()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>In RFC 8986 the host is optional and the authority can only
-consist of the user info and port.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanConstructFalseyUriParts">testCanConstructFalseyUriParts()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_IPv6Host">IPv6Host()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanParseFalseyUriParts">testCanParseFalseyUriParts()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parsesProvidedUri">parsesProvidedUri()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanTransformAndRetrievePartsIndividually">testCanTransformAndRetrievePartsIndividually()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testDefaultReturnValuesOfGetters">testDefaultReturnValuesOfGetters()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFileSchemeWithEmptyHostReconstruction">testFileSchemeWithEmptyHostReconstruction()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFilterHostIPv6">testFilterHostIPv6()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFromParts">testFromParts()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testGetAuthority">testGetAuthority()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>If the port component is not set or is the standard port for the current scheme, it SHOULD NOT be included.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testGetHost">testGetHost()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>The value returned MUST be normalized to lowercase, per RFC 3986 Section 3.2.2.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testHostInUriDefaultsToLocalhost">testHostInUriDefaultsToLocalhost()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testHostIsNormalizedToLowercase">testHostIsNormalizedToLowercase()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testInternationalizedDomainName">testInternationalizedDomainName()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testInvalidUrisThrowException">testInvalidUrisThrowException()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testIPv6Host">testIPv6Host()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParsesProvidedUri">testParsesProvidedUri()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParseUriPortCanBeZero">testParseUriPortCanBeZero()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parseUriPortCanBeZero">parseUriPortCanBeZero()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParseUriPortCannotBeNegative">testParseUriPortCannotBeNegative()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parseUriPortCannotBeNegative">parseUriPortCannotBeNegative()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPathStartingWithTwoSlashes">testPathStartingWithTwoSlashes()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_pathStartingWithTwoSlashes">pathStartingWithTwoSlashes()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortCanBeRemoved">testPortCanBeRemoved()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portCanBeRemoved">portCanBeRemoved()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortIsNullIfStandardPortForScheme">testPortIsNullIfStandardPortForScheme()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portIsNullIfStandardPortForScheme">portIsNullIfStandardPortForScheme()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortIsReturnedIfSchemeUnknown">testPortIsReturnedIfSchemeUnknown()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portIsReturnedIfSchemeUnknown">portIsReturnedIfSchemeUnknown()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortMustBeValid">testPortMustBeValid()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portMustBeValid">portMustBeValid()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testRelativeUriWithPathBeginningWithColonSegmentIsInvalid">testRelativeUriWithPathBeginningWithColonSegmentIsInvalid()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_relativeUriWithPathBeginningWithColonSegmentIsInvalid">relativeUriWithPathBeginningWithColonSegmentIsInvalid()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testRelativeUriWithPathHavingColonSegment">testRelativeUriWithPathHavingColonSegment()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_relativeUriWithPathHavingColonSegment">relativeUriWithPathHavingColonSegment()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testSchemeIsNormalizedToLowercase">testSchemeIsNormalizedToLowercase()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_schemeIsNormalizedToLowercase">schemeIsNormalizedToLowercase()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testStandardPortIsNullIfSchemeChanges">testStandardPortIsNullIfSchemeChanges()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_standardPortIsNullIfSchemeChanges">standardPortIsNullIfSchemeChanges()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testSupportsUrlEncodedValues">testSupportsUrlEncodedValues()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testUriComponentsGetEncodedProperly">testUriComponentsGetEncodedProperly()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testValidUrisStayValid">testValidUrisStayValid()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithFragmentEncodesProperly">testWithFragmentEncodesProperly()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPartSamePart">testWithPartSamePart()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPathEncodesProperly">testWithPathEncodesProperly()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPortCannotBeNegative">testWithPortCannotBeNegative()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithQueryEncodesProperly">testWithQueryEncodesProperly()</a>
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_supportsUrlEncodedValues">supportsUrlEncodedValues()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -445,6 +399,48 @@ consist of the user info and port.</dd>
     <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_uriComponentsEncodingProvider">uriComponentsEncodingProvider()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_uriComponentsGetEncodedProperly">uriComponentsGetEncodedProperly()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_validUrisStayValid">validUrisStayValid()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withFragmentEncodesProperly">withFragmentEncodesProperly()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPartSamePart">withPartSamePart()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPathEncodesProperly">withPathEncodesProperly()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPortCannotBeNegative">withPortCannotBeNegative()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withQueryEncodesProperly">withQueryEncodesProperly()</a>
+    <span>
+                                &nbsp;: void    </span>
 </dt>
 
     </dl>
@@ -465,6 +461,96 @@ consist of the user info and port.</dd>
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addsSlashForRelativeUriStringWithHost">
+        addsSlashForRelativeUriStringWithHost()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_addsSlashForRelativeUriStringWithHost" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">493</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addsSlashForRelativeUriStringWithHost</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_addsSlashForRelativeUriStringWithHost_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_addsSlashForRelativeUriStringWithHost_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_allowsForRelativeUri">
+        allowsForRelativeUri()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_allowsForRelativeUri" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">449</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">allowsForRelativeUri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_allowsForRelativeUri_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_allowsForRelativeUri_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_authorityProvider">
@@ -475,7 +561,7 @@ consist of the user info and port.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">491</span>
+    <span class="phpdocumentor-element-found-in__line">522</span>
 
     </aside>
 
@@ -491,13 +577,563 @@ consist of the user info and port.</dd>
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             </section>
 
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_authorityWithUserInfoOrPortButWithoutHost">
+        authorityWithUserInfoOrPortButWithoutHost()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_authorityWithUserInfoOrPortButWithoutHost" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">313</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">In RFC 8986 the host is optional and the authority can only
+consist of the user info and port.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">authorityWithUserInfoOrPortButWithoutHost</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_authorityWithUserInfoOrPortButWithoutHost_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_authorityWithUserInfoOrPortButWithoutHost_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_canConstructFalseyUriParts">
+        canConstructFalseyUriParts()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canConstructFalseyUriParts" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">208</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">canConstructFalseyUriParts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_canConstructFalseyUriParts_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canConstructFalseyUriParts_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_canParseFalseyUriParts">
+        canParseFalseyUriParts()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canParseFalseyUriParts" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">194</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">canParseFalseyUriParts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_canParseFalseyUriParts_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canParseFalseyUriParts_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_canTransformAndRetrievePartsIndividually">
+        canTransformAndRetrievePartsIndividually()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canTransformAndRetrievePartsIndividually" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">canTransformAndRetrievePartsIndividually</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_canTransformAndRetrievePartsIndividually_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canTransformAndRetrievePartsIndividually_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_defaultReturnValuesOfGetters">
+        defaultReturnValuesOfGetters()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_defaultReturnValuesOfGetters" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">defaultReturnValuesOfGetters</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_defaultReturnValuesOfGetters_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_defaultReturnValuesOfGetters_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fileSchemeWithEmptyHostReconstruction">
+        fileSchemeWithEmptyHostReconstruction()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_fileSchemeWithEmptyHostReconstruction" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">341</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">fileSchemeWithEmptyHostReconstruction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_fileSchemeWithEmptyHostReconstruction_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_fileSchemeWithEmptyHostReconstruction_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_filterHostIPv6">
+        filterHostIPv6()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_filterHostIPv6" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">591</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">filterHostIPv6</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_filterHostIPv6_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_filterHostIPv6_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromParts">
+        fromParts()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_fromParts" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">138</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">fromParts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$input</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_fromParts_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_fromParts_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;getValidUris&#039;
+    </dd>
+    </dl>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getAuthority">
+        getAuthority()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getAuthority" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">570</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">If the port component is not set or is the standard port for the current scheme, it SHOULD NOT be included.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getAuthority</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scheme</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$host</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$port</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$authority</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$scheme</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$user</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$pass</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$host</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$port</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$authority</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_getAuthority_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getAuthority_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;authorityProvider&#039;
+    </dd>
+    </dl>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getHost">
+        getHost()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getHost" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">514</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The value returned MUST be normalized to lowercase, per RFC 3986 Section 3.2.2.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getHost</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$host</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expected</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$host</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$expected</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_getHost_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getHost_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;hostProvider&#039;
+    </dd>
+    </dl>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -513,7 +1149,7 @@ consist of the user info and port.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -529,8 +1165,8 @@ consist of the user info and port.</dd>
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -551,7 +1187,7 @@ consist of the user info and port.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -567,13 +1203,103 @@ consist of the user info and port.</dd>
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             </section>
 
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hostInUriDefaultsToLocalhost">
+        hostInUriDefaultsToLocalhost()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostInUriDefaultsToLocalhost" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">331</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hostInUriDefaultsToLocalhost</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_hostInUriDefaultsToLocalhost_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostInUriDefaultsToLocalhost_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hostIsNormalizedToLowercase">
+        hostIsNormalizedToLowercase()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostIsNormalizedToLowercase" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">243</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hostIsNormalizedToLowercase</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_hostIsNormalizedToLowercase_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostIsNormalizedToLowercase_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -589,7 +1315,7 @@ consist of the user info and port.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">472</span>
+    <span class="phpdocumentor-element-found-in__line">503</span>
 
     </aside>
 
@@ -605,8 +1331,8 @@ consist of the user info and port.</dd>
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -619,22 +1345,22 @@ consist of the user info and port.</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_testAddsSlashForRelativeUriStringWithHost">
-        testAddsSlashForRelativeUriStringWithHost()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAddsSlashForRelativeUriStringWithHost" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_internationalizedDomainName">
+        internationalizedDomainName()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_internationalizedDomainName" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">463</span>
+    <span class="phpdocumentor-element-found-in__line">619</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testAddsSlashForRelativeUriStringWithHost</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">internationalizedDomainName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -643,340 +1369,19 @@ consist of the user info and port.</dd>
     
     
 
-    
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_internationalizedDomainName_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_internationalizedDomainName_attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testAllowsForRelativeUri">
-        testAllowsForRelativeUri()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAllowsForRelativeUri" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">423</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testAllowsForRelativeUri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testAuthorityWithUserInfoOrPortButWithoutHost">
-        testAuthorityWithUserInfoOrPortButWithoutHost()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAuthorityWithUserInfoOrPortButWithoutHost" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">294</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">In RFC 8986 the host is optional and the authority can only
-consist of the user info and port.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testAuthorityWithUserInfoOrPortButWithoutHost</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testCanConstructFalseyUriParts">
-        testCanConstructFalseyUriParts()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanConstructFalseyUriParts" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">196</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testCanConstructFalseyUriParts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testCanParseFalseyUriParts">
-        testCanParseFalseyUriParts()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanParseFalseyUriParts" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">183</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testCanParseFalseyUriParts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testCanTransformAndRetrievePartsIndividually">
-        testCanTransformAndRetrievePartsIndividually()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanTransformAndRetrievePartsIndividually" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">54</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testCanTransformAndRetrievePartsIndividually</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testDefaultReturnValuesOfGetters">
-        testDefaultReturnValuesOfGetters()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testDefaultReturnValuesOfGetters" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">27</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testDefaultReturnValuesOfGetters</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testFileSchemeWithEmptyHostReconstruction">
-        testFileSchemeWithEmptyHostReconstruction()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFileSchemeWithEmptyHostReconstruction" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">320</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testFileSchemeWithEmptyHostReconstruction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testFilterHostIPv6">
-        testFilterHostIPv6()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFilterHostIPv6" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">559</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testFilterHostIPv6</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testFromParts">
-        testFromParts()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFromParts" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">133</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testFromParts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$input</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFromParts#attributes" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
-        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
     </dt>
-        <dd class="phpdocumentor-argument-list__entry">
-        &#039;getValidUris&#039;
-    </dd>
     </dl>
-            </section>
-
+                    </section>
+    
     
 </article>
                     <article
@@ -985,23 +1390,22 @@ consist of the user info and port.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_testGetAuthority">
-        testGetAuthority()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testGetAuthority" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_invalidUrisThrowException">
+        invalidUrisThrowException()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_invalidUrisThrowException" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">539</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">If the port component is not set or is the standard port for the current scheme, it SHOULD NOT be included.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testGetAuthority</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scheme</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$host</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$port</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$authority</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">invalidUrisThrowException</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$invalidUri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1010,43 +1414,8 @@ consist of the user info and port.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$scheme</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$user</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$host</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$port</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$authority</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-argument-list__argument__name">$invalidUri</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1055,239 +1424,13 @@ consist of the user info and port.</p>
 
     
 
-    
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testGetAuthority#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_invalidUrisThrowException_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_invalidUrisThrowException_attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
-    <dt class="phpdocumentor-argument-list__entry">
-        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
-    </dt>
-        <dd class="phpdocumentor-argument-list__entry">
-        &#039;authorityProvider&#039;
-    </dd>
-    </dl>
-            </section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testGetHost">
-        testGetHost()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testGetHost" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">483</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The value returned MUST be normalized to lowercase, per RFC 3986 Section 3.2.2.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testGetHost</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$host</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expected</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$host</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$expected</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testGetHost#attributes" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
-    <dt class="phpdocumentor-argument-list__entry">
-        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
-    </dt>
-        <dd class="phpdocumentor-argument-list__entry">
-        &#039;hostProvider&#039;
-    </dd>
-    </dl>
-            </section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testHostInUriDefaultsToLocalhost">
-        testHostInUriDefaultsToLocalhost()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testHostInUriDefaultsToLocalhost" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">311</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testHostInUriDefaultsToLocalhost</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testHostIsNormalizedToLowercase">
-        testHostIsNormalizedToLowercase()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testHostIsNormalizedToLowercase" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">229</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testHostIsNormalizedToLowercase</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testInternationalizedDomainName">
-        testInternationalizedDomainName()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testInternationalizedDomainName" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">585</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testInternationalizedDomainName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testInvalidUrisThrowException">
-        testInvalidUrisThrowException()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testInvalidUrisThrowException" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">149</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testInvalidUrisThrowException</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$invalidUri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$invalidUri</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testInvalidUrisThrowException#attributes" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
         #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
     </dt>
@@ -1295,570 +1438,13 @@ consist of the user info and port.</p>
         &#039;getInvalidUris&#039;
     </dd>
     </dl>
-            </section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testIPv6Host">
-        testIPv6Host()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testIPv6Host" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">595</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testIPv6Host</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testParsesProvidedUri">
-        testParsesProvidedUri()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParsesProvidedUri" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testParsesProvidedUri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testParseUriPortCanBeZero">
-        testParseUriPortCanBeZero()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParseUriPortCanBeZero" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">178</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testParseUriPortCanBeZero</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testParseUriPortCannotBeNegative">
-        testParseUriPortCannotBeNegative()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParseUriPortCannotBeNegative" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">171</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testParseUriPortCannotBeNegative</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testPathStartingWithTwoSlashes">
-        testPathStartingWithTwoSlashes()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPathStartingWithTwoSlashes" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">430</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testPathStartingWithTwoSlashes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testPortCanBeRemoved">
-        testPortCanBeRemoved()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortCanBeRemoved" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">283</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testPortCanBeRemoved</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testPortIsNullIfStandardPortForScheme">
-        testPortIsNullIfStandardPortForScheme()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortIsNullIfStandardPortForScheme" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">241</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testPortIsNullIfStandardPortForScheme</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testPortIsReturnedIfSchemeUnknown">
-        testPortIsReturnedIfSchemeUnknown()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortIsReturnedIfSchemeUnknown" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">265</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testPortIsReturnedIfSchemeUnknown</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testPortMustBeValid">
-        testPortMustBeValid()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortMustBeValid" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">157</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testPortMustBeValid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testRelativeUriWithPathBeginningWithColonSegmentIsInvalid">
-        testRelativeUriWithPathBeginningWithColonSegmentIsInvalid()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testRelativeUriWithPathBeginningWithColonSegmentIsInvalid" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">446</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testRelativeUriWithPathBeginningWithColonSegmentIsInvalid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testRelativeUriWithPathHavingColonSegment">
-        testRelativeUriWithPathHavingColonSegment()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testRelativeUriWithPathHavingColonSegment" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">453</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testRelativeUriWithPathHavingColonSegment</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testSchemeIsNormalizedToLowercase">
-        testSchemeIsNormalizedToLowercase()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testSchemeIsNormalizedToLowercase" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">217</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testSchemeIsNormalizedToLowercase</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testStandardPortIsNullIfSchemeChanges">
-        testStandardPortIsNullIfSchemeChanges()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testStandardPortIsNullIfSchemeChanges" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">272</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testStandardPortIsNullIfSchemeChanges</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testSupportsUrlEncodedValues">
-        testSupportsUrlEncodedValues()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testSupportsUrlEncodedValues" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">77</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testSupportsUrlEncodedValues</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_testUriComponentsGetEncodedProperly">
-        testUriComponentsGetEncodedProperly()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testUriComponentsGetEncodedProperly" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">384</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testUriComponentsGetEncodedProperly</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fragment</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$input</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$path</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$query</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fragment</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$output</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testUriComponentsGetEncodedProperly#attributes" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
-        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
     </dt>
-        <dd class="phpdocumentor-argument-list__entry">
-        &#039;uriComponentsEncodingProvider&#039;
-    </dd>
     </dl>
-            </section>
-
+                    </section>
+    
     
 </article>
                     <article
@@ -1867,56 +1453,43 @@ consist of the user info and port.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_testValidUrisStayValid">
-        testValidUrisStayValid()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testValidUrisStayValid" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_IPv6Host">
+        IPv6Host()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_IPv6Host" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">630</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testValidUrisStayValid</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">IPv6Host</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$input</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
-    
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testValidUrisStayValid#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_IPv6Host_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_IPv6Host_attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
-        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
     </dt>
-        <dd class="phpdocumentor-argument-list__entry">
-        &#039;getValidUris&#039;
-    </dd>
     </dl>
-            </section>
-
+                    </section>
+    
     
 </article>
                     <article
@@ -1925,22 +1498,22 @@ consist of the user info and port.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_testWithFragmentEncodesProperly">
-        testWithFragmentEncodesProperly()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithFragmentEncodesProperly" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_parsesProvidedUri">
+        parsesProvidedUri()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parsesProvidedUri" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">415</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testWithFragmentEncodesProperly</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">parsesProvidedUri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1949,8 +1522,19 @@ consist of the user info and port.</p>
     
     
 
-    
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_parsesProvidedUri_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parsesProvidedUri_attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
     
 </article>
                     <article
@@ -1959,22 +1543,22 @@ consist of the user info and port.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_testWithPartSamePart">
-        testWithPartSamePart()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPartSamePart" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_parseUriPortCanBeZero">
+        parseUriPortCanBeZero()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parseUriPortCanBeZero" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">564</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testWithPartSamePart</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">parseUriPortCanBeZero</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1983,8 +1567,19 @@ consist of the user info and port.</p>
     
     
 
-    
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_parseUriPortCanBeZero_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parseUriPortCanBeZero_attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
     
 </article>
                     <article
@@ -1993,22 +1588,22 @@ consist of the user info and port.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_testWithPathEncodesProperly">
-        testWithPathEncodesProperly()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPathEncodesProperly" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_parseUriPortCannotBeNegative">
+        parseUriPortCannotBeNegative()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parseUriPortCannotBeNegative" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">400</span>
+    <span class="phpdocumentor-element-found-in__line">180</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testWithPathEncodesProperly</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">parseUriPortCannotBeNegative</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2017,8 +1612,19 @@ consist of the user info and port.</p>
     
     
 
-    
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_parseUriPortCannotBeNegative_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parseUriPortCannotBeNegative_attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
     
 </article>
                     <article
@@ -2027,9 +1633,189 @@ consist of the user info and port.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_testWithPortCannotBeNegative">
-        testWithPortCannotBeNegative()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPortCannotBeNegative" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_pathStartingWithTwoSlashes">
+        pathStartingWithTwoSlashes()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_pathStartingWithTwoSlashes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">457</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">pathStartingWithTwoSlashes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_pathStartingWithTwoSlashes_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_pathStartingWithTwoSlashes_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_portCanBeRemoved">
+        portCanBeRemoved()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portCanBeRemoved" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">301</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">portCanBeRemoved</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_portCanBeRemoved_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portCanBeRemoved_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_portIsNullIfStandardPortForScheme">
+        portIsNullIfStandardPortForScheme()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portIsNullIfStandardPortForScheme" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">256</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">portIsNullIfStandardPortForScheme</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_portIsNullIfStandardPortForScheme_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portIsNullIfStandardPortForScheme_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_portIsReturnedIfSchemeUnknown">
+        portIsReturnedIfSchemeUnknown()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portIsReturnedIfSchemeUnknown" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">281</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">portIsReturnedIfSchemeUnknown</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_portIsReturnedIfSchemeUnknown_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portIsReturnedIfSchemeUnknown_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_portMustBeValid">
+        portMustBeValid()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portMustBeValid" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
@@ -2042,7 +1828,7 @@ consist of the user info and port.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testWithPortCannotBeNegative</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">portMustBeValid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2051,8 +1837,19 @@ consist of the user info and port.</p>
     
     
 
-    
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_portMustBeValid_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portMustBeValid_attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
     
 </article>
                     <article
@@ -2061,22 +1858,22 @@ consist of the user info and port.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_testWithQueryEncodesProperly">
-        testWithQueryEncodesProperly()
-        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithQueryEncodesProperly" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_relativeUriWithPathBeginningWithColonSegmentIsInvalid">
+        relativeUriWithPathBeginningWithColonSegmentIsInvalid()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_relativeUriWithPathBeginningWithColonSegmentIsInvalid" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">407</span>
+    <span class="phpdocumentor-element-found-in__line">474</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">testWithQueryEncodesProperly</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">relativeUriWithPathBeginningWithColonSegmentIsInvalid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2085,8 +1882,199 @@ consist of the user info and port.</p>
     
     
 
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_relativeUriWithPathBeginningWithColonSegmentIsInvalid_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_relativeUriWithPathBeginningWithColonSegmentIsInvalid_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_relativeUriWithPathHavingColonSegment">
+        relativeUriWithPathHavingColonSegment()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_relativeUriWithPathHavingColonSegment" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">482</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">relativeUriWithPathHavingColonSegment</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
     
 
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_relativeUriWithPathHavingColonSegment_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_relativeUriWithPathHavingColonSegment_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_schemeIsNormalizedToLowercase">
+        schemeIsNormalizedToLowercase()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_schemeIsNormalizedToLowercase" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">230</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">schemeIsNormalizedToLowercase</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_schemeIsNormalizedToLowercase_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_schemeIsNormalizedToLowercase_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_standardPortIsNullIfSchemeChanges">
+        standardPortIsNullIfSchemeChanges()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_standardPortIsNullIfSchemeChanges" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">289</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">standardPortIsNullIfSchemeChanges</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_standardPortIsNullIfSchemeChanges_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_standardPortIsNullIfSchemeChanges_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_supportsUrlEncodedValues">
+        supportsUrlEncodedValues()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_supportsUrlEncodedValues" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">supportsUrlEncodedValues</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_supportsUrlEncodedValues_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_supportsUrlEncodedValues_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
     
 </article>
                     <article
@@ -2103,7 +2091,7 @@ consist of the user info and port.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">328</span>
+    <span class="phpdocumentor-element-found-in__line">350</span>
 
     </aside>
 
@@ -2119,110 +2107,396 @@ consist of the user info and port.</p>
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_uriComponentsGetEncodedProperly">
+        uriComponentsGetEncodedProperly()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_uriComponentsGetEncodedProperly" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">406</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">uriComponentsGetEncodedProperly</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fragment</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$input</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$query</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$fragment</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$output</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_uriComponentsGetEncodedProperly_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_uriComponentsGetEncodedProperly_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;uriComponentsEncodingProvider&#039;
+    </dd>
+    </dl>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_validUrisStayValid">
+        validUrisStayValid()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_validUrisStayValid" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">132</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">validUrisStayValid</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$input</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_validUrisStayValid_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_validUrisStayValid_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\DataProvider">DataProvider</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        &#039;getValidUris&#039;
+    </dd>
+    </dl>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withFragmentEncodesProperly">
+        withFragmentEncodesProperly()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withFragmentEncodesProperly" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">440</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withFragmentEncodesProperly</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_withFragmentEncodesProperly_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withFragmentEncodesProperly_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withPartSamePart">
+        withPartSamePart()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPartSamePart" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">597</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withPartSamePart</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_withPartSamePart_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPartSamePart_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withPathEncodesProperly">
+        withPathEncodesProperly()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPathEncodesProperly" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">423</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withPathEncodesProperly</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_withPathEncodesProperly_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPathEncodesProperly_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withPortCannotBeNegative">
+        withPortCannotBeNegative()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPortCannotBeNegative" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">172</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withPortCannotBeNegative</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_withPortCannotBeNegative_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPortCannotBeNegative_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withQueryEncodesProperly">
+        withQueryEncodesProperly()
+        <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withQueryEncodesProperly" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="tests/UriTest.php"><a href="files/tests-uritest.html"><abbr title="tests/UriTest.php">UriTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">431</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withQueryEncodesProperly</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="method_withQueryEncodesProperly_attributes">
+                Attributes <a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withQueryEncodesProperly_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\PHPUnit\Framework\Attributes\Test">Test</abbr>]
+    </dt>
+    </dl>
+                    </section>
+    
+    
+</article>
             </section>
 
-        <div class="phpdocumentor-modal" id="source-view">
-    <div class="phpdocumentor-modal-bg" data-exit-button></div>
-    <div class="phpdocumentor-modal-container">
-        <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/tests/UriTest.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
-        </div>
-        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
-    </div>
-</div>
-
-    <script type="text/javascript">
-        (function () {
-            function loadExternalCodeSnippet(el, url, line) {
-                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
-                    const language = 'php';
-
-                    const code = document.createElement('code');
-                    code.className = 'language-' + language;
-                    pre.textContent = '';
-                    pre.setAttribute('data-line', line)
-                    code.textContent = 'Loading…';
-                    pre.appendChild(code);
-
-                    var xhr = new XMLHttpRequest();
-
-                    xhr.open('GET', src, true);
-
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState !== 4) {
-                            return;
-                        }
-
-                        if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
-                            Prism.highlightElement(code);
-                            d=document.getElementsByClassName("line-numbers");
-                            d[0].scrollTop = d[0].children[1].offsetTop;
-                            return;
-                        }
-
-                        if (xhr.status === 404) {
-                            code.textContent = '✖ Error: File could not be found';
-                            return;
-                        }
-
-                        if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                            return;
-                        }
-
-                        code.textContent = '✖ Error: An unknown error occurred';
-                    };
-
-                    xhr.send(null);
-                });
-            }
-
-            const modalButtons = document.querySelectorAll("[data-modal]");
-            const openedAsLocalFile = window.location.protocol === 'file:';
-            if (modalButtons.length > 0 && openedAsLocalFile) {
-                console.warn(
-                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
-                    'browsers block XHR requests when a page is opened this way'
-                );
-            }
-
-            modalButtons.forEach(function (trigger) {
-                if (openedAsLocalFile) {
-                    trigger.setAttribute("hidden", "hidden");
-                }
-
-                trigger.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const modal = document.getElementById(trigger.dataset.modal);
-                    if (!modal) {
-                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
-                        return;
-                    }
-                    modal.classList.add("phpdocumentor-modal__open");
-
-                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
-                    const exits = modal.querySelectorAll("[data-exit-button]");
-                    exits.forEach(function (exit) {
-                        exit.addEventListener("click", function (event) {
-                            event.preventDefault();
-                            modal.classList.remove("phpdocumentor-modal__open");
-                        });
-                    });
-                });
-            });
-        })();
-    </script>
-
+        
     </article>
                                 </section>
                 <section class="phpdocumentor-on-this-page__sidebar">
@@ -2242,48 +2516,48 @@ consist of the user info and port.</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_addsSlashForRelativeUriStringWithHost">addsSlashForRelativeUriStringWithHost()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_allowsForRelativeUri">allowsForRelativeUri()</a></li>
                                             <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_authorityProvider">authorityProvider()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_authorityWithUserInfoOrPortButWithoutHost">authorityWithUserInfoOrPortButWithoutHost()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canConstructFalseyUriParts">canConstructFalseyUriParts()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canParseFalseyUriParts">canParseFalseyUriParts()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canTransformAndRetrievePartsIndividually">canTransformAndRetrievePartsIndividually()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_defaultReturnValuesOfGetters">defaultReturnValuesOfGetters()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_fileSchemeWithEmptyHostReconstruction">fileSchemeWithEmptyHostReconstruction()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_filterHostIPv6">filterHostIPv6()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_fromParts">fromParts()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getAuthority">getAuthority()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getHost">getHost()</a></li>
                                             <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getInvalidUris">getInvalidUris()</a></li>
                                             <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getValidUris">getValidUris()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostInUriDefaultsToLocalhost">hostInUriDefaultsToLocalhost()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostIsNormalizedToLowercase">hostIsNormalizedToLowercase()</a></li>
                                             <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostProvider">hostProvider()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAddsSlashForRelativeUriStringWithHost">testAddsSlashForRelativeUriStringWithHost()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAllowsForRelativeUri">testAllowsForRelativeUri()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAuthorityWithUserInfoOrPortButWithoutHost">testAuthorityWithUserInfoOrPortButWithoutHost()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanConstructFalseyUriParts">testCanConstructFalseyUriParts()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanParseFalseyUriParts">testCanParseFalseyUriParts()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanTransformAndRetrievePartsIndividually">testCanTransformAndRetrievePartsIndividually()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testDefaultReturnValuesOfGetters">testDefaultReturnValuesOfGetters()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFileSchemeWithEmptyHostReconstruction">testFileSchemeWithEmptyHostReconstruction()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFilterHostIPv6">testFilterHostIPv6()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFromParts">testFromParts()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testGetAuthority">testGetAuthority()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testGetHost">testGetHost()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testHostInUriDefaultsToLocalhost">testHostInUriDefaultsToLocalhost()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testHostIsNormalizedToLowercase">testHostIsNormalizedToLowercase()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testInternationalizedDomainName">testInternationalizedDomainName()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testInvalidUrisThrowException">testInvalidUrisThrowException()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testIPv6Host">testIPv6Host()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParsesProvidedUri">testParsesProvidedUri()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParseUriPortCanBeZero">testParseUriPortCanBeZero()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParseUriPortCannotBeNegative">testParseUriPortCannotBeNegative()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPathStartingWithTwoSlashes">testPathStartingWithTwoSlashes()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortCanBeRemoved">testPortCanBeRemoved()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortIsNullIfStandardPortForScheme">testPortIsNullIfStandardPortForScheme()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortIsReturnedIfSchemeUnknown">testPortIsReturnedIfSchemeUnknown()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortMustBeValid">testPortMustBeValid()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testRelativeUriWithPathBeginningWithColonSegmentIsInvalid">testRelativeUriWithPathBeginningWithColonSegmentIsInvalid()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testRelativeUriWithPathHavingColonSegment">testRelativeUriWithPathHavingColonSegment()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testSchemeIsNormalizedToLowercase">testSchemeIsNormalizedToLowercase()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testStandardPortIsNullIfSchemeChanges">testStandardPortIsNullIfSchemeChanges()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testSupportsUrlEncodedValues">testSupportsUrlEncodedValues()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testUriComponentsGetEncodedProperly">testUriComponentsGetEncodedProperly()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testValidUrisStayValid">testValidUrisStayValid()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithFragmentEncodesProperly">testWithFragmentEncodesProperly()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPartSamePart">testWithPartSamePart()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPathEncodesProperly">testWithPathEncodesProperly()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPortCannotBeNegative">testWithPortCannotBeNegative()</a></li>
-                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithQueryEncodesProperly">testWithQueryEncodesProperly()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_internationalizedDomainName">internationalizedDomainName()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_invalidUrisThrowException">invalidUrisThrowException()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_IPv6Host">IPv6Host()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parsesProvidedUri">parsesProvidedUri()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parseUriPortCanBeZero">parseUriPortCanBeZero()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parseUriPortCannotBeNegative">parseUriPortCannotBeNegative()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_pathStartingWithTwoSlashes">pathStartingWithTwoSlashes()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portCanBeRemoved">portCanBeRemoved()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portIsNullIfStandardPortForScheme">portIsNullIfStandardPortForScheme()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portIsReturnedIfSchemeUnknown">portIsReturnedIfSchemeUnknown()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portMustBeValid">portMustBeValid()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_relativeUriWithPathBeginningWithColonSegmentIsInvalid">relativeUriWithPathBeginningWithColonSegmentIsInvalid()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_relativeUriWithPathHavingColonSegment">relativeUriWithPathHavingColonSegment()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_schemeIsNormalizedToLowercase">schemeIsNormalizedToLowercase()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_standardPortIsNullIfSchemeChanges">standardPortIsNullIfSchemeChanges()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_supportsUrlEncodedValues">supportsUrlEncodedValues()</a></li>
                                             <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_uriComponentsEncodingProvider">uriComponentsEncodingProvider()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_uriComponentsGetEncodedProperly">uriComponentsGetEncodedProperly()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_validUrisStayValid">validUrisStayValid()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withFragmentEncodesProperly">withFragmentEncodesProperly()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPartSamePart">withPartSamePart()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPathEncodesProperly">withPathEncodesProperly()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPortCannotBeNegative">withPortCannotBeNegative()</a></li>
+                                            <li class=""><a href="classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withQueryEncodesProperly">withQueryEncodesProperly()</a></li>
                                     </ul>
             </li>
                     </ul>

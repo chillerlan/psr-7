@@ -318,17 +318,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\chillerlan\\HTTP\\Psr7\\MultipartStreamBuilder\u003A\u003Abuild\u0028\u0029",
             "name": "build",
-            "summary": "Builds\u0020the\u0020multipart\u0020content\u0020from\u0020the\u0020given\u0020messages.",
+            "summary": "Builds\u0020the\u0020multipart\u0020content\u0020from\u0020the\u0020given\u0020messages,\u0020returns\u0020a\u0020StreamInterface\u0020with\u0020the\u0020content.",
             "url": "classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_build"
-        },                {
-            "fqsen": "\\chillerlan\\HTTP\\Psr7\\MultipartStreamBuilder\u003A\u003AbuildStream\u0028\u0029",
-            "name": "buildStream",
-            "summary": "Builds\u0020the\u0020multipart\u0020content\u0020from\u0020the\u0020given\u0020messages.",
-            "url": "classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_buildStream"
         },                {
             "fqsen": "\\chillerlan\\HTTP\\Psr7\\MultipartStreamBuilder\u003A\u003AbuildMessage\u0028\u0029",
             "name": "buildMessage",
-            "summary": "Builds\u0020the\u0020multipart\u0020content\u0020from\u0020the\u0020given\u0020messages\u0020and\u0020sets\u0020body\u0020and\u0020content\u0020type\u0020headerin\u0020the\u0020given\u0020MessageInterface.",
+            "summary": "Builds\u0020the\u0020multipart\u0020content\u0020from\u0020the\u0020given\u0020messages\u0020and\u0020sets\u0020body\u0020and\u0020content\u0020type\u0020header\u0020in\u0020the\u0020given\u0020MessageInterface.",
             "url": "classes/chillerlan-HTTP-Psr7-MultipartStreamBuilder.html#method_buildMessage"
         },                {
             "fqsen": "\\chillerlan\\HTTP\\Psr7\\MultipartStreamBuilder\u003A\u003AwriteHeaders\u0028\u0029",
@@ -991,125 +986,125 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-DummyStreamTest.html#method_setUp"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\DummyStreamTest\u003A\u003AtestDefaultStream\u0028\u0029",
-            "name": "testDefaultStream",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\DummyStreamTest\u003A\u003AdefaultStream\u0028\u0029",
+            "name": "defaultStream",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-DummyStreamTest.html#method_testDefaultStream"
+            "url": "classes/chillerlan-HTTPTest-Psr7-DummyStreamTest.html#method_defaultStream"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\DummyStreamTest\u003A\u003AtestProxiesToFunction\u0028\u0029",
-            "name": "testProxiesToFunction",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\DummyStreamTest\u003A\u003AproxiesToFunction\u0028\u0029",
+            "name": "proxiesToFunction",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-DummyStreamTest.html#method_testProxiesToFunction"
+            "url": "classes/chillerlan-HTTPTest-Psr7-DummyStreamTest.html#method_proxiesToFunction"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\DummyStreamTest\u003A\u003AtestCanCloseOnDestruct\u0028\u0029",
-            "name": "testCanCloseOnDestruct",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\DummyStreamTest\u003A\u003AcanCloseOnDestruct\u0028\u0029",
+            "name": "canCloseOnDestruct",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-DummyStreamTest.html#method_testCanCloseOnDestruct"
+            "url": "classes/chillerlan-HTTPTest-Psr7-DummyStreamTest.html#method_canCloseOnDestruct"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\DummyStreamTest\u003A\u003AtestDecoratesWithCustomizations\u0028\u0029",
-            "name": "testDecoratesWithCustomizations",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\DummyStreamTest\u003A\u003AdecoratesWithCustomizations\u0028\u0029",
+            "name": "decoratesWithCustomizations",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-DummyStreamTest.html#method_testDecoratesWithCustomizations"
+            "url": "classes/chillerlan-HTTPTest-Psr7-DummyStreamTest.html#method_decoratesWithCustomizations"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\FactoryUtilsTest",
             "name": "FactoryUtilsTest",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-FactoryUtilsTest.html"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\FactoryUtilsTest\u003A\u003AtestCreateStream\u0028\u0029",
-            "name": "testCreateStream",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\FactoryUtilsTest\u003A\u003AcreateStream\u0028\u0029",
+            "name": "createStream",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-FactoryUtilsTest.html#method_testCreateStream"
+            "url": "classes/chillerlan-HTTPTest-Psr7-FactoryUtilsTest.html#method_createStream"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\FactoryUtilsTest\u003A\u003AtestCreateStreamInvalidModeException\u0028\u0029",
-            "name": "testCreateStreamInvalidModeException",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\FactoryUtilsTest\u003A\u003AcreateStreamInvalidModeException\u0028\u0029",
+            "name": "createStreamInvalidModeException",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-FactoryUtilsTest.html#method_testCreateStreamInvalidModeException"
+            "url": "classes/chillerlan-HTTPTest-Psr7-FactoryUtilsTest.html#method_createStreamInvalidModeException"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\FactoryUtilsTest\u003A\u003AstreamInputProvider\u0028\u0029",
             "name": "streamInputProvider",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-FactoryUtilsTest.html#method_streamInputProvider"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\FactoryUtilsTest\u003A\u003AtestCreateStreamFromInput\u0028\u0029",
-            "name": "testCreateStreamFromInput",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\FactoryUtilsTest\u003A\u003AcreateStreamFromInput\u0028\u0029",
+            "name": "createStreamFromInput",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-FactoryUtilsTest.html#method_testCreateStreamFromInput"
+            "url": "classes/chillerlan-HTTPTest-Psr7-FactoryUtilsTest.html#method_createStreamFromInput"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\FactoryUtilsTest\u003A\u003AtestCreateStreamFromInputException\u0028\u0029",
-            "name": "testCreateStreamFromInputException",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\FactoryUtilsTest\u003A\u003AcreateStreamFromInputException\u0028\u0029",
+            "name": "createStreamFromInputException",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-FactoryUtilsTest.html#method_testCreateStreamFromInputException"
+            "url": "classes/chillerlan-HTTPTest-Psr7-FactoryUtilsTest.html#method_createStreamFromInputException"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest",
             "name": "MessageTest",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestNullBody\u0028\u0029",
-            "name": "testNullBody",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AnullBody\u0028\u0029",
+            "name": "nullBody",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testNullBody"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_nullBody"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestReturnsEmptyHeadersArray\u0028\u0029",
-            "name": "testReturnsEmptyHeadersArray",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AreturnsEmptyHeadersArray\u0028\u0029",
+            "name": "returnsEmptyHeadersArray",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testReturnsEmptyHeadersArray"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_returnsEmptyHeadersArray"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestWithHeader\u0028\u0029",
-            "name": "testWithHeader",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AwithHeader\u0028\u0029",
+            "name": "withHeader",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testWithHeader"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_withHeader"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestWithHeaderAsArray\u0028\u0029",
-            "name": "testWithHeaderAsArray",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AwithHeaderAsArray\u0028\u0029",
+            "name": "withHeaderAsArray",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testWithHeaderAsArray"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_withHeaderAsArray"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestWithHeaderReplacesDifferentCase\u0028\u0029",
-            "name": "testWithHeaderReplacesDifferentCase",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AwithHeaderReplacesDifferentCase\u0028\u0029",
+            "name": "withHeaderReplacesDifferentCase",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testWithHeaderReplacesDifferentCase"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_withHeaderReplacesDifferentCase"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestWithAddedHeader\u0028\u0029",
-            "name": "testWithAddedHeader",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AwithAddedHeader\u0028\u0029",
+            "name": "withAddedHeader",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testWithAddedHeader"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_withAddedHeader"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestWithAddedHeaderAsArray\u0028\u0029",
-            "name": "testWithAddedHeaderAsArray",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AwithAddedHeaderAsArray\u0028\u0029",
+            "name": "withAddedHeaderAsArray",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testWithAddedHeaderAsArray"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_withAddedHeaderAsArray"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestWithAddedHeaderThatDoesNotExist\u0028\u0029",
-            "name": "testWithAddedHeaderThatDoesNotExist",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AwithAddedHeaderThatDoesNotExist\u0028\u0029",
+            "name": "withAddedHeaderThatDoesNotExist",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testWithAddedHeaderThatDoesNotExist"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_withAddedHeaderThatDoesNotExist"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestWithoutHeaderThatExists\u0028\u0029",
-            "name": "testWithoutHeaderThatExists",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AwithoutHeaderThatExists\u0028\u0029",
+            "name": "withoutHeaderThatExists",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testWithoutHeaderThatExists"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_withoutHeaderThatExists"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestWithoutHeaderThatDoesNotExist\u0028\u0029",
-            "name": "testWithoutHeaderThatDoesNotExist",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AwithoutHeaderThatDoesNotExist\u0028\u0029",
+            "name": "withoutHeaderThatDoesNotExist",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testWithoutHeaderThatDoesNotExist"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_withoutHeaderThatDoesNotExist"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestHeaderValuesAreTrimmed\u0028\u0029",
-            "name": "testHeaderValuesAreTrimmed",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AheaderValuesAreTrimmed\u0028\u0029",
+            "name": "headerValuesAreTrimmed",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testHeaderValuesAreTrimmed"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_headerValuesAreTrimmed"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestSupportNumericHeaderValues\u0028\u0029",
-            "name": "testSupportNumericHeaderValues",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AsupportNumericHeaderValues\u0028\u0029",
+            "name": "supportNumericHeaderValues",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testSupportNumericHeaderValues"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_supportNumericHeaderValues"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AtestHeaderNameAndValueDoesNotContainCRLF\u0028\u0029",
-            "name": "testHeaderNameAndValueDoesNotContainCRLF",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MessageTest\u003A\u003AheaderNameAndValueDoesNotContainCRLF\u0028\u0029",
+            "name": "headerNameAndValueDoesNotContainCRLF",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_testHeaderNameAndValueDoesNotContainCRLF"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MessageTest.html#method_headerNameAndValueDoesNotContainCRLF"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest",
             "name": "MultipartStreamBuilderTest",
@@ -1121,90 +1116,90 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_setUp"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestCreatesDefaultBoundary\u0028\u0029",
-            "name": "testCreatesDefaultBoundary",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AcreatesDefaultBoundary\u0028\u0029",
+            "name": "createsDefaultBoundary",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testCreatesDefaultBoundary"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_createsDefaultBoundary"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestSetBoundary\u0028\u0029",
-            "name": "testSetBoundary",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AsetBoundary\u0028\u0029",
+            "name": "setBoundary",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testSetBoundary"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_setBoundary"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestSetBoundaryEmptyException\u0028\u0029",
-            "name": "testSetBoundaryEmptyException",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AsetBoundaryEmptyException\u0028\u0029",
+            "name": "setBoundaryEmptyException",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testSetBoundaryEmptyException"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_setBoundaryEmptyException"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestSetBoundaryInvalidCharException\u0028\u0029",
-            "name": "testSetBoundaryInvalidCharException",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AsetBoundaryInvalidCharException\u0028\u0029",
+            "name": "setBoundaryInvalidCharException",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testSetBoundaryInvalidCharException"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_setBoundaryInvalidCharException"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestReset\u0028\u0029",
-            "name": "testReset",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testReset"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_reset"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestCanCreateEmptyBody\u0028\u0029",
-            "name": "testCanCreateEmptyBody",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AcanCreateEmptyBody\u0028\u0029",
+            "name": "canCreateEmptyBody",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testCanCreateEmptyBody"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_canCreateEmptyBody"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestAddFields\u0028\u0029",
-            "name": "testAddFields",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AaddFields\u0028\u0029",
+            "name": "addFields",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testAddFields"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_addFields"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestAddStreams\u0028\u0029",
-            "name": "testAddStreams",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AaddStreams\u0028\u0029",
+            "name": "addStreams",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testAddStreams"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_addStreams"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestAddFieldWithSameName\u0028\u0029",
-            "name": "testAddFieldWithSameName",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AaddFieldWithSameName\u0028\u0029",
+            "name": "addFieldWithSameName",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testAddFieldWithSameName"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_addFieldWithSameName"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestGivenFieldnameCannotBeEmptyException\u0028\u0029",
-            "name": "testGivenFieldnameCannotBeEmptyException",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AgivenFieldnameCannotBeEmptyException\u0028\u0029",
+            "name": "givenFieldnameCannotBeEmptyException",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testGivenFieldnameCannotBeEmptyException"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_givenFieldnameCannotBeEmptyException"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestCustomHeaders\u0028\u0029",
-            "name": "testCustomHeaders",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AcustomHeaders\u0028\u0029",
+            "name": "customHeaders",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testCustomHeaders"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_customHeaders"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestCustomHeadersAndMultipleValues\u0028\u0029",
-            "name": "testCustomHeadersAndMultipleValues",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AcustomHeadersAndMultipleValues\u0028\u0029",
+            "name": "customHeadersAndMultipleValues",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testCustomHeadersAndMultipleValues"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_customHeadersAndMultipleValues"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestSuppressContentTypeHeader\u0028\u0029",
-            "name": "testSuppressContentTypeHeader",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AsuppressContentTypeHeader\u0028\u0029",
+            "name": "suppressContentTypeHeader",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testSuppressContentTypeHeader"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_suppressContentTypeHeader"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestIgnoresNonContentNonCustomHeaders\u0028\u0029",
-            "name": "testIgnoresNonContentNonCustomHeaders",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AignoresNonContentNonCustomHeaders\u0028\u0029",
+            "name": "ignoresNonContentNonCustomHeaders",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testIgnoresNonContentNonCustomHeaders"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_ignoresNonContentNonCustomHeaders"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestNesting\u0028\u0029",
-            "name": "testNesting",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003Anesting\u0028\u0029",
+            "name": "nesting",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testNesting"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_nesting"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestBuildWithMessageInterface\u0028\u0029",
-            "name": "testBuildWithMessageInterface",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AbuildWithMessageInterface\u0028\u0029",
+            "name": "buildWithMessageInterface",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testBuildWithMessageInterface"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_buildWithMessageInterface"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AtestOverwritesContentTypeHeaderInMessage\u0028\u0029",
-            "name": "testOverwritesContentTypeHeaderInMessage",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003AoverwritesContentTypeHeaderInMessage\u0028\u0029",
+            "name": "overwritesContentTypeHeaderInMessage",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_testOverwritesContentTypeHeaderInMessage"
+            "url": "classes/chillerlan-HTTPTest-Psr7-MultipartStreamBuilderTest.html#method_overwritesContentTypeHeaderInMessage"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\MultipartStreamBuilderTest\u003A\u003A\u0024multipartStreamBuilder",
             "name": "multipartStreamBuilder",
@@ -1216,170 +1211,170 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestRequestUriMayBeString\u0028\u0029",
-            "name": "testRequestUriMayBeString",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003ArequestUriMayBeString\u0028\u0029",
+            "name": "requestUriMayBeString",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testRequestUriMayBeString"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_requestUriMayBeString"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestRequestUriMayBeUri\u0028\u0029",
-            "name": "testRequestUriMayBeUri",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003ArequestUriMayBeUri\u0028\u0029",
+            "name": "requestUriMayBeUri",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testRequestUriMayBeUri"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_requestUriMayBeUri"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestValidateRequestUri\u0028\u0029",
-            "name": "testValidateRequestUri",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AvalidateRequestUri\u0028\u0029",
+            "name": "validateRequestUri",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testValidateRequestUri"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_validateRequestUri"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestCapitalizesMethod\u0028\u0029",
-            "name": "testCapitalizesMethod",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AcapitalizesMethod\u0028\u0029",
+            "name": "capitalizesMethod",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testCapitalizesMethod"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_capitalizesMethod"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestCapitalizesWithMethod\u0028\u0029",
-            "name": "testCapitalizesWithMethod",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AcapitalizesWithMethod\u0028\u0029",
+            "name": "capitalizesWithMethod",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testCapitalizesWithMethod"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_capitalizesWithMethod"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestWithUri\u0028\u0029",
-            "name": "testWithUri",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AwithUri\u0028\u0029",
+            "name": "withUri",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testWithUri"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_withUri"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestWithRequestTarget\u0028\u0029",
-            "name": "testWithRequestTarget",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AwithRequestTarget\u0028\u0029",
+            "name": "withRequestTarget",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testWithRequestTarget"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_withRequestTarget"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestRequestTargetDoesNotAllowSpaces\u0028\u0029",
-            "name": "testRequestTargetDoesNotAllowSpaces",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003ArequestTargetDoesNotAllowSpaces\u0028\u0029",
+            "name": "requestTargetDoesNotAllowSpaces",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testRequestTargetDoesNotAllowSpaces"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_requestTargetDoesNotAllowSpaces"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestRequestTargetDefaultsToSlash\u0028\u0029",
-            "name": "testRequestTargetDefaultsToSlash",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003ArequestTargetDefaultsToSlash\u0028\u0029",
+            "name": "requestTargetDefaultsToSlash",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testRequestTargetDefaultsToSlash"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_requestTargetDefaultsToSlash"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestBuildsRequestTarget\u0028\u0029",
-            "name": "testBuildsRequestTarget",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AbuildsRequestTarget\u0028\u0029",
+            "name": "buildsRequestTarget",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testBuildsRequestTarget"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_buildsRequestTarget"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestBuildsRequestTargetWithFalseyQuery\u0028\u0029",
-            "name": "testBuildsRequestTargetWithFalseyQuery",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AbuildsRequestTargetWithFalseyQuery\u0028\u0029",
+            "name": "buildsRequestTargetWithFalseyQuery",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testBuildsRequestTargetWithFalseyQuery"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_buildsRequestTargetWithFalseyQuery"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestCanGetHeaderAsCsv\u0028\u0029",
-            "name": "testCanGetHeaderAsCsv",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AcanGetHeaderAsCsv\u0028\u0029",
+            "name": "canGetHeaderAsCsv",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testCanGetHeaderAsCsv"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_canGetHeaderAsCsv"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestOverridesHostWithUri\u0028\u0029",
-            "name": "testOverridesHostWithUri",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AoverridesHostWithUri\u0028\u0029",
+            "name": "overridesHostWithUri",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testOverridesHostWithUri"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_overridesHostWithUri"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestAddsPortToHeader\u0028\u0029",
-            "name": "testAddsPortToHeader",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AaddsPortToHeader\u0028\u0029",
+            "name": "addsPortToHeader",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testAddsPortToHeader"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_addsPortToHeader"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestAddsPortToHeaderAndReplacePreviousPort\u0028\u0029",
-            "name": "testAddsPortToHeaderAndReplacePreviousPort",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AaddsPortToHeaderAndReplacePreviousPort\u0028\u0029",
+            "name": "addsPortToHeaderAndReplacePreviousPort",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testAddsPortToHeaderAndReplacePreviousPort"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_addsPortToHeaderAndReplacePreviousPort"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AtestWithMethodEmptyMethod\u0028\u0029",
-            "name": "testWithMethodEmptyMethod",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\RequestTest\u003A\u003AwithMethodEmptyMethod\u0028\u0029",
+            "name": "withMethodEmptyMethod",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_testWithMethodEmptyMethod"
+            "url": "classes/chillerlan-HTTPTest-Psr7-RequestTest.html#method_withMethodEmptyMethod"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest",
             "name": "ResponseTest",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AtestDefaultConstructor\u0028\u0029",
-            "name": "testDefaultConstructor",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AdefaultConstructor\u0028\u0029",
+            "name": "defaultConstructor",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_testDefaultConstructor"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_defaultConstructor"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AtestCanConstructWithStatusCode\u0028\u0029",
-            "name": "testCanConstructWithStatusCode",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AcanConstructWithStatusCode\u0028\u0029",
+            "name": "canConstructWithStatusCode",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_testCanConstructWithStatusCode"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_canConstructWithStatusCode"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AtestCanConstructWithReason\u0028\u0029",
-            "name": "testCanConstructWithReason",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AcanConstructWithReason\u0028\u0029",
+            "name": "canConstructWithReason",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_testCanConstructWithReason"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_canConstructWithReason"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AtestWithStatusCodeAndNoReason\u0028\u0029",
-            "name": "testWithStatusCodeAndNoReason",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AwithStatusCodeAndNoReason\u0028\u0029",
+            "name": "withStatusCodeAndNoReason",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_testWithStatusCodeAndNoReason"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_withStatusCodeAndNoReason"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AtestWithStatusCodeAndReason\u0028\u0029",
-            "name": "testWithStatusCodeAndReason",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AwithStatusCodeAndReason\u0028\u0029",
+            "name": "withStatusCodeAndReason",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_testWithStatusCodeAndReason"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_withStatusCodeAndReason"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AtestWithProtocolVersion\u0028\u0029",
-            "name": "testWithProtocolVersion",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AwithProtocolVersion\u0028\u0029",
+            "name": "withProtocolVersion",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_testWithProtocolVersion"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_withProtocolVersion"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AtestWithBody\u0028\u0029",
-            "name": "testWithBody",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ResponseTest\u003A\u003AwithBody\u0028\u0029",
+            "name": "withBody",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_testWithBody"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ResponseTest.html#method_withBody"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest",
             "name": "ServerRequestTest",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AtestServerParams\u0028\u0029",
-            "name": "testServerParams",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AserverParams\u0028\u0029",
+            "name": "serverParams",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_testServerParams"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_serverParams"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AtestCookieParams\u0028\u0029",
-            "name": "testCookieParams",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AcookieParams\u0028\u0029",
+            "name": "cookieParams",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_testCookieParams"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_cookieParams"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AtestQueryParams\u0028\u0029",
-            "name": "testQueryParams",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AqueryParams\u0028\u0029",
+            "name": "queryParams",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_testQueryParams"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_queryParams"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AtestParsedBody\u0028\u0029",
-            "name": "testParsedBody",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AparsedBody\u0028\u0029",
+            "name": "parsedBody",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_testParsedBody"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_parsedBody"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AtestParsedBodyInvalidArg\u0028\u0029",
-            "name": "testParsedBodyInvalidArg",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AparsedBodyInvalidArg\u0028\u0029",
+            "name": "parsedBodyInvalidArg",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_testParsedBodyInvalidArg"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_parsedBodyInvalidArg"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AtestAttributes\u0028\u0029",
-            "name": "testAttributes",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003Aattributes\u0028\u0029",
+            "name": "attributes",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_testAttributes"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_attributes"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AtestNullAttribute\u0028\u0029",
-            "name": "testNullAttribute",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AnullAttribute\u0028\u0029",
+            "name": "nullAttribute",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_testNullAttribute"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_nullAttribute"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AtestUploadedFiles\u0028\u0029",
-            "name": "testUploadedFiles",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\ServerRequestTest\u003A\u003AuploadedFiles\u0028\u0029",
+            "name": "uploadedFiles",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_testUploadedFiles"
+            "url": "classes/chillerlan-HTTPTest-Psr7-ServerRequestTest.html#method_uploadedFiles"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest",
             "name": "StreamTest",
@@ -1391,75 +1386,75 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_setUp"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestConstructorThrowsExceptionOnInvalidArgument\u0028\u0029",
-            "name": "testConstructorThrowsExceptionOnInvalidArgument",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AconstructorThrowsExceptionOnInvalidArgument\u0028\u0029",
+            "name": "constructorThrowsExceptionOnInvalidArgument",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testConstructorThrowsExceptionOnInvalidArgument"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_constructorThrowsExceptionOnInvalidArgument"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestConstructorInitializesProperties\u0028\u0029",
-            "name": "testConstructorInitializesProperties",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AconstructorInitializesProperties\u0028\u0029",
+            "name": "constructorInitializesProperties",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testConstructorInitializesProperties"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_constructorInitializesProperties"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestStreamClosesHandleOnDestruct\u0028\u0029",
-            "name": "testStreamClosesHandleOnDestruct",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AstreamClosesHandleOnDestruct\u0028\u0029",
+            "name": "streamClosesHandleOnDestruct",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testStreamClosesHandleOnDestruct"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_streamClosesHandleOnDestruct"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestConvertsToString\u0028\u0029",
-            "name": "testConvertsToString",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AconvertsToString\u0028\u0029",
+            "name": "convertsToString",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testConvertsToString"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_convertsToString"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestGetsContents\u0028\u0029",
-            "name": "testGetsContents",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AgetsContents\u0028\u0029",
+            "name": "getsContents",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testGetsContents"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_getsContents"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestChecksEof\u0028\u0029",
-            "name": "testChecksEof",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AchecksEof\u0028\u0029",
+            "name": "checksEof",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testChecksEof"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_checksEof"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestGetSize\u0028\u0029",
-            "name": "testGetSize",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AgetSize\u0028\u0029",
+            "name": "getSize",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testGetSize"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_getSize"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestEnsuresSizeIsConsistent\u0028\u0029",
-            "name": "testEnsuresSizeIsConsistent",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AensuresSizeIsConsistent\u0028\u0029",
+            "name": "ensuresSizeIsConsistent",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testEnsuresSizeIsConsistent"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_ensuresSizeIsConsistent"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestProvidesStreamPosition\u0028\u0029",
-            "name": "testProvidesStreamPosition",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AprovidesStreamPosition\u0028\u0029",
+            "name": "providesStreamPosition",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testProvidesStreamPosition"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_providesStreamPosition"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestCanDetachStream\u0028\u0029",
-            "name": "testCanDetachStream",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AcanDetachStream\u0028\u0029",
+            "name": "canDetachStream",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testCanDetachStream"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_canDetachStream"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestCloseClearProperties\u0028\u0029",
-            "name": "testCloseClearProperties",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AcloseClearProperties\u0028\u0029",
+            "name": "closeClearProperties",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testCloseClearProperties"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_closeClearProperties"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestStreamReadingWithZeroLength\u0028\u0029",
-            "name": "testStreamReadingWithZeroLength",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AstreamReadingWithZeroLength\u0028\u0029",
+            "name": "streamReadingWithZeroLength",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testStreamReadingWithZeroLength"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_streamReadingWithZeroLength"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestStreamReadingWithNegativeLength\u0028\u0029",
-            "name": "testStreamReadingWithNegativeLength",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AstreamReadingWithNegativeLength\u0028\u0029",
+            "name": "streamReadingWithNegativeLength",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testStreamReadingWithNegativeLength"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_streamReadingWithNegativeLength"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AtestStreamSeekInvalidPosition\u0028\u0029",
-            "name": "testStreamSeekInvalidPosition",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\StreamTest\u003A\u003AstreamSeekInvalidPosition\u0028\u0029",
+            "name": "streamSeekInvalidPosition",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_testStreamSeekInvalidPosition"
+            "url": "classes/chillerlan-HTTPTest-Psr7-StreamTest.html#method_streamSeekInvalidPosition"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest",
             "name": "UploadedFileTest",
@@ -1481,85 +1476,85 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_invalidStreams"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestRaisesExceptionOnInvalidStreamOrFile\u0028\u0029",
-            "name": "testRaisesExceptionOnInvalidStreamOrFile",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AraisesExceptionOnInvalidStreamOrFile\u0028\u0029",
+            "name": "raisesExceptionOnInvalidStreamOrFile",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidStreamOrFile"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_raisesExceptionOnInvalidStreamOrFile"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AinvalidErrorStatuses\u0028\u0029",
             "name": "invalidErrorStatuses",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_invalidErrorStatuses"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestRaisesExceptionOnInvalidErrorStatus\u0028\u0029",
-            "name": "testRaisesExceptionOnInvalidErrorStatus",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AraisesExceptionOnInvalidErrorStatus\u0028\u0029",
+            "name": "raisesExceptionOnInvalidErrorStatus",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testRaisesExceptionOnInvalidErrorStatus"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_raisesExceptionOnInvalidErrorStatus"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestGetStreamReturnsOriginalStreamObject\u0028\u0029",
-            "name": "testGetStreamReturnsOriginalStreamObject",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AgetStreamReturnsOriginalStreamObject\u0028\u0029",
+            "name": "getStreamReturnsOriginalStreamObject",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamReturnsOriginalStreamObject"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_getStreamReturnsOriginalStreamObject"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestGetStreamReturnsWrappedPhpStream\u0028\u0029",
-            "name": "testGetStreamReturnsWrappedPhpStream",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AgetStreamReturnsWrappedPhpStream\u0028\u0029",
+            "name": "getStreamReturnsWrappedPhpStream",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamReturnsWrappedPhpStream"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_getStreamReturnsWrappedPhpStream"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestSuccessful\u0028\u0029",
-            "name": "testSuccessful",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003Asuccessful\u0028\u0029",
+            "name": "successful",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testSuccessful"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_successful"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestMoveCannotBeCalledMoreThanOnce\u0028\u0029",
-            "name": "testMoveCannotBeCalledMoreThanOnce",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AmoveCannotBeCalledMoreThanOnce\u0028\u0029",
+            "name": "moveCannotBeCalledMoreThanOnce",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveCannotBeCalledMoreThanOnce"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_moveCannotBeCalledMoreThanOnce"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestCannotRetrieveStreamAfterMove\u0028\u0029",
-            "name": "testCannotRetrieveStreamAfterMove",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AcannotRetrieveStreamAfterMove\u0028\u0029",
+            "name": "cannotRetrieveStreamAfterMove",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotRetrieveStreamAfterMove"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_cannotRetrieveStreamAfterMove"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestCannotMoveToEmptyTarget\u0028\u0029",
-            "name": "testCannotMoveToEmptyTarget",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AcannotMoveToEmptyTarget\u0028\u0029",
+            "name": "cannotMoveToEmptyTarget",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotMoveToEmptyTarget"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_cannotMoveToEmptyTarget"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestCannotMoveToUnwritableDirectory\u0028\u0029",
-            "name": "testCannotMoveToUnwritableDirectory",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AcannotMoveToUnwritableDirectory\u0028\u0029",
+            "name": "cannotMoveToUnwritableDirectory",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testCannotMoveToUnwritableDirectory"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_cannotMoveToUnwritableDirectory"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AnonOkErrorStatus\u0028\u0029",
             "name": "nonOkErrorStatus",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_nonOkErrorStatus"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent\u0028\u0029",
-            "name": "testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AconstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent\u0028\u0029",
+            "name": "constructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_constructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestMoveToRaisesExceptionWhenErrorStatusPresent\u0028\u0029",
-            "name": "testMoveToRaisesExceptionWhenErrorStatusPresent",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AmoveToRaisesExceptionWhenErrorStatusPresent\u0028\u0029",
+            "name": "moveToRaisesExceptionWhenErrorStatusPresent",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveToRaisesExceptionWhenErrorStatusPresent"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_moveToRaisesExceptionWhenErrorStatusPresent"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestGetStreamRaisesExceptionWhenErrorStatusPresent\u0028\u0029",
-            "name": "testGetStreamRaisesExceptionWhenErrorStatusPresent",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AgetStreamRaisesExceptionWhenErrorStatusPresent\u0028\u0029",
+            "name": "getStreamRaisesExceptionWhenErrorStatusPresent",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testGetStreamRaisesExceptionWhenErrorStatusPresent"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_getStreamRaisesExceptionWhenErrorStatusPresent"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestMoveToCreatesStreamIfOnlyAFilenameWasProvided\u0028\u0029",
-            "name": "testMoveToCreatesStreamIfOnlyAFilenameWasProvided",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AmoveToCreatesStreamIfOnlyAFilenameWasProvided\u0028\u0029",
+            "name": "moveToCreatesStreamIfOnlyAFilenameWasProvided",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testMoveToCreatesStreamIfOnlyAFilenameWasProvided"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_moveToCreatesStreamIfOnlyAFilenameWasProvided"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AtestNormalizeFilesRaisesException\u0028\u0029",
-            "name": "testNormalizeFilesRaisesException",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003AnormalizeFilesRaisesException\u0028\u0029",
+            "name": "normalizeFilesRaisesException",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_testNormalizeFilesRaisesException"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UploadedFileTest.html#method_normalizeFilesRaisesException"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UploadedFileTest\u003A\u003A\u0024cleanup",
             "name": "cleanup",
@@ -1576,215 +1571,215 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestDefaultReturnValuesOfGetters\u0028\u0029",
-            "name": "testDefaultReturnValuesOfGetters",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AdefaultReturnValuesOfGetters\u0028\u0029",
+            "name": "defaultReturnValuesOfGetters",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testDefaultReturnValuesOfGetters"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_defaultReturnValuesOfGetters"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestParsesProvidedUri\u0028\u0029",
-            "name": "testParsesProvidedUri",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AparsesProvidedUri\u0028\u0029",
+            "name": "parsesProvidedUri",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParsesProvidedUri"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parsesProvidedUri"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestCanTransformAndRetrievePartsIndividually\u0028\u0029",
-            "name": "testCanTransformAndRetrievePartsIndividually",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AcanTransformAndRetrievePartsIndividually\u0028\u0029",
+            "name": "canTransformAndRetrievePartsIndividually",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanTransformAndRetrievePartsIndividually"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canTransformAndRetrievePartsIndividually"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestSupportsUrlEncodedValues\u0028\u0029",
-            "name": "testSupportsUrlEncodedValues",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AsupportsUrlEncodedValues\u0028\u0029",
+            "name": "supportsUrlEncodedValues",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testSupportsUrlEncodedValues"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_supportsUrlEncodedValues"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AgetValidUris\u0028\u0029",
             "name": "getValidUris",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getValidUris"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestValidUrisStayValid\u0028\u0029",
-            "name": "testValidUrisStayValid",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AvalidUrisStayValid\u0028\u0029",
+            "name": "validUrisStayValid",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testValidUrisStayValid"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_validUrisStayValid"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestFromParts\u0028\u0029",
-            "name": "testFromParts",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AfromParts\u0028\u0029",
+            "name": "fromParts",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFromParts"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_fromParts"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AgetInvalidUris\u0028\u0029",
             "name": "getInvalidUris",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getInvalidUris"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestInvalidUrisThrowException\u0028\u0029",
-            "name": "testInvalidUrisThrowException",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AinvalidUrisThrowException\u0028\u0029",
+            "name": "invalidUrisThrowException",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testInvalidUrisThrowException"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_invalidUrisThrowException"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestPortMustBeValid\u0028\u0029",
-            "name": "testPortMustBeValid",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AportMustBeValid\u0028\u0029",
+            "name": "portMustBeValid",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortMustBeValid"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portMustBeValid"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestWithPortCannotBeNegative\u0028\u0029",
-            "name": "testWithPortCannotBeNegative",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AwithPortCannotBeNegative\u0028\u0029",
+            "name": "withPortCannotBeNegative",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPortCannotBeNegative"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPortCannotBeNegative"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestParseUriPortCannotBeNegative\u0028\u0029",
-            "name": "testParseUriPortCannotBeNegative",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AparseUriPortCannotBeNegative\u0028\u0029",
+            "name": "parseUriPortCannotBeNegative",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParseUriPortCannotBeNegative"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parseUriPortCannotBeNegative"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestParseUriPortCanBeZero\u0028\u0029",
-            "name": "testParseUriPortCanBeZero",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AparseUriPortCanBeZero\u0028\u0029",
+            "name": "parseUriPortCanBeZero",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testParseUriPortCanBeZero"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_parseUriPortCanBeZero"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestCanParseFalseyUriParts\u0028\u0029",
-            "name": "testCanParseFalseyUriParts",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AcanParseFalseyUriParts\u0028\u0029",
+            "name": "canParseFalseyUriParts",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanParseFalseyUriParts"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canParseFalseyUriParts"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestCanConstructFalseyUriParts\u0028\u0029",
-            "name": "testCanConstructFalseyUriParts",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AcanConstructFalseyUriParts\u0028\u0029",
+            "name": "canConstructFalseyUriParts",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testCanConstructFalseyUriParts"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_canConstructFalseyUriParts"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestSchemeIsNormalizedToLowercase\u0028\u0029",
-            "name": "testSchemeIsNormalizedToLowercase",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AschemeIsNormalizedToLowercase\u0028\u0029",
+            "name": "schemeIsNormalizedToLowercase",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testSchemeIsNormalizedToLowercase"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_schemeIsNormalizedToLowercase"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestHostIsNormalizedToLowercase\u0028\u0029",
-            "name": "testHostIsNormalizedToLowercase",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AhostIsNormalizedToLowercase\u0028\u0029",
+            "name": "hostIsNormalizedToLowercase",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testHostIsNormalizedToLowercase"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostIsNormalizedToLowercase"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestPortIsNullIfStandardPortForScheme\u0028\u0029",
-            "name": "testPortIsNullIfStandardPortForScheme",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AportIsNullIfStandardPortForScheme\u0028\u0029",
+            "name": "portIsNullIfStandardPortForScheme",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortIsNullIfStandardPortForScheme"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portIsNullIfStandardPortForScheme"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestPortIsReturnedIfSchemeUnknown\u0028\u0029",
-            "name": "testPortIsReturnedIfSchemeUnknown",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AportIsReturnedIfSchemeUnknown\u0028\u0029",
+            "name": "portIsReturnedIfSchemeUnknown",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortIsReturnedIfSchemeUnknown"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portIsReturnedIfSchemeUnknown"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestStandardPortIsNullIfSchemeChanges\u0028\u0029",
-            "name": "testStandardPortIsNullIfSchemeChanges",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AstandardPortIsNullIfSchemeChanges\u0028\u0029",
+            "name": "standardPortIsNullIfSchemeChanges",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testStandardPortIsNullIfSchemeChanges"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_standardPortIsNullIfSchemeChanges"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestPortCanBeRemoved\u0028\u0029",
-            "name": "testPortCanBeRemoved",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AportCanBeRemoved\u0028\u0029",
+            "name": "portCanBeRemoved",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPortCanBeRemoved"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_portCanBeRemoved"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestAuthorityWithUserInfoOrPortButWithoutHost\u0028\u0029",
-            "name": "testAuthorityWithUserInfoOrPortButWithoutHost",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AauthorityWithUserInfoOrPortButWithoutHost\u0028\u0029",
+            "name": "authorityWithUserInfoOrPortButWithoutHost",
             "summary": "In\u0020RFC\u00208986\u0020the\u0020host\u0020is\u0020optional\u0020and\u0020the\u0020authority\u0020can\u0020only\nconsist\u0020of\u0020the\u0020user\u0020info\u0020and\u0020port.",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAuthorityWithUserInfoOrPortButWithoutHost"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_authorityWithUserInfoOrPortButWithoutHost"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestHostInUriDefaultsToLocalhost\u0028\u0029",
-            "name": "testHostInUriDefaultsToLocalhost",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AhostInUriDefaultsToLocalhost\u0028\u0029",
+            "name": "hostInUriDefaultsToLocalhost",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testHostInUriDefaultsToLocalhost"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostInUriDefaultsToLocalhost"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestFileSchemeWithEmptyHostReconstruction\u0028\u0029",
-            "name": "testFileSchemeWithEmptyHostReconstruction",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AfileSchemeWithEmptyHostReconstruction\u0028\u0029",
+            "name": "fileSchemeWithEmptyHostReconstruction",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFileSchemeWithEmptyHostReconstruction"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_fileSchemeWithEmptyHostReconstruction"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AuriComponentsEncodingProvider\u0028\u0029",
             "name": "uriComponentsEncodingProvider",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_uriComponentsEncodingProvider"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestUriComponentsGetEncodedProperly\u0028\u0029",
-            "name": "testUriComponentsGetEncodedProperly",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AuriComponentsGetEncodedProperly\u0028\u0029",
+            "name": "uriComponentsGetEncodedProperly",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testUriComponentsGetEncodedProperly"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_uriComponentsGetEncodedProperly"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestWithPathEncodesProperly\u0028\u0029",
-            "name": "testWithPathEncodesProperly",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AwithPathEncodesProperly\u0028\u0029",
+            "name": "withPathEncodesProperly",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPathEncodesProperly"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPathEncodesProperly"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestWithQueryEncodesProperly\u0028\u0029",
-            "name": "testWithQueryEncodesProperly",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AwithQueryEncodesProperly\u0028\u0029",
+            "name": "withQueryEncodesProperly",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithQueryEncodesProperly"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withQueryEncodesProperly"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestWithFragmentEncodesProperly\u0028\u0029",
-            "name": "testWithFragmentEncodesProperly",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AwithFragmentEncodesProperly\u0028\u0029",
+            "name": "withFragmentEncodesProperly",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithFragmentEncodesProperly"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withFragmentEncodesProperly"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestAllowsForRelativeUri\u0028\u0029",
-            "name": "testAllowsForRelativeUri",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AallowsForRelativeUri\u0028\u0029",
+            "name": "allowsForRelativeUri",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAllowsForRelativeUri"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_allowsForRelativeUri"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestPathStartingWithTwoSlashes\u0028\u0029",
-            "name": "testPathStartingWithTwoSlashes",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003ApathStartingWithTwoSlashes\u0028\u0029",
+            "name": "pathStartingWithTwoSlashes",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testPathStartingWithTwoSlashes"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_pathStartingWithTwoSlashes"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestRelativeUriWithPathBeginningWithColonSegmentIsInvalid\u0028\u0029",
-            "name": "testRelativeUriWithPathBeginningWithColonSegmentIsInvalid",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003ArelativeUriWithPathBeginningWithColonSegmentIsInvalid\u0028\u0029",
+            "name": "relativeUriWithPathBeginningWithColonSegmentIsInvalid",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testRelativeUriWithPathBeginningWithColonSegmentIsInvalid"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_relativeUriWithPathBeginningWithColonSegmentIsInvalid"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestRelativeUriWithPathHavingColonSegment\u0028\u0029",
-            "name": "testRelativeUriWithPathHavingColonSegment",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003ArelativeUriWithPathHavingColonSegment\u0028\u0029",
+            "name": "relativeUriWithPathHavingColonSegment",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testRelativeUriWithPathHavingColonSegment"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_relativeUriWithPathHavingColonSegment"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestAddsSlashForRelativeUriStringWithHost\u0028\u0029",
-            "name": "testAddsSlashForRelativeUriStringWithHost",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AaddsSlashForRelativeUriStringWithHost\u0028\u0029",
+            "name": "addsSlashForRelativeUriStringWithHost",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testAddsSlashForRelativeUriStringWithHost"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_addsSlashForRelativeUriStringWithHost"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AhostProvider\u0028\u0029",
             "name": "hostProvider",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_hostProvider"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestGetHost\u0028\u0029",
-            "name": "testGetHost",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AgetHost\u0028\u0029",
+            "name": "getHost",
             "summary": "The\u0020value\u0020returned\u0020MUST\u0020be\u0020normalized\u0020to\u0020lowercase,\u0020per\u0020RFC\u00203986\u0020Section\u00203.2.2.",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testGetHost"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getHost"
         },                {
             "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AauthorityProvider\u0028\u0029",
             "name": "authorityProvider",
             "summary": "",
             "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_authorityProvider"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestGetAuthority\u0028\u0029",
-            "name": "testGetAuthority",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AgetAuthority\u0028\u0029",
+            "name": "getAuthority",
             "summary": "If\u0020the\u0020port\u0020component\u0020is\u0020not\u0020set\u0020or\u0020is\u0020the\u0020standard\u0020port\u0020for\u0020the\u0020current\u0020scheme,\u0020it\u0020SHOULD\u0020NOT\u0020be\u0020included.",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testGetAuthority"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_getAuthority"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestFilterHostIPv6\u0028\u0029",
-            "name": "testFilterHostIPv6",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AfilterHostIPv6\u0028\u0029",
+            "name": "filterHostIPv6",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testFilterHostIPv6"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_filterHostIPv6"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestWithPartSamePart\u0028\u0029",
-            "name": "testWithPartSamePart",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AwithPartSamePart\u0028\u0029",
+            "name": "withPartSamePart",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testWithPartSamePart"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_withPartSamePart"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestInternationalizedDomainName\u0028\u0029",
-            "name": "testInternationalizedDomainName",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AinternationalizedDomainName\u0028\u0029",
+            "name": "internationalizedDomainName",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testInternationalizedDomainName"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_internationalizedDomainName"
         },                {
-            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AtestIPv6Host\u0028\u0029",
-            "name": "testIPv6Host",
+            "fqsen": "\\chillerlan\\HTTPTest\\Psr7\\UriTest\u003A\u003AIPv6Host\u0028\u0029",
+            "name": "IPv6Host",
             "summary": "",
-            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_testIPv6Host"
+            "url": "classes/chillerlan-HTTPTest-Psr7-UriTest.html#method_IPv6Host"
         },                {
             "fqsen": "\\",
             "name": "\\",
