@@ -15,6 +15,7 @@ namespace chillerlan\HTTPTest\Psr7;
 
 use chillerlan\HTTP\Psr7\DummyStream;
 use chillerlan\PHPUnitHttp\HttpFactoryTrait;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
 class DummyStreamTest extends TestCase{
@@ -24,7 +25,8 @@ class DummyStreamTest extends TestCase{
 		$this->initFactories();
 	}
 
-	public function testDefaultStream():void{
+	#[Test]
+	public function defaultStream():void{
 		$dummy = new DummyStream;
 
 		$this::assertTrue($dummy->isReadable());
@@ -44,7 +46,8 @@ class DummyStreamTest extends TestCase{
 		$dummy->close();
 	}
 
-	public function testProxiesToFunction():void{
+	#[Test]
+	public function proxiesToFunction():void{
 		$dummy = new DummyStream;
 		$dummy->dummyOverrideMethod('read', function(int $length):string{
 			TestCase::assertSame(3, $length);
@@ -55,7 +58,8 @@ class DummyStreamTest extends TestCase{
 		$this::assertSame('foo', $dummy->read(3));
 	}
 
-	public function testCanCloseOnDestruct():void{
+	#[Test]
+	public function canCloseOnDestruct():void{
 		$called = false;
 		$dummy = new DummyStream;
 
@@ -68,7 +72,8 @@ class DummyStreamTest extends TestCase{
 		$this::assertTrue($called);
 	}
 
-	public function testDecoratesWithCustomizations(): void{
+	#[Test]
+	public function decoratesWithCustomizations():void{
 		$called = false;
 
 		$a = $this->streamFactory->createStream('foo');

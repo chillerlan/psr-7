@@ -15,12 +15,14 @@ namespace chillerlan\HTTPTest\Psr7;
 
 use chillerlan\HTTP\Psr7\HTTPFactory;
 use chillerlan\HTTP\Psr7\Response;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\StreamInterface;
 
 class ResponseTest extends TestCase{
 
-	public function testDefaultConstructor():void{
+	#[Test]
+	public function defaultConstructor():void{
 		$response = new Response;
 
 		$this::assertSame(200, $response->getStatusCode());
@@ -31,14 +33,16 @@ class ResponseTest extends TestCase{
 		$this::assertSame('', (string)$response->getBody());
 	}
 
-	public function testCanConstructWithStatusCode():void{
+	#[Test]
+	public function canConstructWithStatusCode():void{
 		$response = new Response(404);
 
 		$this::assertSame(404, $response->getStatusCode());
 		$this::assertSame('Not Found', $response->getReasonPhrase());
 	}
 
-	public function testCanConstructWithReason():void{
+	#[Test]
+	public function canConstructWithReason():void{
 		$response = new Response(200, 'bar');
 		$this::assertSame('bar', $response->getReasonPhrase());
 
@@ -46,29 +50,33 @@ class ResponseTest extends TestCase{
 		$this::assertSame('0', $response->getReasonPhrase(), 'Falsey reason works');
 	}
 
-	public function testWithStatusCodeAndNoReason():void{
-		$response = (new Response)->withStatus(201);
+	#[Test]
+	public function withStatusCodeAndNoReason():void{
+		$response = new Response()->withStatus(201);
 		$this::assertSame(201, $response->getStatusCode());
 		$this::assertSame('Created', $response->getReasonPhrase());
 	}
 
-	public function testWithStatusCodeAndReason():void{
-		$response = (new Response)->withStatus(201, 'Foo');
+	#[Test]
+	public function withStatusCodeAndReason():void{
+		$response = new Response()->withStatus(201, 'Foo');
 		$this::assertSame(201, $response->getStatusCode());
 		$this::assertSame('Foo', $response->getReasonPhrase());
 
-		$response = (new Response)->withStatus(201, '0');
+		$response = new Response()->withStatus(201, '0');
 		$this::assertSame(201, $response->getStatusCode());
 		$this::assertSame('0', $response->getReasonPhrase(), 'Falsey reason works');
 	}
 
-	public function testWithProtocolVersion():void{
-		$response = (new Response)->withProtocolVersion('1000');
+	#[Test]
+	public function withProtocolVersion():void{
+		$response = new Response()->withProtocolVersion('1000');
 		$this::assertSame('1000', $response->getProtocolVersion());
 	}
 
-	public function testWithBody():void{
-		$response = (new Response)->withBody(HTTPFactory::createStreamFromString('0'));
+	#[Test]
+	public function withBody():void{
+		$response = new Response()->withBody(HTTPFactory::createStreamFromString('0'));
 		$this::assertInstanceOf(StreamInterface::class, $response->getBody());
 		$this::assertSame('0', (string)$response->getBody());
 	}

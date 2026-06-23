@@ -13,21 +13,22 @@ namespace chillerlan\HTTPTest\Psr7;
 
 use chillerlan\HTTP\Psr7\HTTPFactory;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
-use Psr\Http\Message\StreamInterface;
 use InvalidArgumentException, stdClass;
 use function fopen, fseek, fwrite, simplexml_load_string;
 
 class FactoryUtilsTest extends TestCase{
 
-	public function testCreateStream():void{
+	#[Test]
+	public function createStream():void{
 		$stream = HTTPFactory::createStreamFromString('test');
 
-		$this::assertInstanceOf(Streaminterface::class, $stream);
 		$this::assertSame('test', $stream->getContents());
 	}
 
-	public function testCreateStreamInvalidModeException():void{
+	#[Test]
+	public function createStreamInvalidModeException():void{
 		$this->expectException(InvalidArgumentException::class);
 		$this->expectExceptionMessage('invalid mode for writing');
 
@@ -50,12 +51,14 @@ class FactoryUtilsTest extends TestCase{
 		];
 	}
 
+	#[Test]
 	#[DataProvider('streamInputProvider')]
-	public function testCreateStreamFromInput(mixed $input, string $content):void{
+	public function createStreamFromInput(mixed $input, string $content):void{
 		$this::assertSame($content, HTTPFactory::createStreamFromSource($input)->getContents());
 	}
 
-	public function testCreateStreamFromInputException():void{
+	#[Test]
+	public function createStreamFromInputException():void{
 		$this->expectException(InvalidArgumentException::class);
 		$this->expectExceptionMessage('Invalid resource type: object');
 

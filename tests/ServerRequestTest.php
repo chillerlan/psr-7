@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace chillerlan\HTTPTest\Psr7;
 
+use PHPUnit\Framework\Attributes\Test;
 use chillerlan\HTTP\Psr7\{ServerRequest, UploadedFile};
 use Fig\Http\Message\RequestMethodInterface;
 use PHPUnit\Framework\TestCase;
@@ -21,14 +22,16 @@ use const UPLOAD_ERR_OK;
 
 class ServerRequestTest extends TestCase{
 
-	public function testServerParams():void{
+	#[Test]
+	public function serverParams():void{
 		$params = ['name' => 'value'];
 
 		$request = new ServerRequest(RequestMethodInterface::METHOD_GET, '/', $params);
 		$this::assertSame($params, $request->getServerParams());
 	}
 
-	public function testCookieParams():void{
+	#[Test]
+	public function cookieParams():void{
 		$request = new ServerRequest('GET', '/');
 
 		$this::assertEmpty($request->getCookieParams());
@@ -40,7 +43,8 @@ class ServerRequestTest extends TestCase{
 		$this::assertSame($params, $request->getCookieParams());
 	}
 
-	public function testQueryParams():void{
+	#[Test]
+	public function queryParams():void{
 		$request = new ServerRequest('GET', '/');
 
 		$this::assertEmpty($request->getQueryParams());
@@ -52,7 +56,8 @@ class ServerRequestTest extends TestCase{
 		$this::assertSame($params, $request->getQueryParams());
 	}
 
-	public function testParsedBody():void{
+	#[Test]
+	public function parsedBody():void{
 		$request = new ServerRequest('GET', '/');
 
 		$this::assertEmpty($request->getParsedBody());
@@ -64,14 +69,16 @@ class ServerRequestTest extends TestCase{
 		$this::assertSame($params, $request->getParsedBody());
 	}
 
-	public function testParsedBodyInvalidArg():void{
+	#[Test]
+	public function parsedBodyInvalidArg():void{
 		$this->expectException(InvalidArgumentException::class);
 		$this->expectExceptionMessage('parsed body value must be an array, object or null');
 		/** @phan-suppress-next-line PhanTypeMismatchArgumentProbablyReal */
-		(new ServerRequest('GET', '/'))->withParsedBody('');
+		new ServerRequest('GET', '/')->withParsedBody('');
 	}
 
-	public function testAttributes():void{
+	#[Test]
+	public function attributes():void{
 		$request = new ServerRequest('GET', '/');
 
 		$this::assertSame([], $request->getAttributes());
@@ -92,8 +99,9 @@ class ServerRequestTest extends TestCase{
 		$this::assertSame(['name' => 'value'], $request->getAttributes());
 	}
 
-	public function testNullAttribute():void{
-		$request = (new ServerRequest('GET', '/'))->withAttribute('name', null);
+	#[Test]
+	public function nullAttribute():void{
+		$request = new ServerRequest('GET', '/')->withAttribute('name', null);
 
 		$this::assertSame(['name' => null], $request->getAttributes());
 		$this::assertNull($request->getAttribute('name', 'different-default'));
@@ -104,7 +112,8 @@ class ServerRequestTest extends TestCase{
 		$this::assertSame('different-default', $request->getAttribute('name', 'different-default'));
 	}
 
-	public function testUploadedFiles():void{
+	#[Test]
+	public function uploadedFiles():void{
 		$request = new ServerRequest('GET', '/');
 
 		$this::assertSame([], $request->getUploadedFiles());

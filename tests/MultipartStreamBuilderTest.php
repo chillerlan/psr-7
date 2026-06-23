@@ -13,8 +13,8 @@ namespace chillerlan\HTTPTest\Psr7;
 
 use chillerlan\HTTP\Psr7\MultipartStreamBuilder;
 use chillerlan\PHPUnitHttp\HttpFactoryTrait;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
-use Psr\Http\Message\MessageInterface;
 use InvalidArgumentException;
 
 class MultipartStreamBuilderTest extends TestCase{
@@ -28,32 +28,37 @@ class MultipartStreamBuilderTest extends TestCase{
 		$this->multipartStreamBuilder = new MultipartStreamBuilder($this->streamFactory);
 	}
 
-	public function testCreatesDefaultBoundary():void{
+	#[Test]
+	public function createsDefaultBoundary():void{
 		$this::assertMatchesRegularExpression('/^[a-f\d]{40}$/', $this->multipartStreamBuilder->getBoundary());
 	}
 
-	public function testSetBoundary():void{
+	#[Test]
+	public function setBoundary():void{
 		$boundary = "0-9a-zA-Z'()+_,-./:=?";
 		$this->multipartStreamBuilder->setBoundary($boundary);
 
 		$this::assertSame($boundary, $this->multipartStreamBuilder->getBoundary());
 	}
 
-	public function testSetBoundaryEmptyException():void{
+	#[Test]
+	public function setBoundaryEmptyException():void{
 		$this->expectException(InvalidArgumentException::class);
 		$this->expectExceptionMessage('The given boundary is empty');
 
 		$this->multipartStreamBuilder->setBoundary('');
 	}
 
-	public function testSetBoundaryInvalidCharException():void{
+	#[Test]
+	public function setBoundaryInvalidCharException():void{
 		$this->expectException(InvalidArgumentException::class);
 		$this->expectExceptionMessage('The given boundary contains illegal characters');
 
 		$this->multipartStreamBuilder->setBoundary('foo#');
 	}
 
-	public function testReset():void{
+	#[Test]
+	public function reset():void{
 
 		$this->multipartStreamBuilder
 			->setBoundary('boundary')
@@ -79,11 +84,13 @@ class MultipartStreamBuilderTest extends TestCase{
 		$this::assertSame("--$boundary--\r\n", $this->multipartStreamBuilder->build()->getContents());
 	}
 
-	public function testCanCreateEmptyBody():void{
+	#[Test]
+	public function canCreateEmptyBody():void{
 		$this::assertMatchesRegularExpression("/--[a-f\d]{40}--\r\n/", $this->multipartStreamBuilder->build()->getContents());
 	}
 
-	public function testAddFields():void{
+	#[Test]
+	public function addFields():void{
 
 		$this->multipartStreamBuilder
 			->setBoundary('boundary')
@@ -109,7 +116,8 @@ class MultipartStreamBuilderTest extends TestCase{
 		);
 	}
 
-	public function testAddStreams():void{
+	#[Test]
+	public function addStreams():void{
 
 		$this->multipartStreamBuilder
 			->setBoundary('boundary')
@@ -135,7 +143,8 @@ class MultipartStreamBuilderTest extends TestCase{
 		);
 	}
 
-	public function testAddFieldWithSameName():void{
+	#[Test]
+	public function addFieldWithSameName():void{
 
 		$this->multipartStreamBuilder
 			->setBoundary('boundary')
@@ -161,14 +170,16 @@ class MultipartStreamBuilderTest extends TestCase{
 		);
 	}
 
-	public function testGivenFieldnameCannotBeEmptyException():void{
+	#[Test]
+	public function givenFieldnameCannotBeEmptyException():void{
 		$this->expectException(InvalidArgumentException::class);
 		$this->expectExceptionMessage('Invalid form field name');
 
 		$this->multipartStreamBuilder->addString('content', '');
 	}
 
-	public function testCustomHeaders():void{
+	#[Test]
+	public function customHeaders():void{
 
 		$this->multipartStreamBuilder
 			->setBoundary('boundary')
@@ -191,7 +202,8 @@ class MultipartStreamBuilderTest extends TestCase{
 		);
 	}
 
-	public function testCustomHeadersAndMultipleValues():void{
+	#[Test]
+	public function customHeadersAndMultipleValues():void{
 
 		$this->multipartStreamBuilder
 			->setBoundary('boundary')
@@ -223,7 +235,8 @@ class MultipartStreamBuilderTest extends TestCase{
 		);
 	}
 
-	public function testSuppressContentTypeHeader():void{
+	#[Test]
+	public function suppressContentTypeHeader():void{
 
 		$this->multipartStreamBuilder
 			->setBoundary('boundary')
@@ -241,7 +254,8 @@ class MultipartStreamBuilderTest extends TestCase{
 
 	}
 
-	public function testIgnoresNonContentNonCustomHeaders():void{
+	#[Test]
+	public function ignoresNonContentNonCustomHeaders():void{
 
 		$this->multipartStreamBuilder
 			->setBoundary('boundary')
@@ -250,7 +264,8 @@ class MultipartStreamBuilderTest extends TestCase{
 				'nope'             => 'nah',
 				'x-what'           => 'omg',
 				'this'             => 'absolutely not',
-			]);
+			])
+		;
 
 		$this::assertSame(
 			"--boundary\r\n".
@@ -267,7 +282,8 @@ class MultipartStreamBuilderTest extends TestCase{
 
 	}
 
-	public function testNesting():void{
+	#[Test]
+	public function nesting():void{
 
 		$mp1 = (clone $this->multipartStreamBuilder)
 			->setBoundary('boundary-a')
@@ -320,15 +336,15 @@ class MultipartStreamBuilderTest extends TestCase{
 
 	}
 
-	public function testBuildWithMessageInterface():void{
+	#[Test]
+	public function buildWithMessageInterface():void{
 
 		$request = $this->multipartStreamBuilder
 			->setBoundary('boundary')
 			->addStream($this->streamFactory->createStream('filestream a'), 'a', '/foo/a.jpg')
-			->buildMessage($this->requestFactory->createRequest('POST', 'http://example.com/api/media'))
+			->buildMessage($this->requestFactory->createRequest('POST', 'https://example.com/api/media'))
 		;
 
-		$this::assertInstanceOf(MessageInterface::class, $request);
 		$this::assertTrue($request->hasHeader('content-type'));
 		$this::assertSame('multipart/form-data; boundary="boundary"', $request->getHeaderLine('content-type'));
 
@@ -345,16 +361,16 @@ class MultipartStreamBuilderTest extends TestCase{
 
 	}
 
-	public function testOverwritesContentTypeHeaderInMessage():void{
+	#[Test]
+	public function overwritesContentTypeHeaderInMessage():void{
 
 		$originalRequest = $this->requestFactory
-			->createRequest('POST', 'http://example.com/api/media')
+			->createRequest('POST', 'https://example.com/api/media')
 			->withHeader('Content-Type', 'whatever')
 		;
 
 		$this::assertTrue($originalRequest->hasHeader('content-type'));
 		$this::assertSame('whatever', $originalRequest->getHeaderLine('content-type'));
-
 
 		$modifiedRequest = $this->multipartStreamBuilder
 			->setBoundary('boundary')

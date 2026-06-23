@@ -15,6 +15,7 @@ namespace chillerlan\HTTPTest\Psr7;
 
 use chillerlan\HTTP\Psr7\Stream;
 use chillerlan\PHPUnitHttp\HttpFactoryTrait;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\StreamInterface;
 use Closure, Exception, InvalidArgumentException, RuntimeException;
@@ -27,7 +28,8 @@ class StreamTest extends TestCase{
 		$this->initFactories();
 	}
 
-	public function testConstructorThrowsExceptionOnInvalidArgument():void{
+	#[Test]
+	public function constructorThrowsExceptionOnInvalidArgument():void{
 		$this->expectException(InvalidArgumentException::class);
 
 		/**
@@ -37,7 +39,8 @@ class StreamTest extends TestCase{
 		new Stream(true);
 	}
 
-	public function testConstructorInitializesProperties():void{
+	#[Test]
+	public function constructorInitializesProperties():void{
 		$stream = $this->streamFactory->createStream('data');
 
 		$this::assertTrue($stream->isReadable());
@@ -50,21 +53,24 @@ class StreamTest extends TestCase{
 		$stream->close();
 	}
 
-	public function testStreamClosesHandleOnDestruct():void{
+	#[Test]
+	public function streamClosesHandleOnDestruct():void{
 		$handle = fopen('php://temp', 'r');
 		$stream = new Stream($handle);
 		unset($stream);
 		$this::assertFalse(is_resource($handle));
 	}
 
-	public function testConvertsToString():void{
+	#[Test]
+	public function convertsToString():void{
 		$stream = $this->streamFactory->createStream('data');
 		$this::assertSame('data', (string)$stream);
 		$this::assertSame('data', (string)$stream);
 		$stream->close();
 	}
 
-	public function testGetsContents():void{
+	#[Test]
+	public function getsContents():void{
 		$stream = $this->streamFactory->createStream('data');
 		$this::assertSame('', $stream->getContents());
 		$stream->seek(0);
@@ -72,7 +78,8 @@ class StreamTest extends TestCase{
 		$this::assertSame('', $stream->getContents());
 	}
 
-	public function testChecksEof():void{
+	#[Test]
+	public function checksEof():void{
 		$stream = $this->streamFactory->createStream('data');
 		$this::assertFalse($stream->eof());
 		$stream->read(4);
@@ -80,7 +87,8 @@ class StreamTest extends TestCase{
 		$stream->close();
 	}
 
-	public function testGetSize():void{
+	#[Test]
+	public function getSize():void{
 		$size   = filesize(__FILE__);
 		$handle = fopen(__FILE__, 'r');
 		$stream = new Stream($handle);
@@ -90,7 +98,8 @@ class StreamTest extends TestCase{
 		$stream->close();
 	}
 
-	public function testEnsuresSizeIsConsistent():void{
+	#[Test]
+	public function ensuresSizeIsConsistent():void{
 		$h = fopen('php://temp', 'w+');
 		$this::assertSame(3, fwrite($h, 'foo'));
 		$stream = new Stream($h);
@@ -101,7 +110,8 @@ class StreamTest extends TestCase{
 		$stream->close();
 	}
 
-	public function testProvidesStreamPosition():void{
+	#[Test]
+	public function providesStreamPosition():void{
 		$handle = fopen('php://temp', 'w+');
 		$stream = new Stream($handle);
 		$this::assertSame(0, $stream->tell());
@@ -113,7 +123,8 @@ class StreamTest extends TestCase{
 		$stream->close();
 	}
 
-	public function testCanDetachStream():void{
+	#[Test]
+	public function canDetachStream():void{
 		$handle = fopen('php://temp', 'w+');
 		$stream = new Stream($handle);
 		$stream->write('foo');
@@ -149,7 +160,8 @@ class StreamTest extends TestCase{
 		$stream->close();
 	}
 
-	public function testCloseClearProperties():void{
+	#[Test]
+	public function closeClearProperties():void{
 		$stream = $this->streamFactory->createStream();
 		$stream->close();
 
@@ -160,7 +172,8 @@ class StreamTest extends TestCase{
 		$this::assertEmpty($stream->getMetadata());
 	}
 
-	public function testStreamReadingWithZeroLength():void{
+	#[Test]
+	public function streamReadingWithZeroLength():void{
 		$stream = $this->streamFactory->createStream();
 
 		$this::assertSame('', $stream->read(0));
@@ -168,7 +181,8 @@ class StreamTest extends TestCase{
 		$stream->close();
 	}
 
-	public function testStreamReadingWithNegativeLength():void{
+	#[Test]
+	public function streamReadingWithNegativeLength():void{
 		$this->expectException(RuntimeException::class);
 		$this->expectExceptionMessage('Length parameter cannot be negative');
 
@@ -176,7 +190,8 @@ class StreamTest extends TestCase{
 		$stream->read(-1);
 	}
 
-	public function testStreamSeekInvalidPosition():void{
+	#[Test]
+	public function streamSeekInvalidPosition():void{
 		$this->expectException(RuntimeException::class);
 		$this->expectExceptionMessage('Unable to seek to stream position -1 with whence 0');
 

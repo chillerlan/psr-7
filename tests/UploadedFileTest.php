@@ -17,6 +17,7 @@ use chillerlan\HTTP\Psr7\UploadedFile;
 use chillerlan\HTTP\Utils\ServerUtil;
 use chillerlan\PHPUnitHttp\HttpFactoryTrait;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 use InvalidArgumentException, RuntimeException;
 use function basename, file_exists, fopen, is_scalar, sys_get_temp_dir, tempnam, uniqid, unlink;
@@ -30,7 +31,6 @@ class UploadedFileTest extends TestCase{
 	protected array      $cleanup;
 	protected ServerUtil $server;
 
-	// called from FactoryTrait
 	protected function setUp():void{
 		$this->initFactories();
 
@@ -54,18 +54,14 @@ class UploadedFileTest extends TestCase{
 
 	public static function invalidStreams():array{
 		return [
-#			'null'   => [null],
-#			'true'   => [true],
-#			'false'  => [false],
-#			'int'    => [1],
-#			'float'  => [1.1],
 			'array'  => [['filename']],
 			'object' => [(object)['filename']],
 		];
 	}
 
+	#[Test]
 	#[DataProvider('invalidStreams')]
-	public function testRaisesExceptionOnInvalidStreamOrFile(mixed $streamOrFile){
+	public function raisesExceptionOnInvalidStreamOrFile(mixed $streamOrFile){
 		$this->expectException(InvalidArgumentException::class);
 
 		new UploadedFile($streamOrFile, 0);
@@ -78,21 +74,24 @@ class UploadedFileTest extends TestCase{
 		];
 	}
 
+	#[Test]
 	#[DataProvider('invalidErrorStatuses')]
-	public function testRaisesExceptionOnInvalidErrorStatus(int $status):void{
+	public function raisesExceptionOnInvalidErrorStatus(int $status):void{
 		$this->expectException(InvalidArgumentException::class);
 
 		new UploadedFile(fopen('php://temp', 'wb+'), 0, $status);
 	}
 
-	public function testGetStreamReturnsOriginalStreamObject():void{
+	#[Test]
+	public function getStreamReturnsOriginalStreamObject():void{
 		$stream = $this->streamFactory->createStream();
 		$upload = new UploadedFile($stream, 0);
 
 		$this::assertSame($stream, $upload->getStream());
 	}
 
-	public function testGetStreamReturnsWrappedPhpStream():void{
+	#[Test]
+	public function getStreamReturnsWrappedPhpStream():void{
 		$stream       = fopen('php://temp', 'wb+');
 		$upload       = new UploadedFile($stream, 0);
 		$uploadStream = $upload->getStream()->detach();
@@ -100,7 +99,8 @@ class UploadedFileTest extends TestCase{
 		$this::assertSame($stream, $uploadStream);
 	}
 
-	public function testSuccessful():void{
+	#[Test]
+	public function successful():void{
 		$stream = $this->streamFactory->createStream('Foo bar!');
 		/** @phan-suppress-next-line PhanTypeMismatchArgumentNullable */
 		$upload = new UploadedFile($stream, $stream->getSize(), UPLOAD_ERR_OK, 'filename.txt', 'text/plain');
@@ -116,7 +116,8 @@ class UploadedFileTest extends TestCase{
 		$this::assertSame($stream->__toString(), file_get_contents($to));
 	}
 
-	public function testMoveCannotBeCalledMoreThanOnce():void{
+	#[Test]
+	public function moveCannotBeCalledMoreThanOnce():void{
 		$stream = $this->streamFactory->createStream('Foo bar!');
 		$upload = new UploadedFile($stream, 0);
 
@@ -130,7 +131,8 @@ class UploadedFileTest extends TestCase{
 		$upload->moveTo($to);
 	}
 
-	public function testCannotRetrieveStreamAfterMove():void{
+	#[Test]
+	public function cannotRetrieveStreamAfterMove():void{
 		$stream = $this->streamFactory->createStream('Foo bar!');
 		$upload = new UploadedFile($stream, 0);
 
@@ -144,7 +146,8 @@ class UploadedFileTest extends TestCase{
 		$upload->getStream();
 	}
 
-	public function testCannotMoveToEmptyTarget():void{
+	#[Test]
+	public function cannotMoveToEmptyTarget():void{
 		$stream = $this->streamFactory->createStream('Foo bar!');
 		$upload = new UploadedFile($stream, 0);
 
@@ -153,7 +156,8 @@ class UploadedFileTest extends TestCase{
 		$upload->moveTo('');
 	}
 
-	public function testCannotMoveToUnwritableDirectory():void{
+	#[Test]
+	public function cannotMoveToUnwritableDirectory():void{
 
 		if(PHP_OS_FAMILY !== 'Linux'){
 			$this->markTestSkipped('testing Linux only');
@@ -179,29 +183,33 @@ class UploadedFileTest extends TestCase{
 		];
 	}
 
+	#[Test]
 	#[DataProvider('nonOkErrorStatus')]
-	public function testConstructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent(int $status):void{
+	public function constructorDoesNotRaiseExceptionForInvalidStreamWhenErrorStatusPresent(int $status):void{
 		$uploadedFile = new UploadedFile('not ok', 0, $status);
 		$this::assertSame($status, $uploadedFile->getError());
 	}
 
+	#[Test]
 	#[DataProvider('nonOkErrorStatus')]
-	public function testMoveToRaisesExceptionWhenErrorStatusPresent(int $status):void{
+	public function moveToRaisesExceptionWhenErrorStatusPresent(int $status):void{
 		$uploadedFile = new UploadedFile('not ok', 0, $status);
 		$this->expectException(RuntimeException::class);
 		$this->expectExceptionMessage('Cannot retrieve stream due to upload error');
 		$uploadedFile->moveTo(__DIR__.'/'.uniqid());
 	}
 
+	#[Test]
 	#[DataProvider('nonOkErrorStatus')]
-	public function testGetStreamRaisesExceptionWhenErrorStatusPresent(int $status):void{
+	public function getStreamRaisesExceptionWhenErrorStatusPresent(int $status):void{
 		$uploadedFile = new UploadedFile('not ok', 0, $status);
 		$this->expectException(RuntimeException::class);
 		$this->expectExceptionMessage('Cannot retrieve stream due to upload error');
 		$uploadedFile->getStream();
 	}
 
-	public function testMoveToCreatesStreamIfOnlyAFilenameWasProvided():void{
+	#[Test]
+	public function moveToCreatesStreamIfOnlyAFilenameWasProvided():void{
 		$from = tempnam(sys_get_temp_dir(), 'copy_from');
 		$to   = tempnam(sys_get_temp_dir(), 'copy_to');
 
@@ -211,13 +219,13 @@ class UploadedFileTest extends TestCase{
 		copy(__FILE__, $from);
 
 		$uploadedFile = new UploadedFile($from, 100, UPLOAD_ERR_OK, basename($from), 'text/plain');
-		// why does this produce an error under windows when running with coverage???
 		$uploadedFile->moveTo($to);
 
 		$this::assertFileEquals(__FILE__, $to);
 	}
 
-	public function testNormalizeFilesRaisesException():void{
+	#[Test]
+	public function normalizeFilesRaisesException():void{
 		$this->expectException(InvalidArgumentException::class);
 		$this->expectExceptionMessage('Invalid value in files specification');
 

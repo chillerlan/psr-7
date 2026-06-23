@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace chillerlan\HTTPTest\Psr7;
 
+use PHPUnit\Framework\Attributes\Test;
 use chillerlan\HTTP\Psr7\{Request, Uri};
 use Fig\Http\Message\RequestMethodInterface;
 use InvalidArgumentException;
@@ -20,31 +21,37 @@ use PHPUnit\Framework\TestCase;
 
 class RequestTest extends TestCase{
 
-	public function testRequestUriMayBeString():void{
-		$this::assertSame('/', (string)(new Request(RequestMethodInterface::METHOD_GET, '/'))->getUri());
+	#[Test]
+	public function requestUriMayBeString():void{
+		$this::assertSame('/', (string)new Request(RequestMethodInterface::METHOD_GET, '/')->getUri());
 	}
 
-	public function testRequestUriMayBeUri():void{
+	#[Test]
+	public function requestUriMayBeUri():void{
 		$uri = new Uri('/');
 
-		$this::assertSame($uri, (new Request('GET', $uri))->getUri());
+		$this::assertSame($uri, new Request('GET', $uri)->getUri());
 	}
 
-	public function testValidateRequestUri():void{
+	#[Test]
+	public function validateRequestUri():void{
 		$this->expectException(InvalidArgumentException::class);
 
 		new Request('GET', '///');
 	}
 
-	public function testCapitalizesMethod():void{
-		$this::assertSame('GET', (new Request('get', '/'))->getMethod());
+	#[Test]
+	public function capitalizesMethod():void{
+		$this::assertSame('GET', new Request('get', '/')->getMethod());
 	}
 
-	public function testCapitalizesWithMethod():void{
-		$this::assertSame('PUT', (new Request('GET', '/'))->withMethod('put')->getMethod());
+	#[Test]
+	public function capitalizesWithMethod():void{
+		$this::assertSame('PUT', new Request('GET', '/')->withMethod('put')->getMethod());
 	}
 
-	public function testWithUri():void{
+	#[Test]
+	public function withUri():void{
 		$request = new Request('GET', '/');
 		$uri1    = $request->getUri();
 		$uri2    = new Uri('https://www.example.com');
@@ -56,7 +63,8 @@ class RequestTest extends TestCase{
 		$this::assertSame($uri2, $request->getUri());
 	}
 
-	public function testWithRequestTarget():void{
+	#[Test]
+	public function withRequestTarget():void{
 		$request = new Request('GET', '/');
 
 		$this::assertSame('/', $request->getRequestTarget());
@@ -66,13 +74,15 @@ class RequestTest extends TestCase{
 		$this::assertSame('*', $request->getRequestTarget());
 	}
 
-	public function testRequestTargetDoesNotAllowSpaces():void{
+	#[Test]
+	public function requestTargetDoesNotAllowSpaces():void{
 		$this->expectException(InvalidArgumentException::class);
 
-		(new Request('GET', '/'))->withRequestTarget('/foo bar');
+		new Request('GET', '/')->withRequestTarget('/foo bar');
 	}
 
-	public function testRequestTargetDefaultsToSlash():void{
+	#[Test]
+	public function requestTargetDefaultsToSlash():void{
 		$request = new Request('GET', '');
 		$this::assertSame('/', $request->getRequestTarget());
 
@@ -83,22 +93,26 @@ class RequestTest extends TestCase{
 		$this::assertSame('/bar%20baz/', $request->getRequestTarget());
 	}
 
-	public function testBuildsRequestTarget():void{
-		$this::assertSame('/baz?bar=bam', (new Request('GET', 'https://foo.com/baz?bar=bam'))->getRequestTarget());
+	#[Test]
+	public function buildsRequestTarget():void{
+		$this::assertSame('/baz?bar=bam', new Request('GET', 'https://foo.com/baz?bar=bam')->getRequestTarget());
 	}
 
-	public function testBuildsRequestTargetWithFalseyQuery():void{
-		$this::assertSame('/baz?0', (new Request('GET', 'https://foo.com/baz?0'))->getRequestTarget());
+	#[Test]
+	public function buildsRequestTargetWithFalseyQuery():void{
+		$this::assertSame('/baz?0', new Request('GET', 'https://foo.com/baz?0')->getRequestTarget());
 	}
 
-	public function testCanGetHeaderAsCsv():void{
-		$request = (new Request('GET', 'https://foo.com/baz?bar=bam'))->withHeader('Foo', ['a', 'b', 'c']);
+	#[Test]
+	public function canGetHeaderAsCsv():void{
+		$request = new Request('GET', 'https://foo.com/baz?bar=bam')->withHeader('Foo', ['a', 'b', 'c']);
 
 		$this::assertSame('a, b, c', $request->getHeaderLine('Foo'));
 		$this::assertSame('', $request->getHeaderLine('Bar'));
 	}
 
-	public function testOverridesHostWithUri():void{
+	#[Test]
+	public function overridesHostWithUri():void{
 		$request = new Request('GET', 'https://foo.com/baz?bar=bam');
 		$this::assertSame(['Host' => ['foo.com']], $request->getHeaders());
 
@@ -106,22 +120,25 @@ class RequestTest extends TestCase{
 		$this::assertSame('www.baz.com', $request->getHeaderLine('Host'));
 	}
 
-	public function testAddsPortToHeader():void{
-		$this::assertSame('foo.com:8124', (new Request('GET', 'https://foo.com:8124/bar'))->getHeaderLine('host'));
+	#[Test]
+	public function addsPortToHeader():void{
+		$this::assertSame('foo.com:8124', new Request('GET', 'https://foo.com:8124/bar')->getHeaderLine('host'));
 	}
 
-	public function testAddsPortToHeaderAndReplacePreviousPort():void{
-		$request = (new Request('GET', 'https://foo.com:8124/bar'))
+	#[Test]
+	public function addsPortToHeaderAndReplacePreviousPort():void{
+		$request = new Request('GET', 'https://foo.com:8124/bar')
 			->withUri(new Uri('https://foo.com:8125/bar'));
 
 		$this::assertSame('foo.com:8125', $request->getHeaderLine('host'));
 	}
 
-	public function testWithMethodEmptyMethod():void{
+	#[Test]
+	public function withMethodEmptyMethod():void{
 		$this->expectException(InvalidArgumentException::class);
 		$this->expectExceptionMessage('HTTP method must not be empty');
 
-		(new Request('GET', '/foo'))->withMethod('');
+		new Request('GET', '/foo')->withMethod('');
 	}
 
 }
