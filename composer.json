@@ -46,12 +46,10 @@
 	"require-dev": {
 		"ext-simplexml": "*",
 		"chillerlan/phpunit-http": "^2.0",
-		"phan/phan": "^6.0.5",
-		"phpstan/phpstan": "^2.1.44",
-		"phpstan/phpstan-deprecation-rules": "^2.0.4",
-		"phpunit/phpunit": "^13.0",
+		"phan/phan": "^6.0.7",
+		"phpunit/phpunit": "^13.2",
 		"phpmd/phpmd": "^2.15",
-		"slevomat/coding-standard": "^8.28.1",
+		"slevomat/coding-standard": "^8.29",
 		"squizlabs/php_codesniffer": "^4.0"
 	},
 	"suggest": {

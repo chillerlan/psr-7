@@ -97,7 +97,7 @@ class MultipartStreamBuilder{
 	/**
 	 * Adds a message with the given content
 	 *
-	 * @phpstan-param array<string, string>|null $headers
+	 * @param array<string, string>|null $headers
 	 */
 	public function addString(
 		string        $content,
@@ -112,7 +112,7 @@ class MultipartStreamBuilder{
 	/**
 	 * Adds a StreamInterface
 	 *
-	 * @phpstan-param array<string, string>|null $headers
+	 * @param array<string, string>|null $headers
 	 */
 	public function addStream(
 		StreamInterface $stream,

@@ -26,8 +26,6 @@ use const FILTER_FLAG_IPV6, FILTER_VALIDATE_IP;
  * @see https://datatracker.ietf.org/doc/html/rfc3986
  * @see https://datatracker.ietf.org/doc/html/rfc7320
  * @see https://datatracker.ietf.org/doc/html/rfc8820
- *
- * @phpstan-type ParsedUrl array{scheme?: string, host?: string, port?: int|string, user?: string, pass?: string, path?: string, query?: string, fragment?: string}
  */
 class Uri implements UriInterface{
 
@@ -72,8 +70,7 @@ class Uri implements UriInterface{
 	 * Uri constructor.
 	 *
 	 * @throws \InvalidArgumentException
-	 *
-	 * @phpstan-param ParsedUrl|string|null $uri
+	 * @param array<string, mixed>|string|null $uri
 	 */
 	public function __construct(array|string|null $uri = null){
 
@@ -293,17 +290,17 @@ class Uri implements UriInterface{
 		$str = preg_replace_callback($regex, fn(array $match):string => rawurlencode($match[0]), $str);
 
 		if(!is_string($str)){
-			throw new RuntimeException('preg_replace_callback() did not reurn a string');
+			throw new RuntimeException('preg_replace_callback() did not return a string');
 		}
 
 		return $str;
 	}
 
 	/**
-	 * @phpstan-param ParsedUrl $parts
+	 * @param array<string, mixed> $parts
 	 */
 	protected function parseUriParts(array $parts):static{
-		/** @var string $part */
+
 		foreach($parts as $part => $value){
 
 			if(!property_exists($this, $part)){

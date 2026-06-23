@@ -30,10 +30,6 @@ jobs:
     name: "Static Code Analysis"
     runs-on: ubuntu-latest
 
-#    env:
-#      PHAN_ALLOW_XDEBUG: 0
-#      PHAN_DISABLE_XDEBUG_WARN: 1
-
     strategy:
       fail-fast: true
       matrix:
@@ -64,9 +60,6 @@ jobs:
 
       - name: "Run phan"
         run: php vendor/bin/phan --target-php-version=${{ matrix.php-version }}
-
-#      - name: "Run PHPStan"
-#        run: php vendor/bin/phpstan
 
 
   tests:
