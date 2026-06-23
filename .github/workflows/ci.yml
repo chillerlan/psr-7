@@ -39,7 +39,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: "Install PHP"
         uses: shivammathur/setup-php@v2
@@ -96,7 +96,7 @@ jobs:
         run: php vendor/bin/phpunit --colors=always --configuration=phpunit.xml.dist
 
       - name: "Send code coverage report to Codecov.io"
-        uses: codecov/codecov-action@v6
+        uses: codecov/codecov-action@v7
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: .build/coverage/clover.xml
